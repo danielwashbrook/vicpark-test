@@ -1,0 +1,527 @@
+/* SASS Styles for victoria park mobile site */
+
+.ui-body-a,
+.ui-body-c,
+.ui-body-d {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+  text-shadow: 0 0px 0 #fff;
+}
+
+.ui-bar-c {
+  background: url("../images/header-white@2x.png")repeat-x;
+  background-size: 320px 80px;
+  height: 80px;
+  margin-bottom: -29px;
+  z-index: 3;
+  position: relative;
+  border: 1px solid transparent;
+  &.ui-listview-filter {
+    background:#bfb5b5;
+  }
+}
+
+
+.ui-icon-bars {
+    background: url('../images/menu-button@2x.png') top left no-repeat;
+    background-size: 42px;
+    width: 42px;
+    height: 42px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin:0;
+}
+.ui-header > .ui-btn {
+    -moz-box-shadow: 0 0px 0 rgba(255,255,255,.3);
+    -webkit-box-shadow: 0 0px 0 rgba(255,255,255,.3);
+    box-shadow: 0 0px 0 rgba(255,255,255,.3);
+    -webkit-border-radius: 0 /*{global-radii-buttons}*/;
+    border-radius: 0 /*{global-radii-buttons}*/;
+    border:none;
+    background-image:none;
+    background:transparent;
+    width: 42px;
+    height: 42px;
+
+}
+.ui-btn-inner {
+    border:none;
+}
+
+.ui-header .logo-header {
+  height:42px;
+  top:2px;
+  right:10px;
+}
+
+#mypanel {
+  background:#3c3c3c url('../images/logo-white@2x.png') 70% 97% no-repeat;
+  background-size: 200px;
+  .search {
+    margin-bottom:15px;
+  }
+  .leftmenu {
+    margin:0;
+    padding:0;
+
+    .mapicon {
+      background: url('../images/menu-icons-map@2x.png') left no-repeat;
+    }
+    .explore {
+      background: url('../images/menu-icons-explore@2x.png') left no-repeat;
+    }
+    .events {
+      background: url('../images/menu-icons-special@2x.png') left no-repeat;
+    }
+    .bookmarks {
+      background: url('../images/menu-icons-bookmarks@2x.png') left no-repeat;
+    }
+    li {
+      background: url('../images/separator@2x.png') bottom no-repeat;
+      list-style: none;
+      margin: 0;
+      background-size: 80% 2px;
+      a {
+        display: inline-block;
+        height: 60px;
+        padding-left: 50px;
+        background-size: 40px !important;
+        line-height: 60px;
+        color:white;
+        text-decoration: none;
+        font-weight: normal;
+      }
+      &:last-child {
+        display:none;
+      }
+    }
+  }
+}
+.map {
+    width: 100%;
+    height: 400px;
+}
+#main .ui-body-c {
+  background:#bfb5b5;
+}
+
+#search .ui-content {
+  background:transparent;
+  color:#8f8888;
+  #search-list {
+    min-height: 450px;
+    z-index: 99;
+    position: relative;
+    top: -10px;
+  }
+  ul.ui-listview,
+  .ui-collapsible-content.ui-body-d {
+    background:#bfb5b5;
+  }
+
+  .ui-body-d li.ui-btn {
+
+    &.Events .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-special@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+    &.Cafe .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-cafe@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+    &.Pubs .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-pub@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+    &.Shop .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-shops@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+    &.Stay .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-stay@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+    &.Treats .ui-btn-text {
+      padding-left:30px;
+      background:url("../images/icon-inset-treats@2x.png") 5px 15px no-repeat ;
+      background-size:35px;
+    }
+
+
+    .ui-btn-inner {
+      background:url('../images/search-result-bg@2x.png') top right no-repeat;
+      background-size: 320px 90px;
+      height:77px;
+    }
+    background:url('../images/search-result-bg@2x.png') top left no-repeat;
+    background-size: 100% 90px;
+    height: 85px;
+    margin-bottom:-10px;
+    border: none;
+    //width: 320px;
+
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;
+    .ui-li-heading {
+      font-size:26px;
+      color:#83ba3b;
+      font-weight:normal;
+      margin:0 0 9px 0;
+    }
+    .phone {
+      font-size:18px;
+      color:#918181;
+    }
+  }
+}
+.ui-input-search.ui-focus,
+.ui-input-text.ui-focus {
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+
+}
+#main .ui-content{
+  background:transparent;
+  color:#8f8888;
+  .ui-collapsible-heading {
+      .ui-btn-icon-left .ui-btn-inner {
+        padding-left: 55px;
+        font-size:20px;
+        }
+      a.ui-btn {
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+        color:#a29d9d;
+        background: url("../images/category-bg@2x.png") 0 -7px repeat-x;
+        background-size: 320px 77px;
+        padding: 5px 5px;
+         /*-moz-box-shadow:    inset 0px -1px 3px #7a6762;
+         -webkit-box-shadow: inset 0px -1px 3px #7a6762;
+         box-shadow:         inset 0px -1px 3px #7a6762;*/
+         text-shadow: 1px 1px 0 #d8d2d2;
+         margin-bottom:0px;
+        .ui-icon {
+          background:url('../images/icon-inset-dine@2x.png') left no-repeat;
+          background-size:40px;
+          height:40px;
+          width:40px;
+          margin-top:-18px;
+          border:none;
+          -moz-box-shadow: 0 0px 0 rgba(255,255,255,.4);
+          -webkit-box-shadow: 0 0px 0 rgba(255,255,255,.4);
+          box-shadow: 0 0px 0 rgba(255,255,255,.4);
+        }
+      }
+  }
+  .treats {
+    border-left:6px solid #4e4eac;  //red
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-treats@2x.png') left no-repeat;
+      background-size:40px;
+    }
+  }
+  .shop {
+    border-left:6px solid #3e9ea5; //blue
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-shops@2x.png') left no-repeat;
+      background-size:40px;
+    }
+  }
+  .play {
+    border-left:6px solid #cf811a; //green
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-stay@2x.png') left no-repeat;
+      background-size:40px;
+    }
+  }
+  .pubs {
+    border-left:6px solid #a651a2;  // yellow
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-pub@2x.png') left no-repeat;
+      background-size:40px;
+    }
+  }
+  .cafe {
+    border-left:6px solid #d71339;
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-cafe@2x.png') left no-repeat;
+      background-size:40px;
+    }
+
+  }
+  .events {
+    border-left:6px solid #8cc63f;
+    a.ui-btn .ui-icon {
+      background:url('../images/icon-inset-special@2x.png') left no-repeat;
+      background-size:40px;
+    }
+
+  }
+
+
+    ul.ui-listview,
+    .ui-collapsible-content.ui-body-d {
+      background:#bfb5b5;
+    }
+    padding-top:0;
+
+
+    .header-link {
+
+      margin: -5px -15px 7px -15px;
+      padding: 10px 10px 10px 20px;
+
+      background:#f4f3f3 url('../images/detail-icon-address@2x.png') 95% 60% no-repeat;
+      background-size: 40px;
+      &.events {
+        background:#f4f3f3 url('../images/map-pin-special@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+      &.cafe {
+        background:#f4f3f3 url('../images/map-pin-cafe@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+      &.shop {
+        background:#f4f3f3 url('../images/map-pin-shops@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+      &.pubs {
+        background:#f4f3f3 url('../images/map-pin-pubs@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+      &.play {
+        background:#f4f3f3 url('../images/map-pin-stay@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+      &.treats {
+        background:#f4f3f3 url('../images/map-pin-treats@2x.png') 95% 60% no-repeat;
+        background-size: 40px;
+      }
+
+      display:block;
+      text-decoration: none;
+      &:link,
+      &:visited {
+        font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;
+        color:#afa4a4;
+        font-weight: normal;
+        font-size:22px;
+      }
+    }
+    .ui-body-d li.ui-btn {
+      .ui-btn-inner {
+        background:url('../images/search-result-bg@2x.png') top right no-repeat;
+        background-size: 320px 90px;
+        height:77px;
+      }
+      background:url('../images/search-result-bg@2x.png') top left no-repeat;
+      background-size: 100% 90px;
+      height: 85px;
+      margin-bottom:-10px;
+      border: none;
+
+
+      font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;
+      .ui-li-heading {
+        font-size:26px;
+        color:#83ba3b;
+        font-weight:normal;
+        margin:0 0 9px 0;
+      }
+      .phone {
+        font-size:18px;
+        color:#918181;
+      }
+    }
+}
+.ui-panel-content-wrap {
+  height:100%;
+}
+#map .ui-content {
+    padding:0;
+    height:90%;
+}
+#map, #map_canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  padding: 0; }
+#details {
+
+  #map-canvas {
+    height:300px;
+  }
+
+
+
+  #content {
+    padding:0;
+  }
+  .innertext {
+    padding: 5px 15px;
+    background:#edeaea;
+  }
+  h2 {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    color:#83ba3b;
+    font-weight: normal;
+    border-bottom:1px solid #83ba3b;
+    padding-bottom:10px;
+    padding-right:80px;
+    font-size:30px;
+    margin-bottom:10px;
+
+
+    &.Events  {
+      background:url("../images/icon-inset-special@2x.png") right no-repeat ;
+      background-size: 40px;
+
+    }
+    &.Cafe  {
+      background:url("../images/icon-inset-cafe@2x.png") right no-repeat ;
+      background-size: 40px;
+
+    }
+    &.Pubs  {
+      background:url("../images/icon-inset-pub@2x.png") right no-repeat ;
+      background-size: 40px;
+    }
+    &.Shop {
+      background:url("../images/icon-inset-shops@2x.png") right no-repeat ;
+      background-size: 40px;
+    }
+    &.Stay {
+      background:url("../images/icon-inset-stay@2x.png") right no-repeat ;
+      background-size: 40px;
+    }
+    &.Treats {
+      background:url("../images/icon-inset-treats@2x.png") right no-repeat ;
+      background-size: 40px;
+    }
+  }
+  h3 {
+    border-top:1px solid #83ba3b;
+    padding-top:10px;
+    color:#83ba3b;
+    font-weight:normal;
+    font-style:italic;
+    margin-top:10px;
+  }
+  .ui-btn-left {
+    margin:0;
+    padding:0;
+    top:0;
+    width:auto;
+    height:auto;
+  }
+  .ui-btn-left .ui-btn-inner {
+    margin:0;
+    padding:0;
+  }
+  p {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    color:#8a7979;
+    font-size: 20px;
+    margin: 5px 0;
+    &.address {
+      background: url('../images/detail-icon-address@2x.png') left no-repeat;
+      background-size:20px;
+      padding-left:24px;
+    }
+    &.description {
+      font-size:18px;
+    }
+
+  }
+  phone {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    color:#8a7979;
+    font-size: 20px;
+    background: url('../images/detail-icon-phone@2x.png') left no-repeat;
+    background-size:20px;
+    padding-left:24px;
+  }
+  .detail_image {
+    width:100%;
+    max-height: 250px;
+  }
+  .view_on_map {
+    display: block;
+    height: 75px;
+    margin: 5px auto;
+  }
+}
+
+
+.infobox-wrapper {
+  display:none;
+}
+#infobox {
+  border:0px solid black;
+  //margin-top: 8px;
+  background:url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+  //background:transparent;
+  background-size:40px;
+
+  color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  padding: 1.5em 2em 1.5em 6em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow:0 -1px #000000;
+  /*-webkit-box-shadow: 0 0  8px #000;
+  box-shadow: 0 0 8px #000;*/
+  &.Shop {
+    background: url('../images/icon-inset-shops@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  &.Pubs {
+    background: url('../images/icon-inset-pub@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  &.Events {
+    background: url('../images/icon-inset-special@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  &.Cafe {
+    background: url('../images/icon-inset-cafe@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  &.Stay {
+    background: url('../images/icon-inset-stay@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  &.Treats {
+    background: url('../images/icon-inset-treats@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+    background-size:50px;
+  }
+  h4 {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    color:#9dde47;
+    font-size:24px;
+    margin:0 0 10px 0;
+    height: 86px;
+    overflow: hidden;
+  }
+  phone {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    font-size:20px;
+    margin:10px 0;
+  }
+  .path {
+    display:none;
+  }
+}
+.infoBox {
+  background:url('../images/map-detail-bg@2x.png') -21px -8px no-repeat;
+  background-size: 345px;
+}
+.infoBox > img {
+
+}
+
