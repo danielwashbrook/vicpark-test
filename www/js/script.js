@@ -250,41 +250,50 @@ var vpmobile = {
 
 }
 
-// map page
-$('#map').live('pageinit', function() {
-  console.log('#map pageinit');
-  $('#infobox').live('tap', function(e) {
-    //console.log($(this).find('.path').html());
-    vpmobile.active_listing = $(this).find('.path').html();
-    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {reloadPage:true});
-    return false;
+function onDeviceReady() {
+  $(document).ready(function() {
+
+    // map page
+    $('#map').live('pageinit', function() {
+      console.log('#map pageinit');
+      $('#infobox').live('tap', function(e) {
+        //console.log($(this).find('.path').html());
+        vpmobile.active_listing = $(this).find('.path').html();
+        $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {reloadPage:true});
+        return false;
+      });
+      vpmobile.bounds = new google.maps.LatLngBounds();
+      vpmobile.initialize();
+    });
+
+
+    $('#map').live('pageshow', function() {
+      console.log('#map pageshow');
+      //$('#map_canvas').gmap('refresh');
+      vpmobile.loadNodes(vpmobile.loadMarkers);
+      //$.mobile.showPageLoadingMsg();
+      //$.mobile.hidePageLoadingMsg();
+    });
+
+
+    // search page functionality
+    $('#search').live('pageinit', function() {
+      console.log('#search pageinit');
+      vpmobile.loadNodes(vpmobile.searchListings);
+    });
+
+
+    $(document).live("pageinit", function(){
+      $.extend(  $.mobile , {
+        ajaxEnabled: false
+      });
+    });
+
   });
-  vpmobile.bounds = new google.maps.LatLngBounds();
-  vpmobile.initialize();
-});
-
-
-$('#map').live('pageshow', function() {
-  console.log('#map pageshow');
-  //$('#map_canvas').gmap('refresh');
-  vpmobile.loadNodes(vpmobile.loadMarkers);
-  //$.mobile.showPageLoadingMsg();
-  //$.mobile.hidePageLoadingMsg();
-});
-
-
-// search page functionality
-$('#search').live('pageinit', function() {
-  console.log('#search pageinit');
-  vpmobile.loadNodes(vpmobile.searchListings);
-});
-
-
-$(document).live("pageinit", function(){
-  $.extend(  $.mobile , {
-    ajaxEnabled: false
-  });
-});
-
+}
 $(function() {
 });
+
+/* Phone gap bootstrap */
+
+document.addEventListener("deviceready", onDeviceReady);
