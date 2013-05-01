@@ -65,7 +65,7 @@ var vpmobile = {
     });
 
     // initialize the geolocation feature
-    //vpmobile.getUserLocation();
+    vpmobile.getUserLocation();
   },
   addMarker: function(location) {
     marker = new google.maps.Marker({
@@ -255,71 +255,71 @@ function onDeviceReady() {
   console.log('onDeviceReady');
   $(document).ready(function() {
     console.log('document ready');
-
-    // map page
-    $('#map').live('pageinit', function() {
-      console.log('#map pageinit');
-      $('#infobox').live('tap', function(e) {
-        //console.log($(this).find('.path').html());
-        vpmobile.active_listing = $(this).find('.path').html();
-        $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {reloadPage:true});
-        return false;
-      });
-      vpmobile.bounds = new google.maps.LatLngBounds();
-      vpmobile.initialize();
-    });
-
-
-    $('#map').live('pageshow', function() {
-      console.log('#map pageshow');
-      //$('#map_canvas').gmap('refresh');
-      vpmobile.loadNodes(vpmobile.loadMarkers);
-      //$.mobile.showPageLoadingMsg();
-      //$.mobile.hidePageLoadingMsg();
-    });
-
-
-    // search page functionality
-    $('#search').live('pageinit', function() {
-      console.log('#search pageinit');
-      vpmobile.loadNodes(vpmobile.searchListings);
-    });
-
-
-    $(document).live("pageinit", function(){
-      $.extend(  $.mobile , {
-        ajaxEnabled: false
-      });
-    });
-
-
-    $('#details').live('pageinit', function() {
-      vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
-      $('.view_on_map').click(function(){
-        console.log('clicked');
-        $('#map-canvas').toggle();
-        google.maps.event.trigger(vpmobile.detailMap, 'resize');
-        vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
-        smart_scroll($('#map-canvas'));
-      });
-    });
-
-    // explore page, load the listings into the lists
-    $('#main').live('pageinit', function() {
-      vpmobile.loadNodes(vpmobile.loadListings);
-      $("a.header-link").live("click", function (e) {
-
-        console.log($(this)[0].dataset.link);
-
-        vpmobile.active_category = $(this)[0].dataset.link;
-        $.mobile.changePage('index.html', {reloadPage:true});//
-        return false;
-
-      });
-    });
-
   });
 }
+// map page
+$('#map').live('pageinit', function() {
+  console.log('#map pageinit');
+  $('#infobox').live('tap', function(e) {
+    //console.log($(this).find('.path').html());
+    vpmobile.active_listing = $(this).find('.path').html();
+    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {reloadPage:true});
+    return false;
+  });
+  vpmobile.bounds = new google.maps.LatLngBounds();
+  vpmobile.initialize();
+});
+
+
+$('#map').live('pageshow', function() {
+  console.log('#map pageshow');
+  //$('#map_canvas').gmap('refresh');
+  vpmobile.loadNodes(vpmobile.loadMarkers);
+  //$.mobile.showPageLoadingMsg();
+  //$.mobile.hidePageLoadingMsg();
+});
+
+
+// search page functionality
+$('#search').live('pageinit', function() {
+  console.log('#search pageinit');
+  vpmobile.loadNodes(vpmobile.searchListings);
+});
+
+
+$(document).live("pageinit", function(){
+  $.extend(  $.mobile , {
+    ajaxEnabled: false
+  });
+});
+
+
+$('#details').live('pageinit', function() {
+  vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
+  $('.view_on_map').click(function(){
+    console.log('clicked');
+    $('#map-canvas').toggle();
+    google.maps.event.trigger(vpmobile.detailMap, 'resize');
+    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
+    smart_scroll($('#map-canvas'));
+  });
+});
+
+// explore page, load the listings into the lists
+$('#main').live('pageinit', function() {
+  vpmobile.loadNodes(vpmobile.loadListings);
+  $("a.header-link").live("click", function (e) {
+
+    console.log($(this)[0].dataset.link);
+
+    vpmobile.active_category = $(this)[0].dataset.link;
+    $.mobile.changePage('index.html', {reloadPage:true});//
+    return false;
+
+  });
+});
+
+
 
 function getURLParameter(name) {
     return decodeURI(
