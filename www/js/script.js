@@ -65,7 +65,7 @@ var vpmobile = {
     });
 
     // initialize the geolocation feature
-    vpmobile.getUserLocation();
+    //vpmobile.getUserLocation();
   },
   addMarker: function(location) {
     marker = new google.maps.Marker({
@@ -111,18 +111,19 @@ var vpmobile = {
 
     if (vpmobile.nodes === undefined || vpmobile.nodes.length < 1){
         $.getJSON( 'export.json', function(data) {
-          //console.log('getting data!');
+          console.log('getting data!');
           vpmobile.nodes = data.nodes;
           callbackfunction(optional_argument);
           //console.log(vpmobile.nodes);
         });
       } else {
-        //console.log('already loaded!');
+        console.log('already loaded!');
         callbackfunction(optional_argument);
       }
   },
 
   loadMarkers: function() {
+    console.log('loading markers');
     var markerimage = new Array();
 
     if (getURLParameter('term') != 'null') {
@@ -214,7 +215,7 @@ var vpmobile = {
 
         infobox.setContent('<div id="infobox" class="'+marker.listing.term+'">'+
             '<h4>'+marker.listing.title+'</h4>'+
-            '<phone>'+marker.listing.phone+'</phone>'+
+            '<phone><a href="tel://'+marker.listing.phone+'">'+marker.listing.phone+'</a></phone>'+
             '<p class="path">'+marker.listing.path+'</p>'+
         '</div>');
         infobox.open(vpmobile.map, this);
@@ -254,6 +255,7 @@ function onDeviceReady() {
   console.log('onDeviceReady');
   $(document).ready(function() {
     console.log('document ready');
+
     // map page
     $('#map').live('pageinit', function() {
       console.log('#map pageinit');
@@ -290,7 +292,39 @@ function onDeviceReady() {
       });
     });
 
+
+    $('#details').live('pageinit', function() {
+      vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
+      $('.view_on_map').click(function(){
+        console.log('clicked');
+        $('#map-canvas').toggle();
+        google.maps.event.trigger(vpmobile.detailMap, 'resize');
+        vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
+        smart_scroll($('#map-canvas'));
+      });
+    });
+
+    // explore page, load the listings into the lists
+    $('#main').live('pageinit', function() {
+      vpmobile.loadNodes(vpmobile.loadListings);
+      $("a.header-link").live("click", function (e) {
+
+        console.log($(this)[0].dataset.link);
+
+        vpmobile.active_category = $(this)[0].dataset.link;
+        $.mobile.changePage('index.html', {reloadPage:true});//
+        return false;
+
+      });
+    });
+
   });
+}
+
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
 }
 $(function() {
 });

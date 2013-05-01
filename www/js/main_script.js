@@ -3,7 +3,7 @@ vpmobile.loadListings = function() {
     $.each( vpmobile.nodes, function(i, marker) {
       //console.log(i);
       //console.log(marker.listing);
-      listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone">'+ marker.listing.phone +'</p></a></li>';
+      listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone"><a href="tel://'+ marker.listing.phone +'">'+ marker.listing.phone +'</a></p></a></li>';
 
       switch(marker.listing.term)
       {
@@ -51,7 +51,7 @@ vpmobile.getDetailedListing = function(path) {
     $('.innertext h2').html(thedata.title);
     $('.innertext h2').attr('class', thedata.term);
     $('.innertext .address').html(thedata.street);
-    $('.innertext phone').html(thedata.phone);
+    $('.innertext phone').html('<a href="tel://'+thedata.phone+'">'+thedata.phone+'</a>');
     if (thedata.body != '') {
       $('.innertext .description').html(thedata.body);
       $('.innertext .description').show();
@@ -138,24 +138,6 @@ vpmobile.initializeMap = function (lat, long, term) {
 }
 
 
-$('#details').live('pageinit', function() {
-  vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
-  $('.view_on_map').click(function(){
-    console.log('clicked');
-    $('#map-canvas').toggle();
-    google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
-    smart_scroll($('#map-canvas'));
-  });
-});
-
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-    );
-}
-
-
 // click on link in the list, set the active listing variable
 $('.list-item-link').live('click',function(){
   path = decodeURI(
@@ -167,22 +149,6 @@ $('.list-item-link').live('click',function(){
 $("div.ui-collapsible").live("expand", function(e) {
   smart_scroll(e.target);
 });
-
-// explore page, load the listings into the lists
-$('#main').live('pageinit', function() {
-  vpmobile.loadNodes(vpmobile.loadListings);
-  $("a.header-link").live("click", function (e) {
-
-    console.log($(this)[0].dataset.link);
-
-    vpmobile.active_category = $(this)[0].dataset.link;
-    $.mobile.changePage('index.html', {reloadPage:true});//
-    return false;
-
-  });
-});
-
-
 
 function smart_scroll(el, offset)
 {
