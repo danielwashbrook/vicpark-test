@@ -251,8 +251,9 @@ var vpmobile = {
 }
 
 function onDeviceReady() {
+  console.log('onDeviceReady');
   $(document).ready(function() {
-
+    console.log('document ready');
     // map page
     $('#map').live('pageinit', function() {
       console.log('#map pageinit');
