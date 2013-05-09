@@ -98,6 +98,7 @@ box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2
 #details p.address { background: url("../images/detail-icon-address@2x.png") left no-repeat; background-size: 20px; padding-left: 24px; }
 #details p.description { font-size: 18px; }
 #details phone { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #8a7979; font-size: 20px; background: url("../images/detail-icon-phone@2x.png") left no-repeat; background-size: 20px; padding-left: 24px; }
+#details phone a, #details phone a:link { color: #8a7979; text-decoration: none; }
 #details .detail_image { width: 100%; max-height: 250px; }
 #details .view_on_map { display: block; height: 75px; margin: 5px auto; }
 
@@ -105,6 +106,7 @@ box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2
 
 #infobox { border: 0px solid black; background: url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 40px; color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 1.5em 2em 1.5em 6em; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; text-shadow: 0 -1px black; /*-webkit-box-shadow: 0 0  8px #000;
 box-shadow: 0 0 8px #000;*/ }
+#infobox a, #infobox a:link { color: #FFF; text-decoration: underline; }
 #infobox.Shop { background: url("../images/icon-inset-shops@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }
 #infobox.Pubs { background: url("../images/icon-inset-pub@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }
 #infobox.Events { background: url("../images/icon-inset-special@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }

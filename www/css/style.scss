@@ -1,5 +1,6 @@
 /* SASS Styles for victoria park mobile site */
 
+
 .ui-body-a,
 .ui-body-c,
 .ui-body-d {
@@ -443,6 +444,10 @@
     background: url('../images/detail-icon-phone@2x.png') left no-repeat;
     background-size:20px;
     padding-left:24px;
+    a, a:link {
+      color:#8a7979;
+      text-decoration: none;
+    }
   }
   .detail_image {
     width:100%;
@@ -467,6 +472,10 @@
   background-size:40px;
 
   color:#FFF;
+  a, a:link {
+    color:#FFF;
+    text-decoration: underline;
+  }
   font-family:Arial, Helvetica, sans-serif;
   font-size:12px;
   padding: 1.5em 2em 1.5em 6em;

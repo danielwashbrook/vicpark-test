@@ -300,6 +300,12 @@ function onDeviceReady() {
   });
 }
 
+$( window ).on( "navigate", function( event, data ) {
+  console.log("navigate");
+  console.log( data.state );
+  infobox.close();
+});
+
 // map page
 $('#map').live('pageinit', function() {
 
@@ -380,6 +386,8 @@ $('.leftmenu a[href=#map]').live('click', function(e){
   vpmobile.active_category = $(this)[0].dataset.link;
   vpmobile.loadMarkers();
   $.mobile.changePage($("#map")); //'index.html');//
+  infobox.close();
+  $('#mypanel').panel( "close" );
   return false;
 });
 
