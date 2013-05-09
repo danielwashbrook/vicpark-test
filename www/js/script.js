@@ -1,12 +1,23 @@
-var vpmobile = {
+var vpmobile = vpmobile || {};
+
+
+vpmobile = {
+
+  errorLocation: function(error) {
+    console.log('failed getUserLocation');
+    console.log(error);
+  },
   getUserLocation: function() {
+    //console.log('getUserLocation');
     // get the user's GPS location from an HTML5 browser
     if (navigator.geolocation) {
 
-      navigator.geolocation.getCurrentPosition(vpmobile.updateUserLocation);
+      navigator.geolocation.getCurrentPosition(vpmobile.updateUserLocation, vpmobile.errorLocation);
     }
   },
   updateUserLocation: function(position) {
+    //console.log('updateUserLocation');
+    //console.log(position);
     // call itself in 1 second
     var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
@@ -31,6 +42,7 @@ var vpmobile = {
     setTimeout(function(){vpmobile.getUserLocation()}, 60000);
   },
   initialize: function() {
+    vpmobile.markers = [];
     // the bounds to control the map by
 
     //vpmobile.hasbeenpaned = false;
@@ -65,7 +77,7 @@ var vpmobile = {
     });
 
     // initialize the geolocation feature
-    vpmobile.getUserLocation();
+    //vpmobile.getUserLocation();
   },
   addMarker: function(location) {
     marker = new google.maps.Marker({
@@ -98,7 +110,7 @@ var vpmobile = {
     });
 
     var searchq = getURLParameter('q');
-    //console.log(searchq);
+    console.log('searchq: ' + searchq);
     if (searchq !== "null") {
       //$('#search-input-page').val( decodeURIComponent(searchq).replace(/\+/g, ' '));
       $('.ui-input-search input').val(decodeURIComponent(getURLParameter('q')).replace(/\+/g, ' '));
@@ -107,19 +119,46 @@ var vpmobile = {
     $("#search-list").listview("refresh");
   },
 
+  // jsonp results callback from the server
+  results : function(data){
+    vpmobile.nodes = data.nodes;
+  },
+
   loadNodes: function(callbackfunction, optional_argument) {
 
     if (vpmobile.nodes === undefined || vpmobile.nodes.length < 1){
+      console.log('getting fresh data!');
+
+      $.ajax({
+          url: 'http://victoriapark.org/listings/export.json?callback=?',
+          type: 'GET',
+          crossDomain: true,
+          dataType: 'jsonp',
+          success: function() { callbackfunction(optional_argument);  },
+          error: function() { callbackfunction(optional_argument);  },
+      });
+      // try to load the remote version
+      /*$.getJSON( 'http://victoriapark.org/listings/export.json' , function(data) {
+        console.log('getting remote data!');
+        vpmobile.nodes = data.nodes;
+        callbackfunction(optional_argument);
+        //console.log(vpmobile.nodes);
+      });
+      .fail(function() {
+
+        // remote failed, load the local version
         $.getJSON( 'export.json', function(data) {
-          console.log('getting data!');
+          console.log('getting local data!');
           vpmobile.nodes = data.nodes;
           callbackfunction(optional_argument);
           //console.log(vpmobile.nodes);
         });
-      } else {
-        console.log('already loaded!');
-        callbackfunction(optional_argument);
-      }
+
+      });*/
+    } else {
+      console.log('already loaded!');
+      callbackfunction(optional_argument);
+    }
   },
 
   loadMarkers: function() {
@@ -132,7 +171,7 @@ var vpmobile = {
         return el.listing.term == getURLParameter('term').replace("''","&#039;");
       });
     } else if (vpmobile.active_category !== undefined) {
-      console.log(vpmobile.active_category);
+      console.log('active category:' + vpmobile.active_category);
       var thedata = vpmobile.nodes.filter(function (el) {
         //console.log(el);
         return el.listing.term == vpmobile.active_category.replace("''","&#039;");
@@ -142,9 +181,10 @@ var vpmobile = {
     }
 
     // clear current markers
-    //console.log('clearing markers');
-    //vpmobile.markers = [];
-    //vpmobile.setAllMap(null);
+    console.log('clearing markers');
+
+    vpmobile.setAllMap(null);
+    vpmobile.markers = [];
 
     //console.log(thedata);
     $.each( thedata, function(i, marker) {
@@ -215,13 +255,14 @@ var vpmobile = {
 
         infobox.setContent('<div id="infobox" class="'+marker.listing.term+'">'+
             '<h4>'+marker.listing.title+'</h4>'+
-            '<phone><a href="tel://'+marker.listing.phone+'">'+marker.listing.phone+'</a></phone>'+
+            '<phone>'+marker.listing.phone+'</phone>'+
             '<p class="path">'+marker.listing.path+'</p>'+
         '</div>');
         infobox.open(vpmobile.map, this);
 
       });
-      //vpmobile.markers.push(markerobj);
+
+      vpmobile.markers.push(markerobj);
       oldCenter = vpmobile.map.getCenter();
       google.maps.event.trigger(vpmobile.map, 'resize');
       vpmobile.map.setCenter(oldCenter);
@@ -255,19 +296,28 @@ function onDeviceReady() {
   console.log('onDeviceReady');
   $(document).ready(function() {
     console.log('document ready');
+    vpmobile.getUserLocation();
   });
 }
+
 // map page
 $('#map').live('pageinit', function() {
+
+});
+
+$( document ).delegate("#map", "pageinit", function() {
   console.log('#map pageinit');
+
+  vpmobile.bounds = new google.maps.LatLngBounds();
+  vpmobile.initialize();
+
   $('#infobox').live('tap', function(e) {
     //console.log($(this).find('.path').html());
     vpmobile.active_listing = $(this).find('.path').html();
-    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {reloadPage:true});
+    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
+
     return false;
   });
-  vpmobile.bounds = new google.maps.LatLngBounds();
-  vpmobile.initialize();
 });
 
 
@@ -275,21 +325,23 @@ $('#map').live('pageshow', function() {
   console.log('#map pageshow');
   //$('#map_canvas').gmap('refresh');
   vpmobile.loadNodes(vpmobile.loadMarkers);
-  //$.mobile.showPageLoadingMsg();
-  //$.mobile.hidePageLoadingMsg();
 });
 
 
 // search page functionality
 $('#search').live('pageinit', function() {
   console.log('#search pageinit');
+  $.extend(  $.mobile , {
+    ajaxEnabled: false
+  });
   vpmobile.loadNodes(vpmobile.searchListings);
 });
 
-
+// pageinit of every page
 $(document).live("pageinit", function(){
+  console.log('pageinit');
   $.extend(  $.mobile , {
-    ajaxEnabled: false
+    ajaxEnabled: true
   });
 });
 
@@ -297,7 +349,6 @@ $(document).live("pageinit", function(){
 $('#details').live('pageinit', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
-    console.log('clicked');
     $('#map-canvas').toggle();
     google.maps.event.trigger(vpmobile.detailMap, 'resize');
     vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
@@ -305,27 +356,48 @@ $('#details').live('pageinit', function() {
   });
 });
 
-// explore page, load the listings into the lists
-$('#main').live('pageinit', function() {
-  vpmobile.loadNodes(vpmobile.loadListings);
-  $("a.header-link").live("click", function (e) {
 
-    console.log($(this)[0].dataset.link);
-
-    vpmobile.active_category = $(this)[0].dataset.link;
-    $.mobile.changePage('index.html', {reloadPage:true});//
-    return false;
-
-  });
+$('#main').live('pageshow', function() {
+  console.log('#main pageshow');
+  //$('#map_canvas').gmap('refresh');
 });
 
 
+// explore page, load the listings into the lists
+$('#main').live('pageinit', function() {
+  console.log('#main pageinit');
 
+  vpmobile.loadNodes(vpmobile.loadListings);
+
+
+});
+
+// page link from the left menu
+$('.leftmenu a[href=#map]').live('click', function(e){
+  //console.log($(this).attr("href"));
+  //$.mobile.loading( 'show' );
+  //console.log($(this)[0].dataset.link);
+  vpmobile.active_category = $(this)[0].dataset.link;
+  vpmobile.loadMarkers();
+  $.mobile.changePage($("#map")); //'index.html');//
+  return false;
+});
+
+// explore category list link back to view all on map
+$("a.header-link").live("click", function (e) {
+  //console.log($(this)[0].dataset.link);
+  vpmobile.active_category = $(this)[0].dataset.link;
+  $.mobile.changePage($("#map")); //'index.html');//
+  return false;
+});
+
+// function for parsing the url
 function getURLParameter(name) {
     return decodeURI(
         (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
     );
 }
+
 $(function() {
 });
 

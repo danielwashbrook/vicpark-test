@@ -3,7 +3,7 @@ vpmobile.loadListings = function() {
     $.each( vpmobile.nodes, function(i, marker) {
       //console.log(i);
       //console.log(marker.listing);
-      listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone"><a href="tel://'+ marker.listing.phone +'">'+ marker.listing.phone +'</a></p></a></li>';
+      listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone">'+ marker.listing.phone +'</p></a></li>';
 
       switch(marker.listing.term)
       {
@@ -51,7 +51,7 @@ vpmobile.getDetailedListing = function(path) {
     $('.innertext h2').html(thedata.title);
     $('.innertext h2').attr('class', thedata.term);
     $('.innertext .address').html(thedata.street);
-    $('.innertext phone').html('<a href="tel://'+thedata.phone+'">'+thedata.phone+'</a>');
+    $('.innertext phone').html(thedata.phone);
     if (thedata.body != '') {
       $('.innertext .description').html(thedata.body);
       $('.innertext .description').show();
@@ -70,11 +70,6 @@ vpmobile.getDetailedListing = function(path) {
     vpmobile.initializeMap(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude, vpmobile.currentListing.term);
     console.log(thedata);
 };
-
-$('#main').live('pageshow', function() {
-  console.log('#main pageshow');
-  //$('#map_canvas').gmap('refresh');
-});
 
 vpmobile.initializeMap = function (lat, long, term) {
   var mapOptions = {
@@ -145,6 +140,7 @@ $('.list-item-link').live('click',function(){
   );
   vpmobile.active_listing = path;
 });
+
 
 $("div.ui-collapsible").live("expand", function(e) {
   smart_scroll(e.target);
