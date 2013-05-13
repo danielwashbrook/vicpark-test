@@ -90,6 +90,17 @@
       "initialSize" : 7337,
       "fileType" : 8192
     },
+    "\/images\/close.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/close.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/close.png",
+      "initialSize" : 602,
+      "fileType" : 8192
+    },
     "\/images\/button-detail-bookmark@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -110,17 +121,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/menu-button@2x.png",
       "initialSize" : 1130,
-      "fileType" : 8192
-    },
-    "\/images\/close.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/close.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/close.png",
-      "initialSize" : 602,
       "fileType" : 8192
     },
     "\/images\/separator@2x.png" : {
@@ -1094,6 +1094,17 @@
       "initialSize" : 4003,
       "fileType" : 8192
     },
+    "\/images\/map-pin-pubs@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "initialSize" : 3352,
+      "fileType" : 8192
+    },
     "\/res\/icon\/icon-144.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1123,17 +1134,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
       "initialSize" : 46644,
-      "fileType" : 8192
-    },
-    "\/images\/map-pin-pubs@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "initialSize" : 3352,
       "fileType" : 8192
     },
     "\/res\/screen\/vp-start-640x920.png" : {

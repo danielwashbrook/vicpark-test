@@ -51,6 +51,19 @@ vpmobile = {
       zoom: 16,
       center: new google.maps.LatLng(51.041499,-114.063690),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:
+      [
+          {
+              featureType: "poi.business",
+              elementType: "labels",
+              stylers:
+              [
+                  {
+                      visibility: "off"
+                  }
+              ]
+          }
+      ],
       disableDefaultUI: true,
       zoomControl:true,
     };
@@ -73,22 +86,14 @@ vpmobile = {
         pane: "floatPane",
         closeBoxURL: "images/close.png",
         infoBoxClearance: new google.maps.Size(1, 1),
-        enableEventPropagation: true
+        enableEventPropagation: false
     });
+
+
+
 
     // initialize the geolocation feature
     //vpmobile.getUserLocation();
-  },
-  addMarker: function(location) {
-    marker = new google.maps.Marker({
-      position: location,
-      map: vpmobile.map
-    });
-
-    google.maps.event.addListener(marker, 'click', function() {
-      console.log('clieck');
-    });
-    vpmobile.markers.push(marker);
   },
 
   setAllMap: function(map) {
@@ -137,24 +142,7 @@ vpmobile = {
           success: function() { callbackfunction(optional_argument);  },
           error: function() { callbackfunction(optional_argument);  },
       });
-      // try to load the remote version
-      /*$.getJSON( 'http://victoriapark.org/listings/export.json' , function(data) {
-        console.log('getting remote data!');
-        vpmobile.nodes = data.nodes;
-        callbackfunction(optional_argument);
-        //console.log(vpmobile.nodes);
-      });
-      .fail(function() {
 
-        // remote failed, load the local version
-        $.getJSON( 'export.json', function(data) {
-          console.log('getting local data!');
-          vpmobile.nodes = data.nodes;
-          callbackfunction(optional_argument);
-          //console.log(vpmobile.nodes);
-        });
-
-      });*/
     } else {
       console.log('already loaded!');
       callbackfunction(optional_argument);
@@ -253,14 +241,22 @@ vpmobile = {
         $('#infobox .path').html(marker.listing.path);*/
         //console.log($('#infobox h4').html());
 
-        infobox.setContent('<div id="infobox" class="'+marker.listing.term+'">'+
+        infobox.setContent('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
+          '<a href="detail.html?path='+marker.listing.path+'" class="whole">'+
             '<h4>'+marker.listing.title+'</h4>'+
             '<phone>'+marker.listing.phone+'</phone>'+
             '<p class="path">'+marker.listing.path+'</p>'+
-        '</div>');
+        '</a></div>');
         infobox.open(vpmobile.map, this);
 
       });
+
+      google.maps.event.addDomListener(infobox, 'click', function(){
+        console.log('newclick');
+      });
+
+
+
 
       vpmobile.markers.push(markerobj);
       oldCenter = vpmobile.map.getCenter();
@@ -286,11 +282,13 @@ vpmobile = {
         });*/
     });
 
+
     //vpmobile.map.fitBounds(vpmobile.bounds);
   },
 
 
 }
+
 
 function onDeviceReady() {
   console.log('onDeviceReady');
@@ -301,15 +299,21 @@ function onDeviceReady() {
 }
 
 $( window ).on( "navigate", function( event, data ) {
-  console.log("navigate");
-  console.log( data.state );
-  infobox.close();
+  if(typeof yourFunctionName == 'function') {
+    infobox.close();
+  }
 });
 
 // map page
 $('#map').live('pageinit', function() {
-
+    $('a.whole').live('click', function(e) {
+        console.log('clickOTHER');
+        console.log(e);
+        e.stopPropagation();
+        e.preventDefault();
+      });
 });
+
 
 $( document ).delegate("#map", "pageinit", function() {
   console.log('#map pageinit');
@@ -317,10 +321,25 @@ $( document ).delegate("#map", "pageinit", function() {
   vpmobile.bounds = new google.maps.LatLngBounds();
   vpmobile.initialize();
 
-  $('#infobox').live('tap', function(e) {
+  $('#infobox99.openedinfobox').live('tap', function(e) {
     //console.log($(this).find('.path').html());
-    vpmobile.active_listing = $(this).find('.path').html();
-    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
+    console.log('click');
+
+
+
+    /*var div = document.getElementById('infobox');
+    if (div)
+        //cancel the click event so that it doesn't propagate to the map object below the InfoWindow
+        google.maps.event.addDomListener(div, 'click',
+            function (evt){
+                evt.cancelBubble = true;
+                if (evt.stopPropagation)
+                    evt.stopPropagation();
+            }
+        );
+    */
+    /*vpmobile.active_listing = $(this).find('.path').html();
+    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});*/
 
     return false;
   });
@@ -355,6 +374,7 @@ $(document).live("pageinit", function(){
 $('#details').live('pageinit', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
+
     $('#map-canvas').toggle();
     google.maps.event.trigger(vpmobile.detailMap, 'resize');
     vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
