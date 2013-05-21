@@ -133,14 +133,15 @@ vpmobile = {
 
     if (vpmobile.nodes === undefined || vpmobile.nodes.length < 1){
       console.log('getting fresh data!');
+      $.mobile.loading( 'show' );
 
       $.ajax({
           url: 'http://victoriapark.org/listings/export.json?callback=?',
           type: 'GET',
           crossDomain: true,
           dataType: 'jsonp',
-          success: function() { callbackfunction(optional_argument);  },
-          error: function() { callbackfunction(optional_argument);  },
+          success: function() {   callbackfunction(optional_argument);  },
+          error: function() { $.mobile.loading( 'hide' );  callbackfunction(optional_argument);  },
       });
 
     } else {
@@ -216,7 +217,7 @@ vpmobile = {
       case 'Events':
         markerimage[i] = {
           url:'images/map-pin-special@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
+          scaledSize: new google.maps.Size(60, 80)
         };
         break;
       }

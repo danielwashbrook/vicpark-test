@@ -37,6 +37,7 @@ vpmobile.loadListings = function() {
   };
 
 vpmobile.getDetailedListing = function(path) {
+
     //console.log(path);
     if (path == 'null') {
       //console.log(vpmobile.active_listing);
@@ -69,6 +70,7 @@ vpmobile.getDetailedListing = function(path) {
 
     vpmobile.initializeMap(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude, vpmobile.currentListing.term);
     console.log(thedata);
+
 };
 
 vpmobile.initializeMap = function (lat, long, term) {

@@ -566,17 +566,6 @@
       "initialSize" : 3963,
       "fileType" : 8192
     },
-    "\/images\/search-result-bg@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
-      "initialSize" : 4706,
-      "fileType" : 8192
-    },
     "\/images\/search-box-black@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -586,6 +575,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
       "initialSize" : 2697,
+      "fileType" : 8192
+    },
+    "\/images\/search-result-bg@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "initialSize" : 4706,
       "fileType" : 8192
     },
     "\/res\/icon\/ios\/icon-57-2x.png" : {
@@ -1116,15 +1116,6 @@
       "initialSize" : 16401,
       "fileType" : 8192
     },
-    "\/map.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/map.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/res\/screen\/android\/screen-hdpi-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1135,6 +1126,15 @@
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
       "initialSize" : 46644,
       "fileType" : 8192
+    },
+    "\/map.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/map.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/res\/screen\/vp-start-640x920.png" : {
       "ignoreWasSetByUser" : 0,
