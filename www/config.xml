@@ -4,16 +4,16 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.aperomedia.vicparkapp"
-        version   = "1.1.2">
+        version   = "1.2">
 
-    <name>Victoria Park Mobile App</name>
+    <name>Experience Victoria Park Calgary</name>
 
     <description>
         Victoria Park Mobile app
     </description>
 
     <author href="http://www.aperomedia.com" email="daniel@aperomedia.com">
-        Daniel Washbrook
+        Daniel Washbrook, Apero Media
     </author>
 
     <!--

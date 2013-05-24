@@ -11,7 +11,6 @@ vpmobile = {
     //console.log('getUserLocation');
     // get the user's GPS location from an HTML5 browser
     if (navigator.geolocation) {
-
       navigator.geolocation.getCurrentPosition(vpmobile.updateUserLocation, vpmobile.errorLocation);
     }
   },
@@ -37,15 +36,15 @@ vpmobile = {
     });
     vpmobile.bounds.extend(latlng);
 
-    vpmobile.map.fitBounds(vpmobile.bounds);
+    if (!vpmobile.boundschanged) {
+      vpmobile.map.fitBounds(vpmobile.bounds);
+    }
 
     setTimeout(function(){vpmobile.getUserLocation()}, 60000);
   },
   initialize: function() {
     vpmobile.markers = [];
     // the bounds to control the map by
-
-    //vpmobile.hasbeenpaned = false;
 
     var mapOptions = {
       zoom: 16,
@@ -86,10 +85,13 @@ vpmobile = {
         pane: "floatPane",
         closeBoxURL: "images/close.png",
         infoBoxClearance: new google.maps.Size(1, 1),
-        enableEventPropagation: false
+        enableEventPropagation: true
     });
 
-
+    vpmobile.boundschanged = false;
+    google.maps.event.addListener(vpmobile.map, 'bounds_changed', function() {
+      vpmobile.boundschanged = true;
+    });
 
 
     // initialize the geolocation feature
@@ -234,13 +236,6 @@ vpmobile = {
       vpmobile.bounds.extend(markerPosition);
 
       google.maps.event.addListener(markerobj, 'click', function() {
-        //console.log(marker.listing);
-        //console.log($('#infobox h4').html());
-        /*$('#infobox h4').html(marker.listing.title);
-        $('#infobox').attr('class', marker.listing.term);
-        $('#infobox phone').html(marker.listing.phone);
-        $('#infobox .path').html(marker.listing.path);*/
-        //console.log($('#infobox h4').html());
 
         infobox.setContent('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
           '<a href="detail.html?path='+marker.listing.path+'" class="whole">'+
@@ -249,42 +244,24 @@ vpmobile = {
             '<p class="path">'+marker.listing.path+'</p>'+
         '</a></div>');
         infobox.open(vpmobile.map, this);
+        google.maps.event.addListener(infobox, 'click', function(event) {
+          console.log('PIE');
+        });
 
       });
 
       google.maps.event.addDomListener(infobox, 'click', function(){
         console.log('newclick');
       });
-
-
-
-
       vpmobile.markers.push(markerobj);
       oldCenter = vpmobile.map.getCenter();
       google.maps.event.trigger(vpmobile.map, 'resize');
       vpmobile.map.setCenter(oldCenter);
 
-
-        /*$('#map_canvas').gmap('addMarker', {
-          'position': new google.maps.LatLng(marker.listing.latitude, marker.listing.longitude),
-          'icon' : markerimage[i]
-        }).click(function() {
-          //$('#map_canvas').gmap('openInfoWindow', { 'content': marker.listing.title }, this);
-          //console.log(infobox.content);
-
-          // set the marker content
-          $('#infobox h4').html(marker.listing.title);
-          $('#infobox phone').html(marker.listing.phone);
-          $('#infobox .path').html(marker.listing.path);
-          infobox.open(map, this);
-
-          //console.log(infobox);
-
-        });*/
     });
 
 
-    //vpmobile.map.fitBounds(vpmobile.bounds);
+    vpmobile.map.fitBounds(vpmobile.bounds);
   },
 
 
@@ -300,21 +277,21 @@ function onDeviceReady() {
 }
 
 $( window ).on( "navigate", function( event, data ) {
-  if(typeof yourFunctionName == 'function') {
+  if(typeof infobox != 'undefined') {
     infobox.close();
   }
 });
 
 // map page
 $('#map').live('pageinit', function() {
+
     $('a.whole').live('click', function(e) {
-        console.log('clickOTHER');
-        console.log(e);
+        vpmobile.active_listing = $(this).find('.path').html();
+        $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
         e.stopPropagation();
         e.preventDefault();
       });
 });
-
 
 $( document ).delegate("#map", "pageinit", function() {
   console.log('#map pageinit');
@@ -322,28 +299,6 @@ $( document ).delegate("#map", "pageinit", function() {
   vpmobile.bounds = new google.maps.LatLngBounds();
   vpmobile.initialize();
 
-  $('#infobox99.openedinfobox').live('tap', function(e) {
-    //console.log($(this).find('.path').html());
-    console.log('click');
-
-
-
-    /*var div = document.getElementById('infobox');
-    if (div)
-        //cancel the click event so that it doesn't propagate to the map object below the InfoWindow
-        google.maps.event.addDomListener(div, 'click',
-            function (evt){
-                evt.cancelBubble = true;
-                if (evt.stopPropagation)
-                    evt.stopPropagation();
-            }
-        );
-    */
-    /*vpmobile.active_listing = $(this).find('.path').html();
-    $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});*/
-
-    return false;
-  });
 });
 
 

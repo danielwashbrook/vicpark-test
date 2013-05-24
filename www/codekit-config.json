@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8283",
+  "creatorBuild" : "8300",
   "files" : {
     "\/res\/icon\/icon-72.png" : {
       "ignoreWasSetByUser" : 0,
@@ -90,15 +90,15 @@
       "initialSize" : 7337,
       "fileType" : 8192
     },
-    "\/images\/close.png" : {
+    "\/images\/button-detail-bookmark@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/close.png",
+      "inputAbbreviatedPath" : "\/images\/button-detail-bookmark@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/close.png",
-      "initialSize" : 602,
+      "outputAbbreviatedPath" : "\/images\/button-detail-bookmark@2x.png",
+      "initialSize" : 0,
       "fileType" : 8192
     },
     "\/images\/menu-button@2x.png" : {
@@ -112,15 +112,15 @@
       "initialSize" : 1130,
       "fileType" : 8192
     },
-    "\/images\/button-detail-bookmark@2x.png" : {
+    "\/images\/close.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/button-detail-bookmark@2x.png",
+      "inputAbbreviatedPath" : "\/images\/close.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/button-detail-bookmark@2x.png",
-      "initialSize" : 0,
+      "outputAbbreviatedPath" : "\/images\/close.png",
+      "initialSize" : 602,
       "fileType" : 8192
     },
     "\/images\/separator@2x.png" : {
@@ -566,17 +566,6 @@
       "initialSize" : 3963,
       "fileType" : 8192
     },
-    "\/images\/search-result-bg@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
-      "initialSize" : 4706,
-      "fileType" : 8192
-    },
     "\/images\/search-box-black@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -586,6 +575,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
       "initialSize" : 2697,
+      "fileType" : 8192
+    },
+    "\/images\/search-result-bg@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "initialSize" : 4706,
       "fileType" : 8192
     },
     "\/res\/icon\/ios\/icon-57-2x.png" : {
@@ -705,16 +705,16 @@
       "initialSize" : 8242,
       "fileType" : 8192
     },
-    "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
+    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "initialSize" : 86796,
+      "fileType" : 8192
     },
     "\/images\/icon-inset-treats@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -738,17 +738,6 @@
       "initialSize" : 1704,
       "fileType" : 8192
     },
-    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
-      "initialSize" : 86796,
-      "fileType" : 8192
-    },
     "\/images\/search-box@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -759,6 +748,17 @@
       "outputAbbreviatedPath" : "\/images\/search-box@2x.png",
       "initialSize" : 2650,
       "fileType" : 8192
+    },
+    "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html-min.js",
+      "fileType" : 64
     },
     "\/images\/icon-flat-info@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1116,15 +1116,6 @@
       "initialSize" : 16401,
       "fileType" : 8192
     },
-    "\/map.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/map.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/res\/screen\/android\/screen-hdpi-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1135,6 +1126,15 @@
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
       "initialSize" : 46644,
       "fileType" : 8192
+    },
+    "\/map.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/map.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/res\/screen\/vp-start-640x920.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1400,28 +1400,26 @@
       "curly" : 1,
       "trailing" : 1,
       "nonew" : 1,
-      "withstmt" : 0,
+      "es3" : false,
       "yui" : 0,
       "mootools" : 0,
       "proto" : 0,
       "boss" : 0,
       "funcscope" : 0,
-      "regexdash" : 0,
       "jquery" : 1,
       "esnext" : 0,
       "camelcase" : 0,
-      "es5" : 0,
       "dojo" : 0,
       "strict" : 0,
       "devel" : 0,
-      "onecase" : 0,
       "wsh" : 0,
       "nonstandard" : 0,
       "asi" : 0,
-      "smarttabs" : 0,
+      "moz" : false,
       "rhino" : 0,
-      "noempty" : 0,
+      "smarttabs" : 0,
       "lastsemic" : 0,
+      "noempty" : 0,
       "eqnull" : 0,
       "eqeqeq" : 1,
       "couch" : 0,
@@ -1439,49 +1437,43 @@
       "debug" : 0,
       "bitwise" : 1,
       "white" : 0,
-      "worker" : 0,
       "browser" : 1,
+      "worker" : 0,
       "laxcomma" : 0,
       "multistr" : 0,
       "shadow" : 0,
       "sub" : 0,
-      "regexp" : 1,
+      "plusplus" : 0,
       "scripturl" : 0,
       "forin" : 0,
       "loopfunc" : 0,
-      "laxbreak" : 0,
-      "plusplus" : 0
+      "laxbreak" : 0
     },
     "jsLintFlags" : {
       "white" : 0,
-      "bitwise" : 0,
+      "unparam" : 0,
       "regexp" : 0,
+      "nomen" : 0,
       "vars" : 0,
-      "anon" : 0,
       "sub" : 0,
       "stupid" : 0,
-      "nomen" : 0,
-      "unparam" : 0,
+      "continue" : false,
+      "bitwise" : 0,
       "newcap" : 0,
-      "'continue'" : 0,
       "sloppy" : 0,
-      "fragment" : 0,
-      "undef" : 0,
+      "closure" : false,
       "es5" : 0,
       "browser" : 1,
       "properties" : 0,
-      "forin" : 0,
       "plusplus" : 0,
       "debug" : 0,
+      "forin" : 0,
       "eqeq" : 0,
-      "confusion" : 0,
       "evil" : 0,
-      "on" : 0,
-      "windows" : 0,
-      "devel" : 0,
-      "rhino" : 0,
       "node" : 0,
-      "css" : 0
+      "rhino" : 0,
+      "ass" : false,
+      "devel" : 0
     },
     "uglifyFlags" : {
       "no-mangle-functions" : 0,
