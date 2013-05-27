@@ -95,7 +95,7 @@ vpmobile = {
 
 
     // initialize the geolocation feature
-    //vpmobile.getUserLocation();
+    vpmobile.getUserLocation();
   },
 
   setAllMap: function(map) {
