@@ -90,6 +90,17 @@
       "initialSize" : 7337,
       "fileType" : 8192
     },
+    "\/images\/close.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/close.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/close.png",
+      "initialSize" : 602,
+      "fileType" : 8192
+    },
     "\/images\/button-detail-bookmark@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -110,17 +121,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/menu-button@2x.png",
       "initialSize" : 1130,
-      "fileType" : 8192
-    },
-    "\/images\/close.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/close.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/close.png",
-      "initialSize" : 602,
       "fileType" : 8192
     },
     "\/images\/separator@2x.png" : {
@@ -705,16 +705,16 @@
       "initialSize" : 8242,
       "fileType" : 8192
     },
-    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
+    "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
-      "initialSize" : 86796,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html-min.js",
+      "fileType" : 64
     },
     "\/images\/icon-inset-treats@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -738,6 +738,17 @@
       "initialSize" : 1704,
       "fileType" : 8192
     },
+    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "initialSize" : 86796,
+      "fileType" : 8192
+    },
     "\/images\/search-box@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -748,17 +759,6 @@
       "outputAbbreviatedPath" : "\/images\/search-box@2x.png",
       "initialSize" : 2650,
       "fileType" : 8192
-    },
-    "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-html-min.js",
-      "fileType" : 64
     },
     "\/images\/icon-flat-info@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -945,17 +945,6 @@
       "initialSize" : 1410,
       "fileType" : 8192
     },
-    "\/images\/detail-photos-icon@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
-      "initialSize" : 1374,
-      "fileType" : 8192
-    },
     "\/images\/cancel-button@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -965,6 +954,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/cancel-button@2x.png",
       "initialSize" : 1231,
+      "fileType" : 8192
+    },
+    "\/images\/detail-photos-icon@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
+      "initialSize" : 1374,
       "fileType" : 8192
     },
     "\/images\/star-white@2x.png" : {
@@ -978,16 +978,14 @@
       "initialSize" : 1421,
       "fileType" : 8192
     },
-    "\/js\/jquery.ui.map.min.js" : {
+    "\/index_new.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.ui.map.min.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.ui.map.min-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/index_new.kit",
+      "outputAbbreviatedPath" : "\/index_new.html",
+      "fileType" : 65536
     },
     "\/images\/menu-icons-map@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1000,14 +998,14 @@
       "initialSize" : 1015,
       "fileType" : 8192
     },
-    "\/index_new.kit" : {
+    "\/spec\/lib\/jasmine-1.2.0\/jasmine.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index_new.kit",
-      "outputAbbreviatedPath" : "\/index_new.html",
-      "fileType" : 65536
+      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1018,14 +1016,16 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
-    "\/spec\/lib\/jasmine-1.2.0\/jasmine.css" : {
+    "\/js\/jquery.ui.map.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/js\/jquery.ui.map.min.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jquery.ui.map.min-min.js",
+      "fileType" : 64
     },
     "\/res\/icon\/icon-114.png" : {
       "ignoreWasSetByUser" : 0,
