@@ -6,6 +6,7 @@ vpmobile = {
     console.log('failed getUserLocation');
     console.log(error);
   },
+  /*
   getUserLocationForDetailMap: function() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -25,7 +26,7 @@ vpmobile = {
         console.log('done');
       }, vpmobile.errorLocation);
     }
-  },
+  },*/
   getUserLocation: function() {
     //console.log('getUserLocation');
     // get the user's GPS location from an HTML5 browser
@@ -348,18 +349,18 @@ $(document).live("pageinit", function(){
 
 $('#details').live('pageinit', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
-  vpmobile.detail_bounds = new google.maps.LatLngBounds();
-  vpmobile.getUserLocationForDetailMap();
+  //vpmobile.detail_bounds = new google.maps.LatLngBounds();
+  //vpmobile.getUserLocationForDetailMap();
 
   $('.view_on_map').click(function(){
 
     $('#map-canvas').toggle();
     google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    var position = new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude);
-    vpmobile.detailMap.setCenter(position);
-    vpmobile.detail_bounds.extend(position);
+    //var position =
+    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
+    //vpmobile.detail_bounds.extend(position);
 
-    vpmobile.detailMap.fitBounds(vpmobile.detail_bounds);
+    //vpmobile.detailMap.fitBounds(vpmobile.detail_bounds);
 
     smart_scroll($('#map-canvas'));
   });
