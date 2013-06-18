@@ -1,30 +1,11 @@
 var vpmobile = vpmobile || {};
 
+
 vpmobile = {
 
   errorLocation: function(error) {
     console.log('failed getUserLocation');
     console.log(error);
-  },
-  getUserLocationForDetailMap: function() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        console.log('started');
-        var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        usermarkerimage = {
-          url:'images/user-location.png',
-          scaledSize: new google.maps.Size(50, 50)
-        };
-        vpmobile.userLocationMarker = new google.maps.Marker({
-          position: latlng,
-          map: vpmobile.detailMap,
-          'icon' : usermarkerimage,
-          title:"You are here! (at least within a "+position.coords.accuracy+" meter radius)"
-        });
-        vpmobile.detail_bounds.extend(latlng);
-        console.log('done');
-      }, vpmobile.errorLocation);
-    }
   },
   getUserLocation: function() {
     //console.log('getUserLocation');
@@ -348,19 +329,11 @@ $(document).live("pageinit", function(){
 
 $('#details').live('pageinit', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
-  vpmobile.detail_bounds = new google.maps.LatLngBounds();
-  vpmobile.getUserLocationForDetailMap();
-
   $('.view_on_map').click(function(){
 
     $('#map-canvas').toggle();
     google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    var position = new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude);
-    vpmobile.detailMap.setCenter(position);
-    vpmobile.detail_bounds.extend(position);
-
-    vpmobile.detailMap.fitBounds(vpmobile.detail_bounds);
-
+    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
     smart_scroll($('#map-canvas'));
   });
 });
