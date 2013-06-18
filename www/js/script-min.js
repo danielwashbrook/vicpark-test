@@ -1,6 +1,4 @@
-var gaPlugin;
 var vpmobile = vpmobile || {};
-
 
 vpmobile = {
 
@@ -291,9 +289,6 @@ vpmobile = {
 
 function onDeviceReady() {
   console.log('onDeviceReady');
-
-  //gaPlugin = window.plugins.gaPlugin;
-  //gaPlugin.init(successHandler, errorHandler, "UA-37498066-1", 10);
   $(document).ready(function() {
     console.log('document ready');
     vpmobile.getUserLocation();

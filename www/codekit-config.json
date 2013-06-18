@@ -79,17 +79,6 @@
       "initialSize" : 7839,
       "fileType" : 8192
     },
-    "\/images\/menu-icons-events@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/menu-icons-events@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/menu-icons-events@2x.png",
-      "initialSize" : 1410,
-      "fileType" : 8192
-    },
     "\/images\/detail_image.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -99,6 +88,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/detail_image.png",
       "initialSize" : 90015,
+      "fileType" : 8192
+    },
+    "\/images\/menu-icons-events@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/menu-icons-events@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/menu-icons-events@2x.png",
+      "initialSize" : 1410,
       "fileType" : 8192
     },
     "\/images\/icon-inset-pub@2x.png" : {
@@ -165,17 +165,6 @@
       "initialSize" : 46911,
       "fileType" : 8192
     },
-    "\/images\/category-bg@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/category-bg@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/category-bg@2x.png",
-      "initialSize" : 1601,
-      "fileType" : 8192
-    },
     "\/res\/screen\/vp-start-hdpi.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -185,6 +174,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/screen\/vp-start-hdpi.png",
       "initialSize" : 31510,
+      "fileType" : 8192
+    },
+    "\/images\/back-button@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/back-button@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/back-button@2x.png",
+      "initialSize" : 4003,
       "fileType" : 8192
     },
     "\/images\/explore-categories@2x.png" : {
@@ -209,17 +209,6 @@
       "initialSize" : 1436,
       "fileType" : 8192
     },
-    "\/images\/back-button@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/back-button@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/back-button@2x.png",
-      "initialSize" : 4003,
-      "fileType" : 8192
-    },
     "\/images\/icon-flat-info@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -231,15 +220,15 @@
       "initialSize" : 1572,
       "fileType" : 8192
     },
-    "\/images\/menu-background@2x.png" : {
+    "\/images\/category-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/menu-background@2x.png",
+      "inputAbbreviatedPath" : "\/images\/category-bg@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/menu-background@2x.png",
-      "initialSize" : 3596,
+      "outputAbbreviatedPath" : "\/images\/category-bg@2x.png",
+      "initialSize" : 1601,
       "fileType" : 8192
     },
     "\/images\/logo-white@2x.png" : {
@@ -253,15 +242,15 @@
       "initialSize" : 4323,
       "fileType" : 8192
     },
-    "\/res\/icon\/ios\/icon-57-2x.png" : {
+    "\/images\/menu-background@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
+      "inputAbbreviatedPath" : "\/images\/menu-background@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
-      "initialSize" : 14643,
+      "outputAbbreviatedPath" : "\/images\/menu-background@2x.png",
+      "initialSize" : 3596,
       "fileType" : 8192
     },
     "\/res\/icon\/icon-57.png" : {
@@ -273,6 +262,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/icon-57.png",
       "initialSize" : 8551,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/ios\/icon-57-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
+      "initialSize" : 14643,
       "fileType" : 8192
     },
     "\/search.html" : {
@@ -427,15 +427,37 @@
       "initialSize" : 6459,
       "fileType" : 8192
     },
-    "\/res\/screen\/vp-start-320x460.png" : {
+    "\/res\/screen\/android\/screen-ldpi-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
-      "initialSize" : 9973,
+      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
+      "initialSize" : 14941,
+      "fileType" : 8192
+    },
+    "\/images\/button-detail-view@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/button-detail-view@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/button-detail-view@2x.png",
+      "initialSize" : 0,
+      "fileType" : 8192
+    },
+    "\/res\/screen\/ios\/screen-ipad-landscape-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
+      "initialSize" : 87242,
       "fileType" : 8192
     },
     "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
@@ -460,28 +482,6 @@
       "initialSize" : 77189,
       "fileType" : 8192
     },
-    "\/res\/screen\/android\/screen-ldpi-portrait.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
-      "initialSize" : 14941,
-      "fileType" : 8192
-    },
-    "\/res\/screen\/ios\/screen-ipad-landscape-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
-      "initialSize" : 87242,
-      "fileType" : 8192
-    },
     "\/res\/screen\/ios\/screen-iphone-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -504,17 +504,6 @@
       "initialSize" : 3399,
       "fileType" : 8192
     },
-    "\/res\/icon\/icon-114.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "initialSize" : 12738,
-      "fileType" : 8192
-    },
     "\/res\/screen\/ios\/screen-iphone-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -535,6 +524,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/android\/icon-36-ldpi.png",
       "initialSize" : 3383,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-114.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "initialSize" : 12738,
       "fileType" : 8192
     },
     "\/images\/icon-inset-shops@2x.png" : {
@@ -570,15 +570,15 @@
       "initialSize" : 13512,
       "fileType" : 8192
     },
-    "\/images\/button-detail-view@2x.png" : {
+    "\/res\/screen\/vp-start-320x460.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/button-detail-view@2x.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/button-detail-view@2x.png",
-      "initialSize" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
+      "initialSize" : 9973,
       "fileType" : 8192
     },
     "\/images\/detail-photos-icon@2x.png" : {
@@ -592,17 +592,6 @@
       "initialSize" : 1374,
       "fileType" : 8192
     },
-    "\/res\/icon\/ios\/icon-72-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-72-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-72-2x.png",
-      "initialSize" : 19336,
-      "fileType" : 8192
-    },
     "\/images\/icon-inset-events@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -614,15 +603,15 @@
       "initialSize" : 5889,
       "fileType" : 8192
     },
-    "\/images\/separator@2x.png" : {
+    "\/res\/icon\/ios\/icon-72-2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/separator@2x.png",
+      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-72-2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/separator@2x.png",
-      "initialSize" : 123,
+      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-72-2x.png",
+      "initialSize" : 19336,
       "fileType" : 8192
     },
     "\/images\/bar-basic@2x.png" : {
@@ -634,6 +623,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/bar-basic@2x.png",
       "initialSize" : 1459,
+      "fileType" : 8192
+    },
+    "\/images\/separator@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/separator@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/separator@2x.png",
+      "initialSize" : 123,
       "fileType" : 8192
     },
     "\/res\/screen\/android\/screen-mdpi-landscape.png" : {
@@ -667,6 +667,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/res\/screen\/ios\/screen-iphone-landscape-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+      "initialSize" : 72319,
+      "fileType" : 8192
+    },
     "\/images\/close.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -687,17 +698,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/bottom-nav-bar@2x.png",
       "initialSize" : 2407,
-      "fileType" : 8192
-    },
-    "\/res\/screen\/ios\/screen-iphone-landscape-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
-      "initialSize" : 72319,
       "fileType" : 8192
     },
     "\/images\/detail-icon-distance@2x.png" : {
