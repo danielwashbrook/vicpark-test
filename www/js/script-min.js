@@ -296,11 +296,11 @@ function onDeviceReady() {
   });
 }
 
-$( window ).on( "navigate", function( event, data ) {
+/*$( window ).on( "navigate", function( event, data ) {
   if(typeof infobox != 'undefined') {
     infobox.close();
   }
-});
+});*/
 
 // map page
 $('#map').live('pageinit', function() {
