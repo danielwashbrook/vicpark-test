@@ -2,15 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/images\/map-detail-bg@2x.png" : {
+    "\/images\/search-result-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/map-detail-bg@2x.png",
+      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/map-detail-bg@2x.png",
-      "initialSize" : 3766,
+      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "initialSize" : 4706,
       "fileType" : 8192
     },
     "\/images\/icon-inset-stay@2x.png" : {
@@ -24,15 +24,15 @@
       "initialSize" : 5302,
       "fileType" : 8192
     },
-    "\/res\/screen\/android\/screen-hdpi-portrait.png" : {
+    "\/images\/map-detail-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
+      "inputAbbreviatedPath" : "\/images\/map-detail-bg@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
-      "initialSize" : 46644,
+      "outputAbbreviatedPath" : "\/images\/map-detail-bg@2x.png",
+      "initialSize" : 3766,
       "fileType" : 8192
     },
     "\/js\/script.js" : {
@@ -143,16 +143,16 @@
       "initialSize" : 7839,
       "fileType" : 8192
     },
-    "\/js\/jquery.ui.map.full.min.js" : {
+    "\/res\/screen\/vp-start-hdpi.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.ui.map.full.min.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.ui.map.full.min-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-hdpi.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-hdpi.png",
+      "initialSize" : 31510,
+      "fileType" : 8192
     },
     "\/res\/screen\/vp-start-1536x2008.png" : {
       "ignoreWasSetByUser" : 0,
@@ -165,15 +165,15 @@
       "initialSize" : 46911,
       "fileType" : 8192
     },
-    "\/res\/screen\/vp-start-hdpi.png" : {
+    "\/images\/category-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-hdpi.png",
+      "inputAbbreviatedPath" : "\/images\/category-bg@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-hdpi.png",
-      "initialSize" : 31510,
+      "outputAbbreviatedPath" : "\/images\/category-bg@2x.png",
+      "initialSize" : 1601,
       "fileType" : 8192
     },
     "\/images\/back-button@2x.png" : {
@@ -220,16 +220,16 @@
       "initialSize" : 1572,
       "fileType" : 8192
     },
-    "\/images\/category-bg@2x.png" : {
+    "\/js\/jquery.ui.map.full.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/category-bg@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/category-bg@2x.png",
-      "initialSize" : 1601,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/js\/jquery.ui.map.full.min.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jquery.ui.map.full.min-min.js",
+      "fileType" : 64
     },
     "\/images\/menu-background@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -253,17 +253,6 @@
       "initialSize" : 4323,
       "fileType" : 8192
     },
-    "\/res\/icon\/ios\/icon-57-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
-      "initialSize" : 14643,
-      "fileType" : 8192
-    },
     "\/res\/icon\/icon-57.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -273,6 +262,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/icon-57.png",
       "initialSize" : 8551,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/ios\/icon-57-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57-2x.png",
+      "initialSize" : 14643,
       "fileType" : 8192
     },
     "\/search.html" : {
@@ -416,26 +416,26 @@
       "initialSize" : 21104,
       "fileType" : 8192
     },
-    "\/res\/icon\/icon-29.png" : {
+    "\/res\/screen\/vp-start-320x460.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-29.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-29.png",
-      "initialSize" : 6459,
+      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
+      "initialSize" : 9973,
       "fileType" : 8192
     },
-    "\/res\/screen\/android\/screen-ldpi-portrait.png" : {
+    "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
-      "initialSize" : 14941,
+      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
+      "initialSize" : 15112,
       "fileType" : 8192
     },
     "\/res\/screen\/ios\/screen-ipad-landscape-2x.png" : {
@@ -449,17 +449,6 @@
       "initialSize" : 87242,
       "fileType" : 8192
     },
-    "\/res\/screen\/android\/screen-xhdpi-landscape.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-xhdpi-landscape.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-xhdpi-landscape.png",
-      "initialSize" : 77189,
-      "fileType" : 8192
-    },
     "\/images\/button-detail-view@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -471,15 +460,26 @@
       "initialSize" : 0,
       "fileType" : 8192
     },
-    "\/res\/screen\/vp-start-320x460.png" : {
+    "\/res\/screen\/android\/screen-ldpi-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-320x460.png",
-      "initialSize" : 9973,
+      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-portrait.png",
+      "initialSize" : 14941,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-29.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-29.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-29.png",
+      "initialSize" : 6459,
       "fileType" : 8192
     },
     "\/res\/screen\/ios\/screen-iphone-landscape.png" : {
@@ -504,28 +504,6 @@
       "initialSize" : 3399,
       "fileType" : 8192
     },
-    "\/res\/icon\/icon-114.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "initialSize" : 12738,
-      "fileType" : 8192
-    },
-    "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
-      "initialSize" : 15112,
-      "fileType" : 8192
-    },
     "\/res\/screen\/ios\/screen-iphone-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -535,6 +513,28 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-portrait.png",
       "initialSize" : 29372,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/android\/icon-36-ldpi.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/android\/icon-36-ldpi.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/android\/icon-36-ldpi.png",
+      "initialSize" : 3383,
+      "fileType" : 8192
+    },
+    "\/res\/screen\/android\/screen-xhdpi-landscape.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-xhdpi-landscape.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-xhdpi-landscape.png",
+      "initialSize" : 77189,
       "fileType" : 8192
     },
     "\/images\/icon-inset-shops@2x.png" : {
@@ -570,15 +570,15 @@
       "initialSize" : 13512,
       "fileType" : 8192
     },
-    "\/res\/icon\/android\/icon-36-ldpi.png" : {
+    "\/res\/icon\/icon-114.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/android\/icon-36-ldpi.png",
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/android\/icon-36-ldpi.png",
-      "initialSize" : 3383,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "initialSize" : 12738,
       "fileType" : 8192
     },
     "\/images\/detail-photos-icon@2x.png" : {
@@ -658,16 +658,14 @@
       "initialSize" : 1015,
       "fileType" : 8192
     },
-    "\/res\/screen\/ios\/screen-iphone-landscape-2x.png" : {
+    "\/leftbar.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
-      "initialSize" : 72319,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/leftbar.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/close.png" : {
       "ignoreWasSetByUser" : 0,
@@ -691,14 +689,16 @@
       "initialSize" : 2407,
       "fileType" : 8192
     },
-    "\/leftbar.html" : {
+    "\/res\/screen\/ios\/screen-iphone-landscape-2x.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/leftbar.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+      "initialSize" : 72319,
+      "fileType" : 8192
     },
     "\/images\/detail-icon-distance@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -830,17 +830,6 @@
       "initialSize" : 312,
       "fileType" : 8192
     },
-    "\/icon.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/icon.png",
-      "initialSize" : 16401,
-      "fileType" : 8192
-    },
     "\/res\/icon\/ios\/icon-57.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -850,6 +839,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
       "initialSize" : 6177,
+      "fileType" : 8192
+    },
+    "\/icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/icon.png",
+      "initialSize" : 16401,
       "fileType" : 8192
     },
     "\/images\/header-black@2x.png" : {
@@ -896,15 +896,6 @@
       "initialSize" : 14906,
       "fileType" : 8192
     },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
     "\/res\/icon\/icon-72.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -915,6 +906,15 @@
       "outputAbbreviatedPath" : "\/res\/icon\/icon-72.png",
       "initialSize" : 10135,
       "fileType" : 8192
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/js\/script-min-bak.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1135,17 +1135,6 @@
       "initialSize" : 2697,
       "fileType" : 8192
     },
-    "\/res\/screen\/ios\/screen-ipad-portrait.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-portrait.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-portrait.png",
-      "initialSize" : 68785,
-      "fileType" : 8192
-    },
     "\/images\/listing-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1157,15 +1146,15 @@
       "initialSize" : 4879,
       "fileType" : 8192
     },
-    "\/res\/icon\/icon-50.png" : {
+    "\/res\/screen\/ios\/screen-ipad-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-portrait.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "initialSize" : 8242,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-portrait.png",
+      "initialSize" : 68785,
       "fileType" : 8192
     },
     "\/images\/basic-bar@2x.png" : {
@@ -1177,6 +1166,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/basic-bar@2x.png",
       "initialSize" : 1459,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-50.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "initialSize" : 8242,
       "fileType" : 8192
     },
     "\/images\/menu-icon@2x.png" : {
@@ -1267,15 +1267,15 @@
       "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
       "fileType" : 64
     },
-    "\/images\/search-result-bg@2x.png" : {
+    "\/res\/screen\/android\/screen-hdpi-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
+      "inputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
-      "initialSize" : 4706,
+      "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
+      "initialSize" : 46644,
       "fileType" : 8192
     }
   },
