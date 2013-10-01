@@ -156,15 +156,6 @@
       "initialSize" : 70677,
       "fileType" : 8192
     },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
     "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -175,6 +166,15 @@
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
       "initialSize" : 15112,
       "fileType" : 8192
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/index.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -590,17 +590,6 @@
       "initialSize" : 3963,
       "fileType" : 8192
     },
-    "\/images\/search-box-black@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
-      "initialSize" : 2697,
-      "fileType" : 8192
-    },
     "\/images\/search-result-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -610,6 +599,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
       "initialSize" : 4706,
+      "fileType" : 8192
+    },
+    "\/images\/search-box-black@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
+      "initialSize" : 2697,
       "fileType" : 8192
     },
     "\/res\/icon\/ios\/icon-57-2x.png" : {
@@ -729,15 +729,15 @@
       "initialSize" : 3338,
       "fileType" : 8192
     },
-    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
+    "\/res\/icon\/icon-50.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
-      "initialSize" : 86796,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "initialSize" : 8242,
       "fileType" : 8192
     },
     "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
@@ -773,6 +773,17 @@
       "initialSize" : 1704,
       "fileType" : 8192
     },
+    "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-ipad-landscape.png",
+      "initialSize" : 86796,
+      "fileType" : 8192
+    },
     "\/images\/search-box@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -782,17 +793,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-box@2x.png",
       "initialSize" : 2650,
-      "fileType" : 8192
-    },
-    "\/res\/icon\/icon-50.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "initialSize" : 8242,
       "fileType" : 8192
     },
     "\/images\/icon-flat-info@2x.png" : {
@@ -1035,15 +1035,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.ui.map.min-min.js",
       "fileType" : 64
     },
-    "\/spec\/lib\/jasmine-1.2.0\/jasmine.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/images\/menu-icons-map@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1054,6 +1045,15 @@
       "outputAbbreviatedPath" : "\/images\/menu-icons-map@2x.png",
       "initialSize" : 1015,
       "fileType" : 8192
+    },
+    "\/spec\/lib\/jasmine-1.2.0\/jasmine.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1131,17 +1131,6 @@
       "initialSize" : 4003,
       "fileType" : 8192
     },
-    "\/images\/map-pin-pubs@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "initialSize" : 3352,
-      "fileType" : 8192
-    },
     "\/res\/icon\/icon-144.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1151,6 +1140,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/icon-144.png",
       "initialSize" : 16401,
+      "fileType" : 8192
+    },
+    "\/images\/map-pin-pubs@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "initialSize" : 3352,
       "fileType" : 8192
     },
     "\/res\/screen\/android\/screen-hdpi-portrait.png" : {
@@ -1230,17 +1230,6 @@
       "initialSize" : 4323,
       "fileType" : 8192
     },
-    "\/res\/icon\/ios\/icon-57.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
-      "initialSize" : 6177,
-      "fileType" : 8192
-    },
     "\/images\/map-pin-special@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1250,6 +1239,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/map-pin-special@2x.png",
       "initialSize" : 3760,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/ios\/icon-57.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
+      "initialSize" : 6177,
       "fileType" : 8192
     },
     "\/images\/detail-icon-address@2x.png" : {
