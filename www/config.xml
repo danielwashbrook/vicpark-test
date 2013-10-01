@@ -53,6 +53,9 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
 
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/icon-29.png"   gap:platform="android"    gap:density="ldpi" />
