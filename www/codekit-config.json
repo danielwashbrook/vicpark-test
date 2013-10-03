@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8300",
+  "creatorBuild" : "8326",
   "files" : {
     "\/res\/icon\/icon-72.png" : {
       "ignoreWasSetByUser" : 0,
@@ -251,17 +251,6 @@
       "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-min.js",
       "fileType" : 64
     },
-    "\/res\/screen\/vp-start-1496x2048.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-1496x2048.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-1496x2048.png",
-      "initialSize" : 46754,
-      "fileType" : 8192
-    },
     "\/images\/detail_image.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -271,6 +260,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/detail_image.png",
       "initialSize" : 90015,
+      "fileType" : 8192
+    },
+    "\/res\/screen\/vp-start-1496x2048.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/screen\/vp-start-1496x2048.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/screen\/vp-start-1496x2048.png",
+      "initialSize" : 46754,
       "fileType" : 8192
     },
     "\/images\/detail-icon-phone@2x.png" : {
@@ -740,6 +740,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/css\/images\/icons-36-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
+      "initialSize" : 3859,
+      "fileType" : 8192
+    },
     "\/images\/map-pin-stay@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -749,17 +760,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/map-pin-stay@2x.png",
       "initialSize" : 3338,
-      "fileType" : 8192
-    },
-    "\/res\/icon\/icon-50.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "initialSize" : 8242,
       "fileType" : 8192
     },
     "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
@@ -795,6 +795,17 @@
       "initialSize" : 1704,
       "fileType" : 8192
     },
+    "\/res\/icon\/icon-50.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "initialSize" : 8242,
+      "fileType" : 8192
+    },
     "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -815,17 +826,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-box@2x.png",
       "initialSize" : 2650,
-      "fileType" : 8192
-    },
-    "\/css\/images\/icons-36-black.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
-      "initialSize" : 3859,
       "fileType" : 8192
     },
     "\/images\/icon-flat-info@2x.png" : {
@@ -1013,14 +1013,16 @@
       "initialSize" : 31510,
       "fileType" : 8192
     },
-    "\/css\/jquery.mobile-1.3.2.min.css" : {
+    "\/js\/jqueryuimapfullmin.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/jquery.mobile-1.3.2.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/js\/jqueryuimapfullmin.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
+      "fileType" : 64
     },
     "\/images\/menu-icons-events@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1033,16 +1035,14 @@
       "initialSize" : 1410,
       "fileType" : 8192
     },
-    "\/js\/jqueryuimapfullmin.js" : {
+    "\/css\/jquery.mobile-1.3.2.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jqueryuimapfullmin.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/jquery.mobile-1.3.2.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/images\/detail-photos-icon@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1117,17 +1117,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/res\/icon\/icon-114.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "initialSize" : 12738,
-      "fileType" : 8192
-    },
     "\/images\/star-gold@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1137,6 +1126,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/star-gold@2x.png",
       "initialSize" : 1537,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-114.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "initialSize" : 12738,
       "fileType" : 8192
     },
     "\/images\/back-button@2x.png" : {
@@ -1283,17 +1283,6 @@
       "initialSize" : 7376,
       "fileType" : 8192
     },
-    "\/images\/logo-white@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo-white@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo-white@2x.png",
-      "initialSize" : 4323,
-      "fileType" : 8192
-    },
     "\/images\/map-pin-special@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1314,6 +1303,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
       "initialSize" : 6177,
+      "fileType" : 8192
+    },
+    "\/images\/logo-white@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/logo-white@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/logo-white@2x.png",
+      "initialSize" : 4323,
       "fileType" : 8192
     },
     "\/images\/detail-icon-address@2x.png" : {
@@ -1381,6 +1381,15 @@
       "outputAbbreviatedPath" : "\/res\/screen\/ios\/screen-iphone-portrait.png",
       "initialSize" : 29372,
       "fileType" : 8192
+    },
+    "\/index_load.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index_load.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/user-location.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1451,7 +1460,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : "-min",
     "jadeOutputStyle" : 0,
@@ -1600,6 +1612,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0
