@@ -167,6 +167,15 @@
       "initialSize" : 70677,
       "fileType" : 8192
     },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
     "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -177,15 +186,6 @@
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
       "initialSize" : 15112,
       "fileType" : 8192
-    },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
     },
     "\/index.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -1013,16 +1013,14 @@
       "initialSize" : 31510,
       "fileType" : 8192
     },
-    "\/js\/jqueryuimapfullmin.js" : {
+    "\/css\/jquery.mobile-1.3.2.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jqueryuimapfullmin.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/jquery.mobile-1.3.2.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/images\/menu-icons-events@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1035,14 +1033,16 @@
       "initialSize" : 1410,
       "fileType" : 8192
     },
-    "\/css\/jquery.mobile-1.3.2.min.css" : {
+    "\/js\/jqueryuimapfullmin.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/jquery.mobile-1.3.2.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/js\/jqueryuimapfullmin.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
+      "fileType" : 64
     },
     "\/images\/detail-photos-icon@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1117,17 +1117,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/star-gold@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/star-gold@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/star-gold@2x.png",
-      "initialSize" : 1537,
-      "fileType" : 8192
-    },
     "\/res\/icon\/icon-114.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1137,6 +1126,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
       "initialSize" : 12738,
+      "fileType" : 8192
+    },
+    "\/images\/star-gold@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/star-gold@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/star-gold@2x.png",
+      "initialSize" : 1537,
       "fileType" : 8192
     },
     "\/images\/back-button@2x.png" : {
@@ -1283,6 +1283,17 @@
       "initialSize" : 7376,
       "fileType" : 8192
     },
+    "\/images\/logo-white@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/logo-white@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/logo-white@2x.png",
+      "initialSize" : 4323,
+      "fileType" : 8192
+    },
     "\/images\/map-pin-special@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1303,17 +1314,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/icon\/ios\/icon-57.png",
       "initialSize" : 6177,
-      "fileType" : 8192
-    },
-    "\/images\/logo-white@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo-white@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo-white@2x.png",
-      "initialSize" : 4323,
       "fileType" : 8192
     },
     "\/images\/detail-icon-address@2x.png" : {
