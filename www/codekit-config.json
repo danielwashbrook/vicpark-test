@@ -112,17 +112,6 @@
       "initialSize" : 7337,
       "fileType" : 8192
     },
-    "\/images\/close.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/close.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/close.png",
-      "initialSize" : 602,
-      "fileType" : 8192
-    },
     "\/images\/button-detail-bookmark@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -143,6 +132,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/menu-button@2x.png",
       "initialSize" : 1130,
+      "fileType" : 8192
+    },
+    "\/images\/close.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/close.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/close.png",
+      "initialSize" : 602,
       "fileType" : 8192
     },
     "\/images\/separator@2x.png" : {
@@ -167,15 +167,6 @@
       "initialSize" : 70677,
       "fileType" : 8192
     },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
     "\/res\/screen\/android\/screen-ldpi-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -186,6 +177,15 @@
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-ldpi-landscape.png",
       "initialSize" : 15112,
       "fileType" : 8192
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/index.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -740,17 +740,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/css\/images\/icons-36-black.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
-      "initialSize" : 3859,
-      "fileType" : 8192
-    },
     "\/images\/map-pin-stay@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -760,6 +749,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/map-pin-stay@2x.png",
       "initialSize" : 3338,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-50.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
+      "initialSize" : 8242,
       "fileType" : 8192
     },
     "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js" : {
@@ -795,17 +795,6 @@
       "initialSize" : 1704,
       "fileType" : 8192
     },
-    "\/res\/icon\/icon-50.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-50.png",
-      "initialSize" : 8242,
-      "fileType" : 8192
-    },
     "\/res\/screen\/ios\/screen-ipad-landscape.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -826,6 +815,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-box@2x.png",
       "initialSize" : 2650,
+      "fileType" : 8192
+    },
+    "\/css\/images\/icons-36-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/css\/images\/icons-36-black.png",
+      "initialSize" : 3859,
       "fileType" : 8192
     },
     "\/images\/icon-flat-info@2x.png" : {
