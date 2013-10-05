@@ -252,6 +252,7 @@ vpmobile = {
       vpmobile.boundschanged = true;
     });*/
 
+    vpmobile.bounds = new L.LatLngBounds();
 
     // initialize the geolocation feature
     vpmobile.getUserLocation();

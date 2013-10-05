@@ -252,6 +252,7 @@ vpmobile = {
       vpmobile.boundschanged = true;
     });*/
 
+    vpmobile.bounds = new L.LatLngBounds();
 
     // initialize the geolocation feature
     vpmobile.getUserLocation();
@@ -513,8 +514,6 @@ $( document ).delegate("#map", "pageinit", function() {
 
 $('#map').live('pageshow', function() {
   console.log('#map pageshow');
-
-  vpmobile.bounds = new L.LatLngBounds();
 
   vpmobile.initialize();
 
