@@ -6,10 +6,14 @@
     <title>Experience Victoria Park Calgary</title>
     <script src="http://jsconsole.com/remote.js?173AA228-3243-485F-BB58-6A868F6801CB"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+    <!--<script type="text/javascript" src="cordova-2.5.0.js"></script>-->
     <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/script-min.js"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
 <style>
 
@@ -18,48 +22,112 @@
 
 <body>
   <!-- Main Page -->
-<div id="map" style="width: 600px; height: 400px"></div>
 
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-    <script>
+    <div id="map" data-role="page">
+        <!-- panel content goes here -->
+        <div data-role="panel" id="mypanel"  data-theme="a">
+                        <form action="search.html" method="get" data-ajax="false">
+                <input type="search" name="q" id="search-input" value="" placeholder="Search">
+            </form>
+            <ul class="leftmenu">
+                <li><a class="mapicon" href="#map">View Map</a></li>
+                <li><a class="explore" href="#main">Explore</a></li>
+                <li><a class="events" href="#map" data-link="Events">Events</a></li>
+                <li><a class="bookmarks" href="#">Bookmarks</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
 
-        var map = L.map('map').setView([51.505, -0.09], 13);
+      <div data-role="header"  data-theme="c">
+        <a href="#mypanel" data-icon="bars" data-role="button" data-iconpos="notext"> Menu</a>
+        <span class="ui-title"></span>
+        <img src="images/header-logo@2x.png" class="ui-btn-right logo-header" />
+      </div>
+      <div data-role="content" id="map_canvas"></div>
 
-        L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
-        }).addTo(map);
-
-
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-        L.circle([51.508, -0.11], 500, {
-            color: 'red',
-            fillColor: '#f03',
-            fillOpacity: 0.5
-        }).addTo(map).bindPopup("I am a circle.");
-
-        L.polygon([
-            [51.509, -0.08],
-            [51.503, -0.06],
-            [51.51, -0.047]
-        ]).addTo(map).bindPopup("I am a polygon.");
+    </div>
 
 
-        var popup = L.popup();
+    <div id="main" data-role="page">
+        <!-- panel content goes here -->
+        <div data-role="panel" id="mypanel"  data-theme="a">
+                        <form action="search.html" method="get" data-ajax="false">
+                <input type="search" name="q" id="search-input" value="" placeholder="Search">
+            </form>
+            <ul class="leftmenu">
+                <li><a class="mapicon" href="#map">View Map</a></li>
+                <li><a class="explore" href="#main">Explore</a></li>
+                <li><a class="events" href="#map" data-link="Events">Events</a></li>
+                <li><a class="bookmarks" href="#">Bookmarks</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
 
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent("You clicked the map at " + e.latlng.toString())
-                .openOn(map);
-        }
+      <div data-role="header"  data-theme="c">
+        <a href="#mypanel" class="ui-icon-nodisc" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false"> Menu</a>
+        <span class="ui-title"></span>
+        <img src="images/header-logo@2x.png" class="ui-btn-right logo-header" />
+      </div>
 
-        map.on('click', onMapClick);
+      <div id="content" data-role="content">
+        <h4 style="text-align:center; margin:12px 0;">Choose a category.</h4>
+        <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-inset="false" data-collapsed-icon="category">
 
-    </script>
+            <div data-role="collapsible">
+                <h6 class="events">Events</h6>
+                <a href="index.html?term=Events" class="header-link events" data-link="Events">View all on map</a>
+                <ul data-role="listview" data-divider-theme="c" id="list6" class="events" >
+                </ul>
+            </div>
 
+            <div data-role="collapsible">
+                <h6 class="cafe">Cafe and Dining</h6>
+                <a href="index.html?term=Cafe%20and%20Dining" class="header-link cafe" data-link="Cafe and Dining">View all on map</a>
+                <ul data-role="listview" data-divider-theme="c" id="list1" class="cafe" >
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h6 class="pubs">Pubs 'n Clubs </h6>
+                <a href="index.html?term=Pubs%20''n%20Clubs" class="header-link pubs" data-link="Pubs ''n Clubs">View all on map</a>
+                <ul data-role="listview" data-divider-theme="d" id="list2" class="pubs">
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h6  class="shop">Shop</h6>
+                <a href="index.html?term=Shop" class="header-link shop"  data-link="Shop">View all on map</a>
+                <ul data-role="listview" data-divider-theme="d" id="list3" class="shop">
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h6 class="play">Stay 'n Play </h6>
+                <a href="index.html?term=Stay%20''n%20Play" class="header-link play" data-link="Stay ''n Play">View all on map</a>
+                <ul data-role="listview" data-divider-theme="d" id="list4" class="play">
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h6 class="treats">Treats</h6>
+                <a href="index.html?term=Treats" class="header-link treats" data-link="Treats">View all on map</a>
+                <ul data-role="listview" data-divider-theme="d" id="list5"  class="treats">
+                </ul>
+            </div>
+
+       </div>
+      </div> <!-- end content -->
+
+    </div> <!-- end main / explore -->
+
+
+    <div class="infobox-wrapper">
+        <div id="infobox">
+            <h4></h4>
+            <phone></phone>
+            <p class="path"></p>
+        </div>
+    </div>
 
 
 <script type="text/javascript">
