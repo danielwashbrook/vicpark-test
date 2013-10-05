@@ -63,13 +63,13 @@ $(document).live("pageinit", function(){
 });
 
 
-$('#details').live('pageinit', function() {
+$('#details').live('pageshow', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
 
     $('#map-canvas').toggle();
-    google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
+    //google.maps.event.trigger(vpmobile.detailMap, 'resize');
+    vpmobile.detailMap.setView([vpmobile.currentListing.latitude, vpmobile.currentListing.longitude], 15);
     smart_scroll($('#map-canvas'));
   });
 });

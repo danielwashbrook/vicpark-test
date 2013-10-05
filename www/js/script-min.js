@@ -43,62 +43,84 @@ vpmobile = {
   },
 
   initializeMap: function (lat, long, term) {
-    var mapOptions = {
+    /*var mapOptions = {
       center: new google.maps.LatLng(lat, long),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true
     };
 
-    var map = new google.maps.Map(document.getElementById("map-canvas"),
-        mapOptions);
+    vpmobile.detailMap = new google.maps.Map(document.getElementById("map-canvas"),
+        mapOptions);*/
+
+    vpmobile.detailMap = L.map('map-canvas').setView([lat,long], 15);
+    L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+    }).addTo(vpmobile.detailMap);
+
     switch(term)
     {
     case 'Cafe and Dining':
-      markerimage = {
-        url:'images/map-pin-cafe@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
-    case 'Pubs &#039;n Clubs':
-      markerimage = {
-        url:'images/map-pin-pubs@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
-    case 'Shop':
-      markerimage = {
-        url:'images/map-pin-shops@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
-    case 'Stay &#039;n Play':
-      markerimage = {
-        url:'images/map-pin-stay@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
-    case 'Treats':
-      markerimage = {
-        url:'images/map-pin-treats@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
-    case 'Events':
-      markerimage = {
-        url:'images/map-pin-special@2x.png',
-        scaledSize: new google.maps.Size(60, 80)
-      };
-      break;
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-cafe@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
+        break;
+      case 'Pubs &#039;n Clubs':
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-pubs@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
+        break;
+      case 'Shop':
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-shops@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
+        break;
+      case 'Stay &#039;n Play':
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-stay@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
+        break;
+      case 'Treats':
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-treats@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
+        break;
+      case 'Events':
+
+        markerimage = L.icon({
+          iconUrl: 'images/map-pin-special@2x.png',
+          iconSize:     [60, 80],
+          popupAnchor:  [0, -70],
+          iconAnchor:   [30, 80]}
+        );
+        break;
     }
 
-    markerobj = new google.maps.Marker({
-      position: new google.maps.LatLng(lat, long),
-      map: map,
-      'icon' : markerimage
-    });
-
-    vpmobile.detailMap = map;
+    markerPosition = [lat, long];
+    var markerobj = L.marker(markerPosition,
+      {icon: markerimage})
+      .addTo(vpmobile.detailMap);
 
     $('#map-canvas').toggle();
   },
@@ -311,7 +333,13 @@ vpmobile = {
     // clear current markers
     console.log('clearing markers');
 
-    // @TODO ? vpmobile.setAllMap(null);
+    if (vpmobile.markergroup == null) {
+      vpmobile.markergroup = L.layerGroup();
+    } else {
+      vpmobile.markergroup.clearLayers();
+    }
+
+
     vpmobile.markers = [];
 
     //console.log(thedata);
@@ -381,9 +409,8 @@ vpmobile = {
       }
 
       markerPosition = [marker.listing.latitude, marker.listing.longitude];
-      L.marker(markerPosition,
+      var markerobj = L.marker(markerPosition,
         {icon: markerimage[i]})
-      .addTo(vpmobile.map)
       .bindPopup('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
           '<a href="detail.html?path='+marker.listing.path+'" class="whole">'+
             '<h4>'+marker.listing.title+'</h4>'+
@@ -396,27 +423,20 @@ vpmobile = {
       vpmobile.bounds.extend(markerPosition);
 
 
-      // vpmobile.markers.push(markerobj);
+      vpmobile.markers.push(markerobj);
+      vpmobile.markergroup.addLayer(markerobj);
       // oldCenter = vpmobile.map.getCenter();
       // google.maps.event.trigger(vpmobile.map, 'resize');
       // vpmobile.map.setCenter(oldCenter);
 
     });
+    vpmobile.markergroup.addTo(vpmobile.map);
 
 
     vpmobile.map.fitBounds(vpmobile.bounds);   //fitBounds(vpmobile.bounds);
   },
 
 
-}
-
-function loadScript(src,callback){
-
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  if(callback)script.onload=callback;
-  document.getElementsByTagName("head")[0].appendChild(script);
-  script.src = src;
 }
 
 
@@ -520,13 +540,13 @@ $(document).live("pageinit", function(){
 });
 
 
-$('#details').live('pageinit', function() {
+$('#details').live('pageshow', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
 
     $('#map-canvas').toggle();
-    google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    vpmobile.detailMap.setCenter(new google.maps.LatLng(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude));
+    //google.maps.event.trigger(vpmobile.detailMap, 'resize');
+    vpmobile.detailMap.setView([vpmobile.currentListing.latitude, vpmobile.currentListing.longitude], 15);
     smart_scroll($('#map-canvas'));
   });
 });

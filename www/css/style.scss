@@ -464,6 +464,9 @@
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background: rgb(85, 84, 84);
 }
+.leaflet-popup-content {
+  margin: 0;
+}
 
 .infobox-wrapper {
   display:none;
