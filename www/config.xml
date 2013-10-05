@@ -100,7 +100,8 @@
     <access origin="http://victoriapark.org*" />
     <access origin="*.google.com"/>
     <access origin="*.googleapis.com"/>
-    <access origin="*.gstatic.com"/>
+    <access origin="*.leafletjs.com*"/>
+    <access origin="*.cloudmade.com*"/>
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://honegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
