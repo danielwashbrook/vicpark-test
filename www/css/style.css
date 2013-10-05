@@ -1,5 +1,5 @@
 /* SASS Styles for victoria park mobile site */
-.ui-body-a, .ui-body-c, .ui-body-d { font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; text-shadow: 0 0px 0 white; }
+.ui-body-a, .ui-body-c, .ui-body-d { font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; text-shadow: 0 0px 0 #fff; }
 
 .ui-bar-c { background: url("../images/header-white@2x.png") repeat-x; background-size: 320px 80px; height: 80px; margin-bottom: -29px; z-index: 3; position: relative; border: 1px solid transparent; }
 .ui-bar-c.ui-listview-filter { background: #bfb5b5; }
@@ -30,7 +30,7 @@
 #search .ui-content { background: transparent; color: #8f8888; }
 #search .ui-content #search-list { min-height: 450px; z-index: 99; position: relative; top: -10px; }
 #search .ui-content ul.ui-listview, #search .ui-content .ui-collapsible-content.ui-body-d { background: #bfb5b5; }
-#search .ui-content .ui-body-d li.ui-btn { background: url("../images/search-result-bg@2x.png") top left no-repeat; background-size: 100% 90px; height: 85px; margin-bottom: -10px; border: none; font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; }
+#search .ui-content .ui-body-d li.ui-btn { background: url("../images/search-result-bg@2x.png") top left no-repeat; background-size: 100% 90px; height: 85px; margin-bottom: -10px; border: none; font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; }
 #search .ui-content .ui-body-d li.ui-btn.Events .ui-btn-text { padding-left: 30px; background: url("../images/icon-inset-special@2x.png") 5px 15px no-repeat; background-size: 35px; }
 #search .ui-content .ui-body-d li.ui-btn.Cafe .ui-btn-text { padding-left: 30px; background: url("../images/icon-inset-cafe@2x.png") 5px 15px no-repeat; background-size: 35px; }
 #search .ui-content .ui-body-d li.ui-btn.Pubs .ui-btn-text { padding-left: 30px; background: url("../images/icon-inset-pub@2x.png") 5px 15px no-repeat; background-size: 35px; }
@@ -45,7 +45,7 @@
 
 #main .ui-content { background: transparent; color: #8f8888; padding-top: 0; }
 #main .ui-content .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner { padding-left: 55px; font-size: 20px; }
-#main .ui-content .ui-collapsible-heading a.ui-btn { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 600; font-stretch: normal; color: #a29d9d; background: url("../images/category-bg@2x.png") 0 -7px repeat-x; background-size: 320px 77px; padding: 5px 5px; /*-moz-box-shadow:    inset 0px -1px 3px #7a6762;
+#main .ui-content .ui-collapsible-heading a.ui-btn { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 600; font-stretch: normal; color: #a29d9d; background: url("../images/category-bg@2x.png") 0 -7px repeat-x; background-size: 320px 77px; padding: 5px 5px; /*-moz-box-shadow:    inset 0px -1px 3px #7a6762;
 -webkit-box-shadow: inset 0px -1px 3px #7a6762;
 box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2; margin-bottom: 0px; }
 #main .ui-content .ui-collapsible-heading a.ui-btn .ui-icon { background: url("../images/icon-inset-dine@2x.png") left no-repeat; background-size: 40px; height: 40px; width: 40px; margin-top: -18px; border: none; -moz-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4); -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4); box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4); }
@@ -69,8 +69,8 @@ box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2
 #main .ui-content .header-link.pubs { background: #f4f3f3 url("../images/map-pin-pubs@2x.png") 95% 60% no-repeat; background-size: 40px; }
 #main .ui-content .header-link.play { background: #f4f3f3 url("../images/map-pin-stay@2x.png") 95% 60% no-repeat; background-size: 40px; }
 #main .ui-content .header-link.treats { background: #f4f3f3 url("../images/map-pin-treats@2x.png") 95% 60% no-repeat; background-size: 40px; }
-#main .ui-content .header-link:link, #main .ui-content .header-link:visited { font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; color: #afa4a4; font-weight: normal; font-size: 22px; }
-#main .ui-content .ui-body-d li.ui-btn { background: url("../images/search-result-bg@2x.png") top left no-repeat; background-size: 100% 90px; height: 85px; margin-bottom: -10px; border: none; font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; }
+#main .ui-content .header-link:link, #main .ui-content .header-link:visited { font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; color: #afa4a4; font-weight: normal; font-size: 22px; }
+#main .ui-content .ui-body-d li.ui-btn { background: url("../images/search-result-bg@2x.png") top left no-repeat; background-size: 100% 90px; height: 85px; margin-bottom: -10px; border: none; font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 300; font-stretch: normal; }
 #main .ui-content .ui-body-d li.ui-btn .ui-btn-inner { background: url("../images/search-result-bg@2x.png") top right no-repeat; background-size: 320px 90px; height: 77px; }
 #main .ui-content .ui-body-d li.ui-btn .ui-li-heading { font-size: 26px; color: #83ba3b; font-weight: normal; margin: 0 0 9px 0; }
 #main .ui-content .ui-body-d li.ui-btn .phone { font-size: 18px; color: #918181; }
@@ -84,7 +84,7 @@ box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2
 #details #map-canvas { height: 300px; }
 #details #content { padding: 0; }
 #details .innertext { padding: 5px 15px; background: #edeaea; }
-#details h2 { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #83ba3b; font-weight: normal; border-bottom: 1px solid #83ba3b; padding-bottom: 10px; padding-right: 80px; font-size: 30px; margin-bottom: 10px; }
+#details h2 { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #83ba3b; font-weight: normal; border-bottom: 1px solid #83ba3b; padding-bottom: 10px; padding-right: 80px; font-size: 30px; margin-bottom: 10px; }
 #details h2.Events { background: url("../images/icon-inset-special@2x.png") right no-repeat; background-size: 40px; }
 #details h2.Cafe { background: url("../images/icon-inset-cafe@2x.png") right no-repeat; background-size: 40px; }
 #details h2.Pubs { background: url("../images/icon-inset-pub@2x.png") right no-repeat; background-size: 40px; }
@@ -94,17 +94,20 @@ box-shadow:         inset 0px -1px 3px #7a6762;*/ text-shadow: 1px 1px 0 #d8d2d2
 #details h3 { border-top: 1px solid #83ba3b; padding-top: 10px; color: #83ba3b; font-weight: normal; font-style: italic; margin-top: 10px; }
 #details .ui-btn-left { margin: 0; padding: 0; top: 0; width: auto; height: auto; }
 #details .ui-btn-left .ui-btn-inner { margin: 0; padding: 0; }
-#details p { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #8a7979; font-size: 20px; margin: 5px 0; }
+#details p { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #8a7979; font-size: 20px; margin: 5px 0; }
 #details p.address { background: url("../images/detail-icon-address@2x.png") left no-repeat; background-size: 20px; padding-left: 24px; }
 #details p.description { font-size: 18px; }
-#details phone { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #8a7979; font-size: 20px; background: url("../images/detail-icon-phone@2x.png") left no-repeat; background-size: 20px; padding-left: 24px; }
+#details phone { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #8a7979; font-size: 20px; background: url("../images/detail-icon-phone@2x.png") left no-repeat; background-size: 20px; padding-left: 24px; }
 #details phone a, #details phone a:link { color: #8a7979; text-decoration: none; }
 #details .detail_image { width: 100%; max-height: 250px; }
 #details .view_on_map { display: block; height: 75px; margin: 5px auto; }
 
+/** NEW info box styles for leafjs **/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #555454; }
+
 .infobox-wrapper { display: none; }
 
-#infobox { border: 0px solid black; background: url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 40px; color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 1.5em 2em 1.5em 6em; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; text-shadow: 0 -1px black; /*-webkit-box-shadow: 0 0  8px #000;
+#infobox { border: 0px solid black; background: url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 40px; color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 1.5em 2em 1.5em 6em; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; text-shadow: 0 -1px #000000; /*-webkit-box-shadow: 0 0  8px #000;
 box-shadow: 0 0 8px #000;*/ }
 #infobox a, #infobox a:link { color: #FFF; text-decoration: underline; }
 #infobox a.whole { text-decoration: none; }
@@ -114,8 +117,8 @@ box-shadow: 0 0 8px #000;*/ }
 #infobox.Cafe { background: url("../images/icon-inset-cafe@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }
 #infobox.Stay { background: url("../images/icon-inset-stay@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }
 #infobox.Treats { background: url("../images/icon-inset-treats@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat; background-size: 50px; }
-#infobox h4 { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #9dde47; font-size: 24px; margin: 0 0 10px 0; height: 86px; overflow: hidden; }
-#infobox phone { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; font-size: 20px; margin: 10px 0; }
+#infobox h4 { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; color: #9dde47; font-size: 24px; margin: 0 0 10px 0; height: 86px; overflow: hidden; }
+#infobox phone { font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight: 400; font-stretch: normal; font-size: 20px; margin: 10px 0; }
 #infobox .path { display: none; }
 
 .infoBox { background: url("../images/map-detail-bg@2x.png") -21px -8px no-repeat; background-size: 345px; }

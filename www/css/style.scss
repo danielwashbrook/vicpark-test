@@ -460,6 +460,10 @@
   }
 }
 
+/** NEW info box styles for leafjs **/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: rgb(85, 84, 84);
+}
 
 .infobox-wrapper {
   display:none;

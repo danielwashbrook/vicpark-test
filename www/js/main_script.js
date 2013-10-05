@@ -8,9 +8,7 @@ function onDeviceReady() {
 }
 
 $( window ).on( "navigate", function( event, data ) {
-  if(typeof infobox != 'undefined') {
-    infobox.close();
-  }
+
 });
 
 // map page
@@ -27,15 +25,22 @@ $('#map').live('pageinit', function() {
 $( document ).delegate("#map", "pageinit", function() {
   console.log('#map pageinit');
 
-  vpmobile.bounds = new google.maps.LatLngBounds();
-  vpmobile.initialize();
+  //vpmobile.bounds = new google.maps.LatLngBounds();
+  //
+
+
+
 
 });
 
 
 $('#map').live('pageshow', function() {
   console.log('#map pageshow');
-  //$('#map_canvas').gmap('refresh');
+
+  vpmobile.bounds = new L.LatLngBounds();
+
+  vpmobile.initialize();
+
   vpmobile.loadNodes(vpmobile.loadMarkers);
 });
 

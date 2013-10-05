@@ -155,8 +155,21 @@ vpmobile = {
     //console.log('updateUserLocation');
     //console.log(position);
     // call itself in 1 second
-    var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
+    var usermarkerimage = L.icon({
+        iconUrl: 'images/user-location.png',
+
+        iconSize:     [50, 50], // size of the icon
+        iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    });
+
+    L.marker([position.coords.latitude, position.coords.longitude],
+      {icon: usermarkerimage}).addTo(vpmobile.map);
+
+    //var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+/*
     usermarkerimage = {
       url:'images/user-location.png',
       scaledSize: new google.maps.Size(50, 50)
@@ -176,6 +189,7 @@ vpmobile = {
     if (!vpmobile.boundschanged) {
       vpmobile.map.fitBounds(vpmobile.bounds);
     }
+    */
 
     setTimeout(function(){vpmobile.getUserLocation()}, 60000);
   },
@@ -183,30 +197,16 @@ vpmobile = {
     vpmobile.markers = [];
     // the bounds to control the map by
 
-    var mapOptions = {
-      zoom: 16,
-      center: new google.maps.LatLng(51.041499,-114.063690),
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles:
-      [
-          {
-              featureType: "poi.business",
-              elementType: "labels",
-              stylers:
-              [
-                  {
-                      visibility: "off"
-                  }
-              ]
-          }
-      ],
-      disableDefaultUI: true,
-      zoomControl:true,
-    };
-    vpmobile.map = new google.maps.Map(document.getElementById('map_canvas'),
-        mapOptions);
 
-    infobox = new InfoBox({
+    if (vpmobile.map == null) {
+      vpmobile.map = L.map('map_canvas').setView([51.041499,-114.063690], 15);
+      L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+      }).addTo(vpmobile.map);
+    }
+
+    /*infobox = new InfoBox({
         alignBottom: true,
          content: document.getElementById("infobox"),
          disableAutoPan: false,
@@ -223,12 +223,12 @@ vpmobile = {
         closeBoxURL: "images/close.png",
         infoBoxClearance: new google.maps.Size(1, 1),
         enableEventPropagation: true
-    });
+    });*/
 
-    vpmobile.boundschanged = false;
+    /*vpmobile.boundschanged = false;
     google.maps.event.addListener(vpmobile.map, 'bounds_changed', function() {
       vpmobile.boundschanged = true;
-    });
+    });*/
 
 
     // initialize the geolocation feature
@@ -311,7 +311,7 @@ vpmobile = {
     // clear current markers
     console.log('clearing markers');
 
-    vpmobile.setAllMap(null);
+    // @TODO ? vpmobile.setAllMap(null);
     vpmobile.markers = [];
 
     //console.log(thedata);
@@ -321,84 +321,90 @@ vpmobile = {
 
       // Marker image from category
 
+
       switch(marker.listing.term)
       {
       case 'Cafe and Dining':
-        markerimage[i] = {
-          url:'images/map-pin-cafe@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-cafe@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
         break;
       case 'Pubs &#039;n Clubs':
-        markerimage[i] = {
-          url:'images/map-pin-pubs@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-pubs@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
         break;
       case 'Shop':
-        markerimage[i] = {
-          url:'images/map-pin-shops@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-shops@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
         break;
       case 'Stay &#039;n Play':
-        markerimage[i] = {
-          url:'images/map-pin-stay@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-stay@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
         break;
       case 'Treats':
-        markerimage[i] = {
-          url:'images/map-pin-treats@2x.png',
-          scaledSize: new google.maps.Size(45, 60)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-treats@2x.png',
+          iconSize:     [45, 60],
+          popupAnchor:  [0, -50],
+          iconAnchor:   [22, 60]
+        });
         break;
       case 'Events':
-        markerimage[i] = {
-          url:'images/map-pin-special@2x.png',
-          scaledSize: new google.maps.Size(60, 80)
-        };
+
+        markerimage[i] = L.icon({
+          iconUrl: 'images/map-pin-special@2x.png',
+          iconSize:     [60, 80],
+          popupAnchor:  [0, -70],
+          iconAnchor:   [30, 80]}
+        );
         break;
       }
-      //console.log(markerimage[i]);
 
-      // add the marker with the image and the click function
-      //vpmobile.addMarker(new google.maps.LatLng(marker.listing.latitude, marker.listing.longitude));
-      var markerPosition = new google.maps.LatLng(marker.listing.latitude, marker.listing.longitude);
-      markerobj = new google.maps.Marker({
-        position: markerPosition,
-        map: vpmobile.map,
-        'icon' : markerimage[i]
-      });
-      vpmobile.bounds.extend(markerPosition);
-
-      google.maps.event.addListener(markerobj, 'click', function() {
-
-        infobox.setContent('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
+      markerPosition = [marker.listing.latitude, marker.listing.longitude];
+      L.marker(markerPosition,
+        {icon: markerimage[i]})
+      .addTo(vpmobile.map)
+      .bindPopup('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
           '<a href="detail.html?path='+marker.listing.path+'" class="whole">'+
             '<h4>'+marker.listing.title+'</h4>'+
             '<phone>'+marker.listing.phone+'</phone>'+
             '<p class="path">'+marker.listing.path+'</p>'+
         '</a></div>');
-        infobox.open(vpmobile.map, this);
-        google.maps.event.addListener(infobox, 'click', function(event) {
-          console.log('PIE');
-        });
+      //console.log(markerimage[i]);
 
-      });
 
-      google.maps.event.addDomListener(infobox, 'click', function(){
-        console.log('newclick');
-      });
-      vpmobile.markers.push(markerobj);
-      oldCenter = vpmobile.map.getCenter();
-      google.maps.event.trigger(vpmobile.map, 'resize');
-      vpmobile.map.setCenter(oldCenter);
+      vpmobile.bounds.extend(markerPosition);
+
+
+      // vpmobile.markers.push(markerobj);
+      // oldCenter = vpmobile.map.getCenter();
+      // google.maps.event.trigger(vpmobile.map, 'resize');
+      // vpmobile.map.setCenter(oldCenter);
 
     });
 
 
-    vpmobile.map.fitBounds(vpmobile.bounds);
+    vpmobile.map.fitBounds(vpmobile.bounds);   //fitBounds(vpmobile.bounds);
   },
 
 
@@ -459,9 +465,7 @@ function onDeviceReady() {
 }
 
 $( window ).on( "navigate", function( event, data ) {
-  if(typeof infobox != 'undefined') {
-    infobox.close();
-  }
+
 });
 
 // map page
@@ -478,15 +482,22 @@ $('#map').live('pageinit', function() {
 $( document ).delegate("#map", "pageinit", function() {
   console.log('#map pageinit');
 
-  vpmobile.bounds = new google.maps.LatLngBounds();
-  vpmobile.initialize();
+  //vpmobile.bounds = new google.maps.LatLngBounds();
+  //
+
+
+
 
 });
 
 
 $('#map').live('pageshow', function() {
   console.log('#map pageshow');
-  //$('#map_canvas').gmap('refresh');
+
+  vpmobile.bounds = new L.LatLngBounds();
+
+  vpmobile.initialize();
+
   vpmobile.loadNodes(vpmobile.loadMarkers);
 });
 
