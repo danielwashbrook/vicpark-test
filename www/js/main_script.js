@@ -1,8 +1,8 @@
 
 function onDeviceReady() {
-  console.log('onDeviceReady');
+  log('onDeviceReady');
   $(document).ready(function() {
-    console.log('document ready');
+    log('document ready');
     vpmobile.getUserLocation();
   });
 }
@@ -23,7 +23,7 @@ $('#map').live('pageinit', function() {
 });
 
 $( document ).delegate("#map", "pageinit", function() {
-  console.log('#map pageinit');
+  log('#map pageinit');
 
   //vpmobile.bounds = new google.maps.LatLngBounds();
   //
@@ -35,7 +35,7 @@ $( document ).delegate("#map", "pageinit", function() {
 
 
 $('#map').live('pageshow', function() {
-  console.log('#map pageshow');
+  log('#map pageshow');
 
   vpmobile.initialize();
 
@@ -45,7 +45,7 @@ $('#map').live('pageshow', function() {
 
 // search page functionality
 $('#search').live('pageinit', function() {
-  console.log('#search pageinit');
+  log('#search pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: false
   });
@@ -54,7 +54,7 @@ $('#search').live('pageinit', function() {
 
 // pageinit of every page
 $(document).live("pageinit", function(){
-  console.log('pageinit');
+  log('pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: true
   });
@@ -74,14 +74,14 @@ $('#details').live('pageshow', function() {
 
 
 $('#main').live('pageshow', function() {
-  console.log('#main pageshow');
+  log('#main pageshow');
   //$('#map_canvas').gmap('refresh');
 });
 
 
 // explore page, load the listings into the lists
 $('#main').live('pageinit', function() {
-  console.log('#main pageinit');
+  log('#main pageinit');
 
   vpmobile.loadNodes(vpmobile.loadListings);
 
@@ -90,9 +90,9 @@ $('#main').live('pageinit', function() {
 
 // page link from the left menu
 $('.leftmenu a[href=#map]').live('click', function(e){
-  //console.log($(this).attr("href"));
+  //log($(this).attr("href"));
   //$.mobile.loading( 'show' );
-  //console.log($(this)[0].dataset.link);
+  //log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   vpmobile.loadMarkers();
   $.mobile.changePage($("#map")); //'index.html');//
@@ -103,7 +103,7 @@ $('.leftmenu a[href=#map]').live('click', function(e){
 
 // explore category list link back to view all on map
 $("a.header-link").live("click", function (e) {
-  //console.log($(this)[0].dataset.link);
+  //log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   $.mobile.changePage($("#map")); //'index.html');//
   return false;
@@ -136,6 +136,6 @@ $("div.ui-collapsible").live("expand", function(e) {
 document.addEventListener("deviceready", onDeviceReady);
 
 function log(str){
-  console.log(str);
+  //console.log(str);
 }
 
