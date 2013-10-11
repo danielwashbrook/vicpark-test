@@ -101,17 +101,6 @@
       "initialSize" : 2067,
       "fileType" : 8192
     },
-    "\/images\/icon-inset-pub@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-inset-pub@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-inset-pub@2x.png",
-      "initialSize" : 7337,
-      "fileType" : 8192
-    },
     "\/images\/close.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -143,6 +132,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/menu-button@2x.png",
       "initialSize" : 1130,
+      "fileType" : 8192
+    },
+    "\/images\/icon-inset-pub@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-inset-pub@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-inset-pub@2x.png",
+      "initialSize" : 7337,
       "fileType" : 8192
     },
     "\/images\/separator@2x.png" : {
@@ -251,17 +251,6 @@
       "outputAbbreviatedPath" : "\/spec\/lib\/jasmine-1.2.0\/jasmine-min.js",
       "fileType" : 64
     },
-    "\/images\/detail_image.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/detail_image.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/detail_image.png",
-      "initialSize" : 90015,
-      "fileType" : 8192
-    },
     "\/res\/screen\/vp-start-1496x2048.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -271,6 +260,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/screen\/vp-start-1496x2048.png",
       "initialSize" : 46754,
+      "fileType" : 8192
+    },
+    "\/images\/detail_image.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/detail_image.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/detail_image.png",
+      "initialSize" : 90015,
       "fileType" : 8192
     },
     "\/images\/detail-icon-phone@2x.png" : {
@@ -447,6 +447,17 @@
       "initialSize" : 6459,
       "fileType" : 8192
     },
+    "\/images\/close-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/close-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/close-icon.png",
+      "initialSize" : 2088,
+      "fileType" : 8192
+    },
     "\/images\/icon-search@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -467,17 +478,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/header-logo@2x.png",
       "initialSize" : 4179,
-      "fileType" : 8192
-    },
-    "\/images\/close-icon.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/close-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/close-icon.png",
-      "initialSize" : 2088,
       "fileType" : 8192
     },
     "\/js\/jquery.ui.map.full.min.js" : {
@@ -621,17 +621,6 @@
       "initialSize" : 3963,
       "fileType" : 8192
     },
-    "\/images\/search-box-black@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
-      "initialSize" : 2697,
-      "fileType" : 8192
-    },
     "\/images\/search-result-bg@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -641,6 +630,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-result-bg@2x.png",
       "initialSize" : 4706,
+      "fileType" : 8192
+    },
+    "\/images\/search-box-black@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/search-box-black@2x.png",
+      "initialSize" : 2697,
       "fileType" : 8192
     },
     "\/res\/icon\/ios\/icon-57-2x.png" : {
@@ -1053,17 +1053,6 @@
       "outputAbbreviatedPath" : "\/js\/jqueryuimapfullmin-min.js",
       "fileType" : 64
     },
-    "\/images\/detail-photos-icon@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
-      "initialSize" : 1374,
-      "fileType" : 8192
-    },
     "\/images\/cancel-button@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1073,6 +1062,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/cancel-button@2x.png",
       "initialSize" : 1231,
+      "fileType" : 8192
+    },
+    "\/images\/detail-photos-icon@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/detail-photos-icon@2x.png",
+      "initialSize" : 1374,
       "fileType" : 8192
     },
     "\/index_map.html" : {
@@ -1146,17 +1146,6 @@
       "outputAbbreviatedPath" : "\/js\/leaflet-min.js",
       "fileType" : 64
     },
-    "\/res\/icon\/icon-114.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
-      "initialSize" : 12738,
-      "fileType" : 8192
-    },
     "\/images\/star-gold@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1166,6 +1155,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/star-gold@2x.png",
       "initialSize" : 1537,
+      "fileType" : 8192
+    },
+    "\/res\/icon\/icon-114.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/res\/icon\/icon-114.png",
+      "initialSize" : 12738,
       "fileType" : 8192
     },
     "\/images\/back-button@2x.png" : {
@@ -1213,17 +1213,6 @@
       "initialSize" : 4003,
       "fileType" : 8192
     },
-    "\/images\/map-pin-pubs@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
-      "initialSize" : 3352,
-      "fileType" : 8192
-    },
     "\/res\/icon\/icon-144.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1255,6 +1244,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/res\/screen\/android\/screen-hdpi-portrait.png",
       "initialSize" : 46644,
+      "fileType" : 8192
+    },
+    "\/images\/map-pin-pubs@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/map-pin-pubs@2x.png",
+      "initialSize" : 3352,
       "fileType" : 8192
     },
     "\/res\/screen\/vp-start-640x920.png" : {
