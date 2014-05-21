@@ -54,9 +54,9 @@ vpmobile = {
         mapOptions);*/
 
     vpmobile.detailMap = L.map('map-canvas').setView([lat,long], 15);
-    L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+      L.tileLayer('http://{s}.tiles.mapbox.com/v3/danielwashbrook.i8eb33d5/{z}/{x}/{y}.png', {
           maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+          attribution: 'Map data &copy; 2014 mapbox'
     }).addTo(vpmobile.detailMap);
 
     switch(term)
@@ -231,9 +231,9 @@ vpmobile = {
 
     if (vpmobile.map == null) {
       vpmobile.map = L.map('map_canvas').setView([51.041499,-114.063690], 15);
-      L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+       L.tileLayer('http://{s}.tiles.mapbox.com/v3/danielwashbrook.i8eb33d5/{z}/{x}/{y}.png', {
             maxZoom: 18,
-            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+            attribution: 'Map data &copy; 2014 mapbox'
       }).addTo(vpmobile.map);
     }
 
