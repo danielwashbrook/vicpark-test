@@ -12,9 +12,9 @@ vpmobile = {
       if (item.listing.childName) {
         var childTerm = item.listing.childName;
         var childTermID = childTerm.replace(/[\$\s\&\/]/g, '-');
-        category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link">' + childTerm + '<div class="collapsible-set"><div data-role="collapsible"><ul  id="' + childTermID + '"   data-role="listview" data-filter="true" data-filter-theme="c" data-divider-theme="d"></ul></div></div></li>';
-        if ($.inArray(childTerm, terms) < 0) {
-          terms.push(childTerm);
+        category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link" id="' + childTermID + '" ><div class="sub-collapsible" data-role="collapsible"><h2>'+ childTerm +'</h2></div></li>';
+        if ($.inArray(childTermID, terms) < 0) {
+          terms.push(childTermID);
           switch (item.listing.term) {
             case 'Explore':
               $('#list1').append(category_html);
@@ -40,15 +40,18 @@ vpmobile = {
     $.each( vpmobile.nodes, function(i, marker) {
       if (marker.listing.childName) {
         var childTermID = marker.listing.childName.replace(/[\$\s\&\/]/g, '-').replace('&', '');
-        listing_html = '<li><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2>' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
-        console.log(childTermID);
-
-        $('#' + childTermID + ' ul').append(listing_html);
+        listing_html = '<li data-icon="false"><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2>' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
+        $('#' + childTermID + ' div').append(listing_html);
       }
 
     });
-    $("#list1").listview("refresh");
-    $("#Shop").listview("refresh");
+
+    // Now refresh/create the jQuery Mobile listing
+    $.each(terms, function(i, v) {
+      console.log(v, 'this is terms', i);
+      $('#' + v).trigger('create');
+    });
+    // $("#Shop").trigger('create');
     // $("#list3").listview("refresh");
     // $("#list4").listview("refresh");
     // $("#list6").listview("refresh");
@@ -498,9 +501,9 @@ $( window ).on( "navigate", function( event, data ) {
 });
 
 // map page
-$('#map').live('pageinit', function() {
+$('#map').on('pageinit', function() {
 
-    $('a.whole').live('click', function(e) {
+    $('a.whole').on('click', function(e) {
         vpmobile.active_listing = $(this).find('.path').html();
         $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
         e.stopPropagation();
@@ -520,7 +523,7 @@ $( document ).delegate("#map", "pageinit", function() {
 });
 
 
-$('#map').live('pageshow', function() {
+$('#map').on('pageshow', function() {
   log('#map pageshow');
 
   vpmobile.initialize();
@@ -530,7 +533,7 @@ $('#map').live('pageshow', function() {
 
 
 // search page functionality
-$('#search').live('pageinit', function() {
+$('#search').on('pageinit', function() {
   log('#search pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: false
@@ -539,7 +542,7 @@ $('#search').live('pageinit', function() {
 });
 
 // pageinit of every page
-$(document).live("pageinit", function(){
+$(document).on("pageinit", function(){
   log('pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: true
@@ -547,7 +550,7 @@ $(document).live("pageinit", function(){
 });
 
 
-$('#details').live('pageshow', function() {
+$('#details').on('pageshow', function() {
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
 
@@ -559,14 +562,14 @@ $('#details').live('pageshow', function() {
 });
 
 
-$('#main').live('pageshow', function() {
+$('#main').on('pageshow', function() {
   log('#main pageshow');
   //$('#map_canvas').gmap('refresh');
 });
 
 
 // explore page, load the listings into the lists
-$('#main').live('pageinit', function() {
+$('#main').on('pageinit', function() {
   log('#main pageinit');
 
   vpmobile.loadNodes(vpmobile.loadListings);
@@ -575,7 +578,7 @@ $('#main').live('pageinit', function() {
 });
 
 // page link from the left menu
-$('.leftmenu a[href=#map]').live('click', function(e){
+$('.leftmenu a[href=#map]').on('click', function(e){
   console.log('here1');
   //log($(this).attr("href"));
   //$.mobile.loading( 'show' );
@@ -589,7 +592,7 @@ $('.leftmenu a[href=#map]').live('click', function(e){
 });
 
 // explore category list link back to view all on map
-$("a.header-link").live("click", function (e) {
+$("a.header-link").on("click", function (e) {
   console.log('here2',$(this)[0].dataset.link);
   console.log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
@@ -606,7 +609,7 @@ function getURLParameter(name) {
 
 
 // click on link in the list, set the active listing variable
-$('.list-item-link').live('click',function(){
+$('.list-item-link').on('click',function(){
   console.log('here3');
   path = decodeURI(
     (RegExp(name + '=' + '(.+?)(&|$)').exec($(this).attr('href'))||[,null])[1]
@@ -615,7 +618,7 @@ $('.list-item-link').live('click',function(){
 });
 
 
-$("div.ui-collapsible").live("expand", function(e) {
+$("div.ui-collapsible").on("expand", function(e) {
   smart_scroll(e.target);
 });
 

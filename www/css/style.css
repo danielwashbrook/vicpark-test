@@ -432,4 +432,27 @@
   background: url("../images/map-detail-bg@2x.png") -21px -8px no-repeat;
   background-size: 345px; }
 
+#main .ui-content .ui-listview {
+  padding-left: 9px; }
+#main .ui-content .sub-collapsible a.ui-btn .ui-icon {
+  display: none; }
+#main .ui-content .sub-collapsible .ui-collapsible-heading a.ui-btn {
+  background: url("../images/bg-sub-collapsible.png") repeat-x 0 0;
+  height: 35px;
+  width: 100%;
+  margin-left: 6px; }
+#main .ui-content .sub-collapsible .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 15px;
+  font-size: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 35px; }
+#main .ui-content .sub-collapsible span.ui-btn-text {
+  font-size: 18px;
+  color: #FFF;
+  text-shadow: none;
+  line-height: 1;
+  margin-top: 0;
+  font-weight: normal; }
+
 /*# sourceMappingURL=style.css.map */

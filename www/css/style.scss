@@ -539,3 +539,35 @@
 
 }
 
+// Styling updates from new design
+#main .ui-content {
+  .ui-listview {
+    padding-left: 9px;
+  }
+  .sub-collapsible  {
+    a.ui-btn .ui-icon {
+      display: none;
+    }
+    .ui-collapsible-heading a.ui-btn {
+      background: url('../images/bg-sub-collapsible.png') repeat-x 0 0;
+      height: 35px;
+      width: 100%;
+      margin-left: 6px;
+    }
+    .ui-btn-icon-left .ui-btn-inner {
+      padding-left: 15px;
+      font-size: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 35px;
+    }
+    span.ui-btn-text {
+      font-size: 18px;
+      color: #FFF;
+      text-shadow: none;
+      line-height: 1;
+      margin-top: 0;
+      font-weight: normal;
+    }
+  }
+}
