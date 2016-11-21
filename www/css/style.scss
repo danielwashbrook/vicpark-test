@@ -157,9 +157,6 @@
       background:url('../images/search-result-bg@2x.png') top right no-repeat;
       background-size: 320px 90px;
       height:77px;
-      .list-item-link {
-        padding: .7em 20px .7em 12px;
-      }
     }
     background:url('../images/search-result-bg@2x.png') top left no-repeat;
     background-size: 100% 90px;
@@ -274,24 +271,20 @@
         background:#f4f3f3 url('../images/map-pin-special@2x.png') 95% 60% no-repeat;
         background-size: 40px;
       }
-      &.cafe {
-        background:#f4f3f3 url('../images/map-pin-cafe@2x.png') 95% 60% no-repeat;
+      &.explore {
+        background:#f4f3f3 url('../images/map-pin-explore@2x.png') 95% 60% no-repeat;
         background-size: 40px;
       }
-      &.shop {
-        background:#f4f3f3 url('../images/map-pin-shops@2x.png') 95% 60% no-repeat;
+      &.eat {
+        background:#f4f3f3 url('../images/map-pin-eat@2x.png') 95% 60% no-repeat;
         background-size: 40px;
       }
-      &.pubs {
-        background:#f4f3f3 url('../images/map-pin-pubs@2x.png') 95% 60% no-repeat;
+      &.health {
+        background:#f4f3f3 url('../images/map-pin-health@2x.png') 95% 60% no-repeat;
         background-size: 40px;
       }
-      &.play {
-        background:#f4f3f3 url('../images/map-pin-stay@2x.png') 95% 60% no-repeat;
-        background-size: 40px;
-      }
-      &.treats {
-        background:#f4f3f3 url('../images/map-pin-treats@2x.png') 95% 60% no-repeat;
+      &.services {
+        background:#f4f3f3 url('../images/map-pin-services@2x.png') 95% 60% no-repeat;
         background-size: 40px;
       }
 
@@ -310,6 +303,10 @@
         background:url('../images/search-result-bg@2x.png') top right no-repeat;
         background-size: 320px 90px;
         height:77px;
+        a.list-item-link {
+          padding: .7em 20px .7em 20px;
+        }
+
       }
       background:url('../images/search-result-bg@2x.png') top left no-repeat;
       background-size: 100% 90px;

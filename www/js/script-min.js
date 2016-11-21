@@ -10,23 +10,21 @@ vpmobile = {
       //log(i);
       //log(marker.listing);
       listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone">'+ marker.listing.phone +'</p></a></li>';
+      console.log(marker.listing.term, 'this is term');
 
       switch(marker.listing.term)
       {
-      case 'Cafe and Dining':
+      case 'Explore':
         $('#list1').append(listing_html);
         break;
-      case 'Pubs &#039;n Clubs':
+      case 'Eat &#039;n Drink':
         $('#list2').append(listing_html);
         break;
-      case 'Shop':
+      case 'Health &#039;n Beauty':
         $('#list3').append(listing_html);
         break;
-      case 'Stay &#039;n Play':
+      case 'Services':
         $('#list4').append(listing_html);
-        break;
-      case 'Treats':
-        $('#list5').append(listing_html);
         break;
       case 'Events':
         $('#list6').append(listing_html);
@@ -58,10 +56,9 @@ vpmobile = {
           maxZoom: 18,
           attribution: 'Map data &copy; 2014 mapbox'
     }).addTo(vpmobile.detailMap);
-
     switch(term)
     {
-    case 'Cafe and Dining':
+    case 'Explore':
 
         markerimage = L.icon({
           iconUrl: 'images/map-pin-cafe@2x.png',
@@ -70,7 +67,7 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Pubs &#039;n Clubs':
+      case 'Eat &#039;n Drink':
 
         markerimage = L.icon({
           iconUrl: 'images/map-pin-pubs@2x.png',
@@ -79,7 +76,7 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Shop':
+      case 'Health &#039;n Beauty':
 
         markerimage = L.icon({
           iconUrl: 'images/map-pin-shops@2x.png',
@@ -88,19 +85,10 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Stay &#039;n Play':
+      case 'Services':
 
         markerimage = L.icon({
           iconUrl: 'images/map-pin-stay@2x.png',
-          iconSize:     [45, 60],
-          popupAnchor:  [0, -50],
-          iconAnchor:   [22, 60]
-        });
-        break;
-      case 'Treats':
-
-        markerimage = L.icon({
-          iconUrl: 'images/map-pin-treats@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
@@ -307,7 +295,7 @@ vpmobile = {
       $.mobile.loading( 'show' );
 
       $.ajax({
-          url: 'http://victoriapark.org/listings/export.json?callback=?',
+          url: 'http://vicpark.localhost/listings/export.json?callback=?',
           type: 'GET',
           crossDomain: true,
           dataType: 'jsonp',
@@ -362,7 +350,7 @@ vpmobile = {
 
       switch(marker.listing.term)
       {
-      case 'Cafe and Dining':
+      case 'Explore':
 
         markerimage[i] = L.icon({
           iconUrl: 'images/map-pin-cafe@2x.png',
@@ -371,7 +359,7 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Pubs &#039;n Clubs':
+      case 'Eat &#039;n Drink':
 
         markerimage[i] = L.icon({
           iconUrl: 'images/map-pin-pubs@2x.png',
@@ -380,7 +368,7 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Shop':
+      case 'Health &#039;n Beauty':
 
         markerimage[i] = L.icon({
           iconUrl: 'images/map-pin-shops@2x.png',
@@ -389,19 +377,10 @@ vpmobile = {
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Stay &#039;n Play':
+      case 'Services':
 
         markerimage[i] = L.icon({
           iconUrl: 'images/map-pin-stay@2x.png',
-          iconSize:     [45, 60],
-          popupAnchor:  [0, -50],
-          iconAnchor:   [22, 60]
-        });
-        break;
-      case 'Treats':
-
-        markerimage[i] = L.icon({
-          iconUrl: 'images/map-pin-treats@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]

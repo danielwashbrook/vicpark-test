@@ -135,8 +135,6 @@
       background: url("../images/search-result-bg@2x.png") top right no-repeat;
       background-size: 320px 90px;
       height: 77px; }
-      #search .ui-content .ui-body-d li.ui-btn .ui-btn-inner .list-item-link {
-        padding: .7em 20px .7em 12px; }
     #search .ui-content .ui-body-d li.ui-btn .ui-li-heading {
       font-size: 26px;
       color: #83ba3b;
@@ -220,20 +218,17 @@
     #main .ui-content .header-link.events {
       background: #f4f3f3 url("../images/map-pin-special@2x.png") 95% 60% no-repeat;
       background-size: 40px; }
-    #main .ui-content .header-link.cafe {
-      background: #f4f3f3 url("../images/map-pin-cafe@2x.png") 95% 60% no-repeat;
+    #main .ui-content .header-link.explore {
+      background: #f4f3f3 url("../images/map-pin-explore@2x.png") 95% 60% no-repeat;
       background-size: 40px; }
-    #main .ui-content .header-link.shop {
-      background: #f4f3f3 url("../images/map-pin-shops@2x.png") 95% 60% no-repeat;
+    #main .ui-content .header-link.eat {
+      background: #f4f3f3 url("../images/map-pin-eat@2x.png") 95% 60% no-repeat;
       background-size: 40px; }
-    #main .ui-content .header-link.pubs {
-      background: #f4f3f3 url("../images/map-pin-pubs@2x.png") 95% 60% no-repeat;
+    #main .ui-content .header-link.health {
+      background: #f4f3f3 url("../images/map-pin-health@2x.png") 95% 60% no-repeat;
       background-size: 40px; }
-    #main .ui-content .header-link.play {
-      background: #f4f3f3 url("../images/map-pin-stay@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link.treats {
-      background: #f4f3f3 url("../images/map-pin-treats@2x.png") 95% 60% no-repeat;
+    #main .ui-content .header-link.services {
+      background: #f4f3f3 url("../images/map-pin-services@2x.png") 95% 60% no-repeat;
       background-size: 40px; }
     #main .ui-content .header-link:link, #main .ui-content .header-link:visited {
       font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -255,6 +250,8 @@
       background: url("../images/search-result-bg@2x.png") top right no-repeat;
       background-size: 320px 90px;
       height: 77px; }
+      #main .ui-content .ui-body-d li.ui-btn .ui-btn-inner a.list-item-link {
+        padding: .7em 20px .7em 20px; }
     #main .ui-content .ui-body-d li.ui-btn .ui-li-heading {
       font-size: 18px;
       color: #83ba3b;
