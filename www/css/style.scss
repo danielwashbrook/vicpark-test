@@ -123,7 +123,7 @@
 
     &.Events .ui-btn-text {
       padding-left:30px;
-      background:url("../images/icon-inset-special@2x.png") 5px 15px no-repeat ;
+      background:url("../images/menu-balloons-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
     &.Cafe .ui-btn-text {
@@ -157,6 +157,9 @@
       background:url('../images/search-result-bg@2x.png') top right no-repeat;
       background-size: 320px 90px;
       height:77px;
+      .list-item-link {
+        padding: .7em 20px .7em 12px;
+      }
     }
     background:url('../images/search-result-bg@2x.png') top left no-repeat;
     background-size: 100% 90px;
@@ -207,8 +210,8 @@
         .ui-icon {
           background:url('../images/icon-inset-dine@2x.png') left no-repeat;
           background-size:40px;
-          height:40px;
-          width:40px;
+          height:37px;
+          width:37px;
           margin-top:-18px;
           border:none;
           -moz-box-shadow: 0 0px 0 rgba(255,255,255,.4);
@@ -217,51 +220,41 @@
         }
       }
   }
-  .treats {
-    border-left:6px solid #4e4eac;  //red
-    a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-treats@2x.png') left no-repeat;
-      background-size:40px;
-    }
-  }
-  .shop {
-    border-left:6px solid #3e9ea5; //blue
-    a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-shops@2x.png') left no-repeat;
-      background-size:40px;
-    }
-  }
-  .play {
-    border-left:6px solid #cf811a; //green
-    a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-stay@2x.png') left no-repeat;
-      background-size:40px;
-    }
-  }
-  .pubs {
-    border-left:6px solid #a651a2;  // yellow
-    a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-pub@2x.png') left no-repeat;
-      background-size:40px;
-    }
-  }
-  .cafe {
-    border-left:6px solid #d71339;
-    a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-cafe@2x.png') left no-repeat;
-      background-size:40px;
-    }
-
-  }
   .events {
     border-left:6px solid #8cc63f;
     a.ui-btn .ui-icon {
-      background:url('../images/icon-inset-special@2x.png') left no-repeat;
-      background-size:40px;
+      background:url('../images/menu-balloons-icon@2x.png') left no-repeat;
+      background-size:contain;
     }
-
   }
-
+  .explore {
+    border-left:6px solid #3e9ea5; //blue
+    a.ui-btn .ui-icon {
+      background:url('../images/menu-sign-icon@2x.png') left no-repeat;
+      background-size:contain;
+    }
+  }
+  .eat {
+    border-left:6px solid #d71339;
+    a.ui-btn .ui-icon {
+      background:url('../images/menu-plate-icon@2x.png') left no-repeat;
+      background-size:contain;
+    }
+  }
+  .health {
+    border-left:6px solid #4e4eac;  //red
+    a.ui-btn .ui-icon {
+      background:url('../images/menu-heart-icon@2x.png') left no-repeat;
+      background-size:contain;
+    }
+  }
+  .services {
+    border-left:6px solid #cf811a; //green
+    a.ui-btn .ui-icon {
+      background:url('../images/menu-suitcase-icon@2x.png') left no-repeat;
+      background-size:contain;
+    }
+  }
 
     ul.ui-listview,
     .ui-collapsible-content.ui-body-d {
@@ -327,14 +320,19 @@
 
       font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;
       .ui-li-heading {
-        font-size:26px;
+        font-size:18px;
         color:#83ba3b;
         font-weight:normal;
         margin:0 0 9px 0;
       }
       .phone {
-        font-size:18px;
-        color:#918181;
+        font-size:16px;
+        color:#a29d9d;
+      }
+      .category {
+        font-size: 14px;
+        color: #a29d9d;
+        font-style: italic;
       }
     }
 }
