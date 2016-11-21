@@ -6,38 +6,52 @@ vpmobile = {
 
   loadListings: function() {
 
-    $.each( vpmobile.nodes, function(i, marker) {
-      //log(i);
-      //log(marker.listing);
-      listing_html = '<li data-icon="false"><a href="detail.html?path='+ marker.listing.path +'" class="list-item-link"><h2>'+ marker.listing.title +'</h2><p class="phone">'+ marker.listing.phone +'</p></a></li>';
-      console.log(marker.listing.term, 'this is term');
+    // Start by adding the sub-catgories to the parent catgories
+    var terms = [];
+    $.each(vpmobile.nodes, function(index, item) {
+      if (item.listing.childName) {
+        var childTerm = item.listing.childName;
+        var childTermID = childTerm.replace(/[\$\s\&\/]/g, '-');
+        category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link">' + childTerm + '<div class="collapsible-set"><div data-role="collapsible"><ul  id="' + childTermID + '"   data-role="listview" data-filter="true" data-filter-theme="c" data-divider-theme="d"></ul></div></div></li>';
+        if ($.inArray(childTerm, terms) < 0) {
+          terms.push(childTerm);
+          switch (item.listing.term) {
+            case 'Explore':
+              $('#list1').append(category_html);
+              break;
+            case 'Eat & Drink':
+              $('#list2').append(category_html);
+              break;
+            case 'Health & Beauty':
+              $('#list3').append(category_html);
+              break;
+            case 'Services':
+              $('#list4').append(category_html);
+              break;
+            case 'Events':
+              $('#list6').append(category_html);
+              break;
+          }
+        }
+      }
+    });
 
-      switch(marker.listing.term)
-      {
-      case 'Explore':
-        $('#list1').append(listing_html);
-        break;
-      case 'Eat &#039;n Drink':
-        $('#list2').append(listing_html);
-        break;
-      case 'Health &#039;n Beauty':
-        $('#list3').append(listing_html);
-        break;
-      case 'Services':
-        $('#list4').append(listing_html);
-        break;
-      case 'Events':
-        $('#list6').append(listing_html);
-        break;
+    // Add Locations to the proper Child Category
+    $.each( vpmobile.nodes, function(i, marker) {
+      if (marker.listing.childName) {
+        var childTermID = marker.listing.childName.replace(/[\$\s\&\/]/g, '-').replace('&', '');
+        listing_html = '<li><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2>' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
+        console.log(childTermID);
+
+        $('#' + childTermID + ' ul').append(listing_html);
       }
 
     });
     $("#list1").listview("refresh");
-    $("#list2").listview("refresh");
-    $("#list3").listview("refresh");
-    $("#list4").listview("refresh");
-    $("#list5").listview("refresh");
-    $("#list6").listview("refresh");
+    $("#Shop").listview("refresh");
+    // $("#list3").listview("refresh");
+    // $("#list4").listview("refresh");
+    // $("#list6").listview("refresh");
   },
 
   initializeMap: function (lat, long, term) {
@@ -56,30 +70,31 @@ vpmobile = {
           maxZoom: 18,
           attribution: 'Map data &copy; 2014 mapbox'
     }).addTo(vpmobile.detailMap);
+    console.log('here4', term);
     switch(term)
     {
     case 'Explore':
 
         markerimage = L.icon({
-          iconUrl: 'images/map-pin-cafe@2x.png',
+          iconUrl: 'images/map-pin-explore@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Eat &#039;n Drink':
+      case 'Eat & Drink':
 
         markerimage = L.icon({
-          iconUrl: 'images/map-pin-pubs@2x.png',
+          iconUrl: 'images/map-pin-eat@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Health &#039;n Beauty':
+      case 'Health & Beauty':
 
         markerimage = L.icon({
-          iconUrl: 'images/map-pin-shops@2x.png',
+          iconUrl: 'images/map-pin-health@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
@@ -88,7 +103,7 @@ vpmobile = {
       case 'Services':
 
         markerimage = L.icon({
-          iconUrl: 'images/map-pin-stay@2x.png',
+          iconUrl: 'images/map-pin-services@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
@@ -145,7 +160,7 @@ vpmobile = {
 
     vpmobile.currentListing = thedata;
 
-    vpmobile.initializeMap(vpmobile.currentListing.latitude, vpmobile.currentListing.longitude, vpmobile.currentListing.term);
+    vpmobile.initializeMap(vpmobile.currentListing.lattitude, vpmobile.currentListing.longitude, vpmobile.currentListing.term);
     log(thedata);
 
   },
@@ -180,13 +195,13 @@ vpmobile = {
       vpmobile.userLocationMarker.clearLayers();
     }
 
-    var userLocationMarkerObj = L.marker([position.coords.latitude, position.coords.longitude],
+    var userLocationMarkerObj = L.marker([position.coords.lattitude, position.coords.longitude],
       {icon: usermarkerimage});
 
     vpmobile.userLocationMarker.addLayer(userLocationMarkerObj);
 
     vpmobile.userLocationMarker.addTo(vpmobile.map);
-    //var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    //var latlng = new google.maps.LatLng(position.coords.lattitude, position.coords.longitude);
 
 /*
     usermarkerimage = {
@@ -285,6 +300,7 @@ vpmobile = {
 
   // jsonp results callback from the server
   results : function(data){
+    console.log(data,'this is data');
     vpmobile.nodes = data.nodes;
   },
 
@@ -312,24 +328,25 @@ vpmobile = {
   loadMarkers: function() {
     log('loading markers');
     var markerimage = new Array();
-
+    console.log(vpmobile.nodes, 'are we here?');
     if (getURLParameter('term') != 'null') {
       var thedata = vpmobile.nodes.filter(function (el) {
         //log(el);
         return el.listing.term == getURLParameter('term').replace("''","&#039;");
       });
     } else if (vpmobile.active_category !== undefined) {
-      log('active category:' + vpmobile.active_category);
+      console.log('active category:' + vpmobile.active_category);
       var thedata = vpmobile.nodes.filter(function (el) {
-        //log(el);
+        console.log(el, vpmobile.active_category.replace("''","&#039;"));
         return el.listing.term == vpmobile.active_category.replace("''","&#039;");
       });
     } else {
       var thedata = vpmobile.nodes;
     }
 
+
     // clear current markers
-    log('clearing markers');
+    console.log(thedata, 'clearing markers');
 
     if (vpmobile.markergroup == null) {
       vpmobile.markergroup = L.layerGroup();
@@ -353,25 +370,25 @@ vpmobile = {
       case 'Explore':
 
         markerimage[i] = L.icon({
-          iconUrl: 'images/map-pin-cafe@2x.png',
+          iconUrl: 'images/map-pin-explore@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Eat &#039;n Drink':
+      case 'Eat & Drink':
 
         markerimage[i] = L.icon({
-          iconUrl: 'images/map-pin-pubs@2x.png',
+          iconUrl: 'images/map-pin-eat@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
         });
         break;
-      case 'Health &#039;n Beauty':
+      case 'Health & Beauty':
 
         markerimage[i] = L.icon({
-          iconUrl: 'images/map-pin-shops@2x.png',
+          iconUrl: 'images/map-pin-health@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
@@ -380,7 +397,7 @@ vpmobile = {
       case 'Services':
 
         markerimage[i] = L.icon({
-          iconUrl: 'images/map-pin-stay@2x.png',
+          iconUrl: 'images/map-pin-services@2x.png',
           iconSize:     [45, 60],
           popupAnchor:  [0, -50],
           iconAnchor:   [22, 60]
@@ -397,10 +414,10 @@ vpmobile = {
         break;
       }
 
-      if (marker.listing.latitude == undefined || marker.listing.longitude == undefined) {
+      if (marker.listing.lattitude == undefined || marker.listing.longitude == undefined) {
         return;
       }
-      markerPosition = [marker.listing.latitude, marker.listing.longitude];
+      markerPosition = [marker.listing.lattitude, marker.listing.longitude];
       var markerobj = L.marker(markerPosition,
         {icon: markerimage[i]})
       .bindPopup('<div id="infobox" class="'+marker.listing.term+' openedinfobox">'+
@@ -536,7 +553,7 @@ $('#details').live('pageshow', function() {
 
     $('#map-canvas').toggle();
     //google.maps.event.trigger(vpmobile.detailMap, 'resize');
-    vpmobile.detailMap.setView([vpmobile.currentListing.latitude, vpmobile.currentListing.longitude], 15);
+    vpmobile.detailMap.setView([vpmobile.currentListing.lattitude, vpmobile.currentListing.longitude], 15);
     smart_scroll($('#map-canvas'));
   });
 });
@@ -559,9 +576,10 @@ $('#main').live('pageinit', function() {
 
 // page link from the left menu
 $('.leftmenu a[href=#map]').live('click', function(e){
+  console.log('here1');
   //log($(this).attr("href"));
   //$.mobile.loading( 'show' );
-  //log($(this)[0].dataset.link);
+  console.log('here1', $(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   vpmobile.loadMarkers();
   $.mobile.changePage($("#map")); //'index.html');//
@@ -572,7 +590,8 @@ $('.leftmenu a[href=#map]').live('click', function(e){
 
 // explore category list link back to view all on map
 $("a.header-link").live("click", function (e) {
-  //log($(this)[0].dataset.link);
+  console.log('here2',$(this)[0].dataset.link);
+  console.log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   $.mobile.changePage($("#map")); //'index.html');//
   return false;
@@ -588,6 +607,7 @@ function getURLParameter(name) {
 
 // click on link in the list, set the active listing variable
 $('.list-item-link').live('click',function(){
+  console.log('here3');
   path = decodeURI(
     (RegExp(name + '=' + '(.+?)(&|$)').exec($(this).attr('href'))||[,null])[1]
   );

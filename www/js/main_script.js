@@ -103,7 +103,7 @@ $('.leftmenu a[href=#map]').live('click', function(e){
 
 // explore category list link back to view all on map
 $("a.header-link").live("click", function (e) {
-  //log($(this)[0].dataset.link);
+  console.log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   $.mobile.changePage($("#map")); //'index.html');//
   return false;
