@@ -12,7 +12,8 @@ vpmobile = {
       if (item.listing.childName) {
         var childTerm = item.listing.childName;
         var childTermID = childTerm.replace(/[\$\s\&\/]/g, '-');
-        category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link" id="' + childTermID + '" ><div class="sub-collapsible" data-role="collapsible"><h2>'+ childTerm +'</h2></div></li>';
+        category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link" id="' + childTermID + '" ><div class="sub-collapsible" data-role="collapsible"><h2>'+ childTerm +'</h2>' +
+          '<a href="index.html?term='+ childTermID +'" class="header-link '+ item.listing.term +'" data-link="'+ childTermID +'">View all on map</a></div></li>';
         if ($.inArray(childTermID, terms) < 0) {
           terms.push(childTermID);
           switch (item.listing.term) {
