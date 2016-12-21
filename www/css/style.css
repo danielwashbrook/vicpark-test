@@ -111,38 +111,40 @@
       padding-left: 30px;
       background: url("../images/menu-balloons-icon@2x.png") 5px 15px no-repeat;
       background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Cafe .ui-btn-text {
+    #search .ui-content .ui-body-d li.ui-btn.Eat .ui-btn-text {
       padding-left: 30px;
-      background: url("../images/icon-inset-cafe@2x.png") 5px 15px no-repeat;
+      background: url("../images/menu-plate-icon@2x.png") 5px 15px no-repeat;
       background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Pubs .ui-btn-text {
+    #search .ui-content .ui-body-d li.ui-btn.Explore .ui-btn-text {
       padding-left: 30px;
-      background: url("../images/icon-inset-pub@2x.png") 5px 15px no-repeat;
+      background: url("../images/menu-sign-icon@2x.png") 5px 15px no-repeat;
       background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Shop .ui-btn-text {
+    #search .ui-content .ui-body-d li.ui-btn.Services .ui-btn-text {
       padding-left: 30px;
-      background: url("../images/icon-inset-shops@2x.png") 5px 15px no-repeat;
+      background: url("../images/menu-suitcase-icon@2x.png") 5px 15px no-repeat;
       background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Stay .ui-btn-text {
+    #search .ui-content .ui-body-d li.ui-btn.Health .ui-btn-text {
       padding-left: 30px;
-      background: url("../images/icon-inset-stay@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Treats .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/icon-inset-treats@2x.png") 5px 15px no-repeat;
+      background: url("../images/menu-heart-icon@2x.png") 5px 15px no-repeat;
       background-size: 35px; }
     #search .ui-content .ui-body-d li.ui-btn .ui-btn-inner {
       background: url("../images/search-result-bg@2x.png") top right no-repeat;
       background-size: 320px 90px;
       height: 77px; }
     #search .ui-content .ui-body-d li.ui-btn .ui-li-heading {
-      font-size: 26px;
+      font-size: 22px;
       color: #83ba3b;
       font-weight: normal;
-      margin: 0 0 9px 0; }
+      margin: 0 0 7px 0; }
     #search .ui-content .ui-body-d li.ui-btn .phone {
       font-size: 18px;
-      color: #918181; }
+      color: #918181;
+      margin-bottom: 0; }
+    #search .ui-content .ui-body-d li.ui-btn .category {
+      margin: 0;
+      font-size: 16px;
+      color: #918181;
+      font-style: italic; }
 
 .ui-input-search.ui-focus,
 .ui-input-text.ui-focus {
@@ -299,20 +301,17 @@
   #details h2.Events {
     background: url("../images/icon-inset-special@2x.png") right no-repeat;
     background-size: 40px; }
-  #details h2.Cafe {
-    background: url("../images/icon-inset-cafe@2x.png") right no-repeat;
+  #details h2.Eat {
+    background: url("../images/menu-plate-icon@2x.png") right no-repeat;
     background-size: 40px; }
-  #details h2.Pubs {
-    background: url("../images/icon-inset-pub@2x.png") right no-repeat;
+  #details h2.Health {
+    background: url("../images/menu-heart-icon@2x.png") right no-repeat;
     background-size: 40px; }
-  #details h2.Shop {
-    background: url("../images/icon-inset-shops@2x.png") right no-repeat;
+  #details h2.Explore {
+    background: url("../images/menu-sign-icon@2x.png") right no-repeat;
     background-size: 40px; }
-  #details h2.Stay {
-    background: url("../images/icon-inset-stay@2x.png") right no-repeat;
-    background-size: 40px; }
-  #details h2.Treats {
-    background: url("../images/icon-inset-treats@2x.png") right no-repeat;
+  #details h2.Services {
+    background: url("../images/menu-suitcase-icon@2x.png") right no-repeat;
     background-size: 40px; }
 #details h3 {
   border-top: 1px solid #83ba3b;
@@ -392,23 +391,20 @@
     text-decoration: underline; }
   #infobox a.whole {
     text-decoration: none; }
-  #infobox.Shop {
-    background: url("../images/icon-inset-shops@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  #infobox.Explore {
+    background: url("../images/menu-sign-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
     background-size: 50px; }
-  #infobox.Pubs {
-    background: url("../images/icon-inset-pub@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  #infobox.Eat {
+    background: url("../images/menu-plate-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
     background-size: 50px; }
   #infobox.Events {
     background: url("../images/icon-inset-special@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
     background-size: 50px; }
-  #infobox.Cafe {
-    background: url("../images/icon-inset-cafe@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  #infobox.Health {
+    background: url("../images/menu-heart-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
     background-size: 50px; }
-  #infobox.Stay {
-    background: url("../images/icon-inset-stay@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox.Treats {
-    background: url("../images/icon-inset-treats@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  #infobox.Services {
+    background: url("../images/menu-suitcase-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
     background-size: 50px; }
   #infobox h4 {
     font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -417,7 +413,7 @@
     color: #9dde47;
     font-size: 24px;
     margin: 0 0 10px 0;
-    height: 86px;
+    height: 95px;
     overflow: hidden; }
   #infobox phone {
     font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -425,6 +421,13 @@
     font-stretch: normal;
     font-size: 20px;
     margin: 10px 0; }
+  #infobox .category {
+    margin: 0;
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: italic;
+    font-size: 16px; }
   #infobox .path {
     display: none; }
 
@@ -433,14 +436,16 @@
   background-size: 345px; }
 
 #main .ui-content .ui-listview {
-  padding-left: 9px; }
+  padding-left: 15px; }
+#main .ui-content .sub-collapsible .header-link {
+  margin: -4px -15px 0px -15px; }
 #main .ui-content .sub-collapsible a.ui-btn .ui-icon {
   display: none; }
 #main .ui-content .sub-collapsible .ui-collapsible-heading a.ui-btn {
   background: url("../images/bg-sub-collapsible.png") repeat-x 0 0;
   height: 35px;
   width: 100%;
-  margin-left: 6px; }
+  margin-left: 0px; }
 #main .ui-content .sub-collapsible .ui-btn-icon-left .ui-btn-inner {
   padding-left: 15px;
   font-size: 20px;
@@ -454,5 +459,34 @@
   line-height: 1;
   margin-top: 0;
   font-weight: normal; }
+#main .ui-content .sub-collapsible .ui-body-d li {
+  background: url("../images/search-result-bg@2x.png") top left no-repeat;
+  background-size: 100% 90px;
+  height: 85px;
+  margin-bottom: -10px;
+  border: none;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  margin-left: -15px; }
+  #main .ui-content .sub-collapsible .ui-body-d li a {
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    padding: 13px 20px 12px 20px; }
+#main .ui-content .sub-collapsible .ui-li-heading {
+  font-size: 18px;
+  color: #83ba3b;
+  font-weight: normal;
+  margin: 0 0 0px 0; }
+#main .ui-content .sub-collapsible .phone {
+  font-size: 16px;
+  color: #a29d9d;
+  margin: 0; }
+#main .ui-content .sub-collapsible .term {
+  font-size: 14px;
+  color: #a29d9d;
+  font-style: italic;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

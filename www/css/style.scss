@@ -126,29 +126,24 @@
       background:url("../images/menu-balloons-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
-    &.Cafe .ui-btn-text {
+    &.Eat .ui-btn-text {
       padding-left:30px;
-      background:url("../images/icon-inset-cafe@2x.png") 5px 15px no-repeat ;
+      background:url("../images/menu-plate-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
-    &.Pubs .ui-btn-text {
+    &.Explore .ui-btn-text {
       padding-left:30px;
-      background:url("../images/icon-inset-pub@2x.png") 5px 15px no-repeat ;
+      background:url("../images/menu-sign-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
-    &.Shop .ui-btn-text {
+    &.Services .ui-btn-text {
       padding-left:30px;
-      background:url("../images/icon-inset-shops@2x.png") 5px 15px no-repeat ;
+      background:url("../images/menu-suitcase-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
-    &.Stay .ui-btn-text {
+    &.Health .ui-btn-text {
       padding-left:30px;
-      background:url("../images/icon-inset-stay@2x.png") 5px 15px no-repeat ;
-      background-size:35px;
-    }
-    &.Treats .ui-btn-text {
-      padding-left:30px;
-      background:url("../images/icon-inset-treats@2x.png") 5px 15px no-repeat ;
+      background:url("../images/menu-heart-icon@2x.png") 5px 15px no-repeat ;
       background-size:35px;
     }
 
@@ -167,14 +162,21 @@
 
     font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;
     .ui-li-heading {
-      font-size:26px;
+      font-size:22px;
       color:#83ba3b;
       font-weight:normal;
-      margin:0 0 9px 0;
+      margin:0 0 7px 0;
     }
     .phone {
       font-size:18px;
       color:#918181;
+      margin-bottom: 0;
+    }
+    .category {
+      margin: 0;
+      font-size: 16px;
+      color:#918181;
+      font-style: italic;
     }
   }
 }
@@ -376,25 +378,21 @@
       background-size: 40px;
 
     }
-    &.Cafe  {
-      background:url("../images/icon-inset-cafe@2x.png") right no-repeat ;
+    &.Eat  {
+      background:url("../images/menu-plate-icon@2x.png") right no-repeat ;
       background-size: 40px;
 
     }
-    &.Pubs  {
-      background:url("../images/icon-inset-pub@2x.png") right no-repeat ;
+    &.Health  {
+      background:url("../images/menu-heart-icon@2x.png") right no-repeat ;
       background-size: 40px;
     }
-    &.Shop {
-      background:url("../images/icon-inset-shops@2x.png") right no-repeat ;
+    &.Explore {
+      background:url("../images/menu-sign-icon@2x.png") right no-repeat ;
       background-size: 40px;
     }
-    &.Stay {
-      background:url("../images/icon-inset-stay@2x.png") right no-repeat ;
-      background-size: 40px;
-    }
-    &.Treats {
-      background:url("../images/icon-inset-treats@2x.png") right no-repeat ;
+    &.Services {
+      background:url("../images/menu-suitcase-icon@2x.png") right no-repeat ;
       background-size: 40px;
     }
   }
@@ -490,28 +488,24 @@
   text-shadow:0 -1px #000000;
   /*-webkit-box-shadow: 0 0  8px #000;
   box-shadow: 0 0 8px #000;*/
-  &.Shop {
-    background: url('../images/icon-inset-shops@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+  &.Explore {
+    background: url('../images/menu-sign-icon@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
     background-size:50px;
   }
-  &.Pubs {
-    background: url('../images/icon-inset-pub@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+  &.Eat {
+    background: url('../images/menu-plate-icon@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
     background-size:50px;
   }
   &.Events {
     background: url('../images/icon-inset-special@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
     background-size:50px;
   }
-  &.Cafe {
-    background: url('../images/icon-inset-cafe@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+  &.Health {
+    background: url('../images/menu-heart-icon@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
     background-size:50px;
   }
-  &.Stay {
-    background: url('../images/icon-inset-stay@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
-    background-size:50px;
-  }
-  &.Treats {
-    background: url('../images/icon-inset-treats@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
+  &.Services {
+    background: url('../images/menu-suitcase-icon@2x.png') 10px 18px no-repeat, url('../images/icon-flat-info@2x.png') 95% 85% no-repeat;
     background-size:50px;
   }
   h4 {
@@ -519,13 +513,19 @@
     color:#9dde47;
     font-size:24px;
     margin:0 0 10px 0;
-    height: 86px;
+    height: 95px;
     overflow: hidden;
   }
   phone {
     font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
     font-size:20px;
     margin:10px 0;
+  }
+  .category {
+    margin: 0;
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+    font-style: italic;
+    font-size: 16px;
   }
   .path {
     display:none;
@@ -542,9 +542,12 @@
 // Styling updates from new design
 #main .ui-content {
   .ui-listview {
-    padding-left: 9px;
+    padding-left: 15px;
   }
   .sub-collapsible  {
+    .header-link {
+      margin: -4px -15px 0px -15px;
+    }
     a.ui-btn .ui-icon {
       display: none;
     }
@@ -552,7 +555,7 @@
       background: url('../images/bg-sub-collapsible.png') repeat-x 0 0;
       height: 35px;
       width: 100%;
-      margin-left: 6px;
+      margin-left: 0px;
     }
     .ui-btn-icon-left .ui-btn-inner {
       padding-left: 15px;
@@ -568,6 +571,40 @@
       line-height: 1;
       margin-top: 0;
       font-weight: normal;
+    }
+    .ui-body-d li {
+      background: url('../images/search-result-bg@2x.png') top left no-repeat;
+      background-size: 100% 90px;
+      height: 85px;
+      margin-bottom: -10px;
+      border: none;
+      font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+      font-weight: 300;
+      font-stretch: normal;
+      margin-left: -15px;
+      a {
+        text-decoration: none;
+        font-weight: normal;
+        display: block;
+        padding: 13px 20px 12px 20px;
+      }
+    }
+    .ui-li-heading {
+      font-size:18px;
+      color:#83ba3b;
+      font-weight:normal;
+      margin:0 0 0px 0;
+    }
+    .phone {
+      font-size:16px;
+      color:#a29d9d;
+      margin: 0;
+    }
+    .term {
+      font-size: 14px;
+      color: #a29d9d;
+      font-style: italic;
+      margin: 0;
     }
   }
 }

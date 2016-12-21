@@ -13,7 +13,7 @@ vpmobile = {
         var childTerm = item.listing.childName;
         var childTermID = childTerm.replace(/[\$\s\&\/]/g, '-');
         category_html = '<li data-role="collapsible" data-icon="false" class="list-item-link" id="' + childTermID + '" ><div class="sub-collapsible" data-role="collapsible"><h2>'+ childTerm +'</h2>' +
-          '<a href="index.html?term='+ childTermID +'" class="header-link '+ item.listing.term +'" data-link="'+ childTermID +'">View all on map</a></div></li>';
+          '<a href="index.html?childName='+ childTermID +'" class="header-link '+ item.listing.term +'" data-link="'+ childTermID +'">View all on map</a></div></li>';
         if ($.inArray(childTermID, terms) < 0) {
           terms.push(childTermID);
           switch (item.listing.term) {
@@ -41,7 +41,7 @@ vpmobile = {
     $.each( vpmobile.nodes, function(i, marker) {
       if (marker.listing.childName) {
         var childTermID = marker.listing.childName.replace(/[\$\s\&\/]/g, '-').replace('&', '');
-        listing_html = '<li data-icon="false"><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2>' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
+        listing_html = '<li data-icon="false"><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2 class="ui-li-heading">' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
         $('#' + childTermID + ' div').append(listing_html);
       }
 
@@ -49,7 +49,6 @@ vpmobile = {
 
     // Now refresh/create the jQuery Mobile listing
     $.each(terms, function(i, v) {
-      console.log(v, 'this is terms', i);
       $('#' + v).trigger('create');
     });
     // $("#Shop").trigger('create');
@@ -74,7 +73,6 @@ vpmobile = {
           maxZoom: 18,
           attribution: 'Map data &copy; 2014 mapbox'
     }).addTo(vpmobile.detailMap);
-    console.log('here4', term);
     switch(term)
     {
     case 'Explore':
@@ -285,7 +283,7 @@ vpmobile = {
     $.each( thedata, function(i, node) {
       //log(i);
       //log(node.listing);
-      listing_html = '<li data-icon="false" class="'+ node.listing.term +'"><a href="detail.html?path='+ node.listing.path +'" class="list-item-link"><h2>'+ node.listing.title +'</h2><p class="phone">'+ node.listing.phone +'</p></a>';
+      listing_html = '<li data-icon="false" class="'+ node.listing.term +'"><a href="detail.html?path='+ node.listing.path +'" class="list-item-link"><h2>'+ node.listing.title +'</h2><p class="phone">'+ node.listing.phone +'</p><p class="category">'+ node.listing.childName +'</p></a>';
       listing_html += '<span style="display:none;">'+node.listing.body + '</span></li>';
 
       $('#search-list').append(listing_html);
@@ -304,7 +302,6 @@ vpmobile = {
 
   // jsonp results callback from the server
   results : function(data){
-    console.log(data,'this is data');
     vpmobile.nodes = data.nodes;
   },
 
@@ -324,7 +321,6 @@ vpmobile = {
       });
 
     } else {
-      log('already loaded!');
       callbackfunction(optional_argument);
     }
   },
@@ -332,25 +328,26 @@ vpmobile = {
   loadMarkers: function() {
     log('loading markers');
     var markerimage = new Array();
-    console.log(vpmobile.nodes, 'are we here?');
-    if (getURLParameter('term') != 'null') {
-      var thedata = vpmobile.nodes.filter(function (el) {
-        //log(el);
-        return el.listing.term == getURLParameter('term').replace("''","&#039;");
+    if (getURLParameter('childName') != 'null') {
+      var thedataBefore = vpmobile.nodes.filter(function (el) {
+        var modifiedChildName = el.listing.childName.replace(/[\$\s\&\/]/g, '-').replace('&', '');
+        return modifiedChildName == getURLParameter('childName').replace("''","&#039;");
       });
-    } else if (vpmobile.active_category !== undefined) {
-      console.log('active category:' + vpmobile.active_category);
-      var thedata = vpmobile.nodes.filter(function (el) {
-        console.log(el, vpmobile.active_category.replace("''","&#039;"));
+    } else if ((vpmobile.active_category !== undefined)) {
+      var thedataBefore = vpmobile.nodes.filter(function (el) {
         return el.listing.term == vpmobile.active_category.replace("''","&#039;");
       });
     } else {
-      var thedata = vpmobile.nodes;
+      var thedataBefore = vpmobile.nodes;
     }
 
+    var thedataTemp = thedataBefore.filter(function (el) {
+      return el.listing.term !== '';
+    });
+    var thedata = thedataTemp.filter(function (el) {
+      return el.listing.longitude != '0';
+    });
 
-    // clear current markers
-    console.log(thedata, 'clearing markers');
 
     if (vpmobile.markergroup == null) {
       vpmobile.markergroup = L.layerGroup();
@@ -418,9 +415,14 @@ vpmobile = {
         break;
       }
 
-      if (marker.listing.lattitude == undefined || marker.listing.longitude == undefined) {
+      if ((marker.listing.lattitude == undefined) || (marker.listing.longitude == undefined) || (marker.listing.lattitude == 0) || (marker.listing.longitude == 0)) {
         return;
       }
+
+      if (marker.listing.termId == null) {
+        return;
+      }
+
       markerPosition = [marker.listing.lattitude, marker.listing.longitude];
       var markerobj = L.marker(markerPosition,
         {icon: markerimage[i]})
@@ -428,6 +430,7 @@ vpmobile = {
           '<a href="detail.html?path='+marker.listing.path+'" class="whole">'+
             '<h4>'+marker.listing.title+'</h4>'+
             '<phone>'+marker.listing.phone+'</phone>'+
+            '<p class="category">'+marker.listing.childName+'</p>'+
             '<p class="path">'+marker.listing.path+'</p>'+
         '</a></div>');
       //log(markerimage[i]);
@@ -580,22 +583,22 @@ $('#main').on('pageinit', function() {
 
 // page link from the left menu
 $('.leftmenu a[href=#map]').on('click', function(e){
-  console.log('here1');
-  //log($(this).attr("href"));
-  //$.mobile.loading( 'show' );
-  console.log('here1', $(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   vpmobile.loadMarkers();
   $.mobile.changePage($("#map")); //'index.html');//
-  infobox.close();
+  // infobox.close();
   $('#mypanel').panel( "close" );
   return false;
 });
 
+$('.event-linkChange').on('click', function(e) {
+  vpmobile.active_category = $(this)[0].dataset.link;
+  vpmobile.loadMarkers();
+  $.mobile.changePage($("#map"));
+})
+
 // explore category list link back to view all on map
 $("a.header-link").on("click", function (e) {
-  console.log('here2',$(this)[0].dataset.link);
-  console.log($(this)[0].dataset.link);
   vpmobile.active_category = $(this)[0].dataset.link;
   $.mobile.changePage($("#map")); //'index.html');//
   return false;
@@ -611,7 +614,6 @@ function getURLParameter(name) {
 
 // click on link in the list, set the active listing variable
 $('.list-item-link').on('click',function(){
-  console.log('here3');
   path = decodeURI(
     (RegExp(name + '=' + '(.+?)(&|$)').exec($(this).attr('href'))||[,null])[1]
   );
