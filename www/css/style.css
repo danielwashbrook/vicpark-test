@@ -1,12 +1,15 @@
 /* SASS Styles for victoria park mobile site */
+/* line 4, style.scss */
 .ui-body-a,
 .ui-body-c,
 .ui-body-d {
   font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
   font-stretch: normal;
-  text-shadow: 0 0px 0 #fff; }
+  text-shadow: 0 0px 0 #fff;
+}
 
+/* line 11, style.scss */
 .ui-bar-c {
   background: url("../images/header-white@2x.png") repeat-x;
   background-size: 320px 80px;
@@ -14,10 +17,14 @@
   margin-bottom: -29px;
   z-index: 3;
   position: relative;
-  border: 1px solid transparent; }
-  .ui-bar-c.ui-listview-filter {
-    background: #bfb5b5; }
+  border: 1px solid transparent;
+}
+/* line 19, style.scss */
+.ui-bar-c.ui-listview-filter {
+  background: #bfb5b5;
+}
 
+/* line 25, style.scss */
 .ui-icon-bars {
   background: url("../images/menu-button@2x.png") top left no-repeat;
   background-size: 42px;
@@ -25,8 +32,10 @@
   height: 42px;
   -webkit-border-radius: 0;
   border-radius: 0;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 34, style.scss */
 .ui-header > .ui-btn {
   -moz-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.3);
@@ -37,256 +46,409 @@
   background-image: none;
   background: transparent;
   width: 42px;
-  height: 42px; }
+  height: 42px;
+}
 
+/* line 47, style.scss */
 .ui-btn-inner {
-  border: none; }
+  border: none;
+}
 
+/* line 51, style.scss */
 .ui-header .logo-header {
   height: 42px;
   top: 2px;
-  right: 10px; }
+  right: 10px;
+}
 
+/* line 57, style.scss */
 #mypanel {
   background: #3c3c3c url("../images/logo-white@2x.png") 70% 97% no-repeat;
-  background-size: 200px; }
-  #mypanel .search {
-    margin-bottom: 15px; }
-  #mypanel .leftmenu {
-    margin: 0;
-    padding: 0; }
-    #mypanel .leftmenu .mapicon {
-      background: url("../images/menu-icons-map@2x.png") left no-repeat; }
-    #mypanel .leftmenu .explore {
-      background: url("../images/menu-icons-explore@2x.png") left no-repeat; }
-    #mypanel .leftmenu .events {
-      background: url("../images/menu-icons-special@2x.png") left no-repeat; }
-    #mypanel .leftmenu .bookmarks {
-      background: url("../images/menu-icons-bookmarks@2x.png") left no-repeat; }
-    #mypanel .leftmenu li {
-      background: url("../images/separator@2x.png") bottom no-repeat;
-      list-style: none;
-      margin: 0;
-      background-size: 80% 2px; }
-      #mypanel .leftmenu li a {
-        display: inline-block;
-        height: 60px;
-        padding-left: 50px;
-        background-size: 40px !important;
-        line-height: 60px;
-        color: white;
-        text-decoration: none;
-        font-weight: normal; }
-      #mypanel .leftmenu li:last-child {
-        display: none; }
+  background-size: 200px;
+}
+/* line 60, style.scss */
+#mypanel .search {
+  margin-bottom: 15px;
+}
+/* line 63, style.scss */
+#mypanel .leftmenu {
+  margin: 0;
+  padding: 0;
+}
+/* line 67, style.scss */
+#mypanel .leftmenu .mapicon {
+  background: url("../images/menu-icons-map@2x.png") left no-repeat;
+}
+/* line 70, style.scss */
+#mypanel .leftmenu .explore {
+  background: url("../images/menu-icons-explore@2x.png") left no-repeat;
+}
+/* line 73, style.scss */
+#mypanel .leftmenu .events {
+  background: url("../images/menu-icons-special@2x.png") left no-repeat;
+}
+/* line 76, style.scss */
+#mypanel .leftmenu .bookmarks {
+  background: url("../images/menu-icons-bookmarks@2x.png") left no-repeat;
+}
+/* line 79, style.scss */
+#mypanel .leftmenu li {
+  background: url("../images/separator@2x.png") bottom no-repeat;
+  list-style: none;
+  margin: 0;
+  background-size: 80% 2px;
+}
+/* line 84, style.scss */
+#mypanel .leftmenu li a {
+  display: inline-block;
+  height: 60px;
+  padding-left: 50px;
+  background-size: 40px !important;
+  line-height: 60px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+/* line 94, style.scss */
+#mypanel .leftmenu li:last-child {
+  display: none;
+}
 
+/* line 100, style.scss */
 .map {
   width: 100%;
-  height: 400px; }
+  height: 400px;
+}
 
+/* line 104, style.scss */
 #main .ui-body-c {
-  background: #bfb5b5; }
+  background: #bfb5b5;
+}
 
+/* line 108, style.scss */
 #search .ui-content {
   background: transparent;
-  color: #8f8888; }
-  #search .ui-content #search-list {
-    min-height: 450px;
-    z-index: 99;
-    position: relative;
-    top: -10px; }
-  #search .ui-content ul.ui-listview,
-  #search .ui-content .ui-collapsible-content.ui-body-d {
-    background: #bfb5b5; }
-  #search .ui-content .ui-body-d li.ui-btn {
-    background: url("../images/search-result-bg@2x.png") top left no-repeat;
-    background-size: 100% 90px;
-    height: 85px;
-    margin-bottom: -10px;
-    border: none;
-    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 300;
-    font-stretch: normal; }
-    #search .ui-content .ui-body-d li.ui-btn.Events .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/menu-balloons-icon@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Eat .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/menu-plate-icon@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Explore .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/menu-sign-icon@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Services .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/menu-suitcase-icon@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn.Health .ui-btn-text {
-      padding-left: 30px;
-      background: url("../images/menu-heart-icon@2x.png") 5px 15px no-repeat;
-      background-size: 35px; }
-    #search .ui-content .ui-body-d li.ui-btn .ui-btn-inner {
-      background: url("../images/search-result-bg@2x.png") top right no-repeat;
-      background-size: 320px 90px;
-      height: 77px; }
-    #search .ui-content .ui-body-d li.ui-btn .ui-li-heading {
-      font-size: 22px;
-      color: #83ba3b;
-      font-weight: normal;
-      margin: 0 0 7px 0; }
-    #search .ui-content .ui-body-d li.ui-btn .phone {
-      font-size: 18px;
-      color: #918181;
-      margin-bottom: 0; }
-    #search .ui-content .ui-body-d li.ui-btn .category {
-      margin: 0;
-      font-size: 16px;
-      color: #918181;
-      font-style: italic; }
+  color: #8f8888;
+}
+/* line 111, style.scss */
+#search .ui-content #search-list {
+  min-height: 450px;
+  z-index: 99;
+  position: relative;
+  top: -10px;
+}
+/* line 117, style.scss */
+#search .ui-content ul.ui-listview,
+#search .ui-content .ui-collapsible-content.ui-body-d {
+  background: #bfb5b5;
+}
+/* line 122, style.scss */
+#search .ui-content .ui-body-d li.ui-btn {
+  background: url("../images/search-result-bg@2x.png") top left no-repeat;
+  background-size: 100% 90px;
+  height: 85px;
+  margin-bottom: -10px;
+  border: none;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+}
+/* line 124, style.scss */
+#search .ui-content .ui-body-d li.ui-btn.Events .ui-btn-text {
+  padding-left: 30px;
+  background: url("../images/menu-balloons-icon@2x.png") 5px 15px no-repeat;
+  background-size: 35px;
+}
+/* line 129, style.scss */
+#search .ui-content .ui-body-d li.ui-btn.Eat .ui-btn-text {
+  padding-left: 30px;
+  background: url("../images/menu-plate-icon@2x.png") 5px 15px no-repeat;
+  background-size: 35px;
+}
+/* line 134, style.scss */
+#search .ui-content .ui-body-d li.ui-btn.Explore .ui-btn-text {
+  padding-left: 30px;
+  background: url("../images/menu-sign-icon@2x.png") 5px 15px no-repeat;
+  background-size: 35px;
+}
+/* line 139, style.scss */
+#search .ui-content .ui-body-d li.ui-btn.Services .ui-btn-text {
+  padding-left: 30px;
+  background: url("../images/menu-suitcase-icon@2x.png") 5px 15px no-repeat;
+  background-size: 35px;
+}
+/* line 144, style.scss */
+#search .ui-content .ui-body-d li.ui-btn.Health .ui-btn-text {
+  padding-left: 30px;
+  background: url("../images/menu-heart-icon@2x.png") 5px 15px no-repeat;
+  background-size: 35px;
+}
+/* line 151, style.scss */
+#search .ui-content .ui-body-d li.ui-btn .ui-btn-inner {
+  background: url("../images/search-result-bg@2x.png") top right no-repeat;
+  background-size: 320px 90px;
+  height: 77px;
+}
+/* line 164, style.scss */
+#search .ui-content .ui-body-d li.ui-btn .ui-li-heading {
+  font-size: 22px;
+  color: #83ba3b;
+  font-weight: normal;
+  margin: 0 0 7px 0;
+}
+/* line 170, style.scss */
+#search .ui-content .ui-body-d li.ui-btn .phone {
+  font-size: 18px;
+  color: #918181;
+  margin-bottom: 0;
+}
+/* line 175, style.scss */
+#search .ui-content .ui-body-d li.ui-btn .category {
+  margin: 0;
+  font-size: 16px;
+  color: #918181;
+  font-style: italic;
+}
 
+/* line 183, style.scss */
 .ui-input-search.ui-focus,
 .ui-input-text.ui-focus {
   box-shadow: none;
   -moz-box-shadow: none;
-  -webkit-box-shadow: none; }
+  -webkit-box-shadow: none;
+}
 
+/* line 190, style.scss */
 #main .ui-content {
   background: transparent;
   color: #8f8888;
-  padding-top: 0; }
-  #main .ui-content .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
-    padding-left: 55px;
-    font-size: 20px; }
-  #main .ui-content .ui-collapsible-heading a.ui-btn {
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 600;
-    font-stretch: normal;
-    color: #a29d9d;
-    background: url("../images/category-bg@2x.png") 0 -7px repeat-x;
-    background-size: 320px 77px;
-    padding: 5px 5px;
-    /*-moz-box-shadow:    inset 0px -1px 3px #7a6762;
-    -webkit-box-shadow: inset 0px -1px 3px #7a6762;
-    box-shadow:         inset 0px -1px 3px #7a6762;*/
-    text-shadow: 1px 1px 0 #d8d2d2;
-    margin-bottom: 0px; }
-    #main .ui-content .ui-collapsible-heading a.ui-btn .ui-icon {
-      background: url("../images/icon-inset-dine@2x.png") left no-repeat;
-      background-size: 40px;
-      height: 37px;
-      width: 37px;
-      margin-top: -18px;
-      border: none;
-      -moz-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4);
-      -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4);
-      box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4); }
-  #main .ui-content .events {
-    border-left: 6px solid #8cc63f; }
-    #main .ui-content .events a.ui-btn .ui-icon {
-      background: url("../images/menu-balloons-icon@2x.png") left no-repeat;
-      background-size: contain; }
-  #main .ui-content .explore {
-    border-left: 6px solid #3e9ea5; }
-    #main .ui-content .explore a.ui-btn .ui-icon {
-      background: url("../images/menu-sign-icon@2x.png") left no-repeat;
-      background-size: contain; }
-  #main .ui-content .eat {
-    border-left: 6px solid #d71339; }
-    #main .ui-content .eat a.ui-btn .ui-icon {
-      background: url("../images/menu-plate-icon@2x.png") left no-repeat;
-      background-size: contain; }
-  #main .ui-content .health {
-    border-left: 6px solid #4e4eac; }
-    #main .ui-content .health a.ui-btn .ui-icon {
-      background: url("../images/menu-heart-icon@2x.png") left no-repeat;
-      background-size: contain; }
-  #main .ui-content .services {
-    border-left: 6px solid #cf811a; }
-    #main .ui-content .services a.ui-btn .ui-icon {
-      background: url("../images/menu-suitcase-icon@2x.png") left no-repeat;
-      background-size: contain; }
-  #main .ui-content ul.ui-listview,
-  #main .ui-content .ui-collapsible-content.ui-body-d {
-    background: #bfb5b5; }
-  #main .ui-content .header-link {
-    margin: -5px -15px 7px -15px;
-    padding: 10px 10px 10px 20px;
-    background: #f4f3f3 url("../images/detail-icon-address@2x.png") 95% 60% no-repeat;
-    background-size: 40px;
-    display: block;
-    text-decoration: none; }
-    #main .ui-content .header-link.Events {
-      background: #f4f3f3 url("../images/map-pin-special@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link.Explore {
-      background: #f4f3f3 url("../images/map-pin-explore@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link.Eat {
-      background: #f4f3f3 url("../images/map-pin-eat@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link.Health {
-      background: #f4f3f3 url("../images/map-pin-health@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link.Services {
-      background: #f4f3f3 url("../images/map-pin-services@2x.png") 95% 60% no-repeat;
-      background-size: 40px; }
-    #main .ui-content .header-link:link, #main .ui-content .header-link:visited {
-      font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-      font-weight: 300;
-      font-stretch: normal;
-      color: #afa4a4;
-      font-weight: normal;
-      font-size: 22px; }
-  #main .ui-content .ui-body-d li.ui-btn {
-    background: url("../images/search-result-bg@2x.png") top left no-repeat;
-    background-size: 100% 90px;
-    height: 85px;
-    margin-bottom: -10px;
-    border: none;
-    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 300;
-    font-stretch: normal; }
-    #main .ui-content .ui-body-d li.ui-btn .ui-btn-inner {
-      background: url("../images/search-result-bg@2x.png") top right no-repeat;
-      background-size: 320px 90px;
-      height: 77px; }
-      #main .ui-content .ui-body-d li.ui-btn .ui-btn-inner a.list-item-link {
-        padding: .7em 20px .7em 20px; }
-    #main .ui-content .ui-body-d li.ui-btn .ui-li-heading {
-      font-size: 18px;
-      color: #83ba3b;
-      font-weight: normal;
-      margin: 0 0 9px 0; }
-    #main .ui-content .ui-body-d li.ui-btn .phone {
-      font-size: 16px;
-      color: #a29d9d; }
-    #main .ui-content .ui-body-d li.ui-btn .term {
-      font-size: 14px;
-      color: #a29d9d;
-      font-style: italic; }
+  padding-top: 0;
+}
+/* line 193, style.scss */
+#main .ui-content .event-linkChange {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  color: #a29d9d;
+  background: url(../images/category-bg@2x.png) 0 -6px repeat-x;
+  background-size: 320px 77px;
+  padding: 0;
+  text-shadow: 1px 1px 0 #d8d2d2;
+  margin-bottom: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 205, style.scss */
+#main .ui-content .event-linkChange h6 {
+  padding: 18px 0 18px 55px;
+  font-size: 20px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  color: #a29d9d;
+  text-shadow: 1px 1px 0 #d8d2d2;
+  margin: 0 0;
+  background: url(../images/menu-balloons-icon@2x.png) 15px no-repeat;
+  background-size: auto 37px;
+}
+/* line 219, style.scss */
+#main .ui-content .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 55px;
+  font-size: 20px;
+}
+/* line 223, style.scss */
+#main .ui-content .ui-collapsible-heading a.ui-btn {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  color: #a29d9d;
+  background: url("../images/category-bg@2x.png") 0 -7px repeat-x;
+  background-size: 320px 77px;
+  padding: 5px 5px;
+  /*-moz-box-shadow:    inset 0px -1px 3px #7a6762;
+  -webkit-box-shadow: inset 0px -1px 3px #7a6762;
+  box-shadow:         inset 0px -1px 3px #7a6762;*/
+  text-shadow: 1px 1px 0 #d8d2d2;
+  margin-bottom: 0px;
+}
+/* line 234, style.scss */
+#main .ui-content .ui-collapsible-heading a.ui-btn .ui-icon {
+  background: url("../images/icon-inset-dine@2x.png") left no-repeat;
+  background-size: 40px;
+  height: 37px;
+  width: 37px;
+  margin-top: -18px;
+  border: none;
+  -moz-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0px 0 rgba(255, 255, 255, 0.4);
+}
+/* line 247, style.scss */
+#main .ui-content .events {
+  border-left: 6px solid #8cc63f;
+}
+/* line 249, style.scss */
+#main .ui-content .events a.ui-btn .ui-icon {
+  background: url("../images/menu-balloons-icon@2x.png") left no-repeat;
+  background-size: contain;
+}
+/* line 254, style.scss */
+#main .ui-content .explore {
+  border-left: 6px solid #3e9ea5;
+}
+/* line 256, style.scss */
+#main .ui-content .explore a.ui-btn .ui-icon {
+  background: url("../images/menu-sign-icon@2x.png") left no-repeat;
+  background-size: contain;
+}
+/* line 261, style.scss */
+#main .ui-content .eat {
+  border-left: 6px solid #d71339;
+}
+/* line 263, style.scss */
+#main .ui-content .eat a.ui-btn .ui-icon {
+  background: url("../images/menu-plate-icon@2x.png") left no-repeat;
+  background-size: contain;
+}
+/* line 268, style.scss */
+#main .ui-content .health {
+  border-left: 6px solid #4e4eac;
+}
+/* line 270, style.scss */
+#main .ui-content .health a.ui-btn .ui-icon {
+  background: url("../images/menu-heart-icon@2x.png") left no-repeat;
+  background-size: contain;
+}
+/* line 275, style.scss */
+#main .ui-content .services {
+  border-left: 6px solid #cf811a;
+}
+/* line 277, style.scss */
+#main .ui-content .services a.ui-btn .ui-icon {
+  background: url("../images/menu-suitcase-icon@2x.png") left no-repeat;
+  background-size: contain;
+}
+/* line 283, style.scss */
+#main .ui-content ul.ui-listview,
+#main .ui-content .ui-collapsible-content.ui-body-d {
+  background: #bfb5b5;
+}
+/* line 290, style.scss */
+#main .ui-content .header-link {
+  margin: -5px -15px 7px -15px;
+  padding: 10px 10px 10px 20px;
+  background: #f4f3f3 url("../images/detail-icon-address@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+  display: block;
+  text-decoration: none;
+}
+/* line 297, style.scss */
+#main .ui-content .header-link.Events {
+  background: #f4f3f3 url("../images/map-pin-special@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+}
+/* line 301, style.scss */
+#main .ui-content .header-link.Explore {
+  background: #f4f3f3 url("../images/map-pin-explore@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+}
+/* line 305, style.scss */
+#main .ui-content .header-link.Eat {
+  background: #f4f3f3 url("../images/map-pin-eat@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+}
+/* line 309, style.scss */
+#main .ui-content .header-link.Health {
+  background: #f4f3f3 url("../images/map-pin-health@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+}
+/* line 313, style.scss */
+#main .ui-content .header-link.Services {
+  background: #f4f3f3 url("../images/map-pin-services@2x.png") 95% 60% no-repeat;
+  background-size: 40px;
+}
+/* line 320, style.scss */
+#main .ui-content .header-link:link, #main .ui-content .header-link:visited {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  color: #afa4a4;
+  font-weight: normal;
+  font-size: 22px;
+}
+/* line 328, style.scss */
+#main .ui-content .ui-body-d li.ui-btn {
+  background: url("../images/search-result-bg@2x.png") top left no-repeat;
+  background-size: 100% 90px;
+  height: 85px;
+  margin-bottom: -10px;
+  border: none;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+}
+/* line 329, style.scss */
+#main .ui-content .ui-body-d li.ui-btn .ui-btn-inner {
+  background: url("../images/search-result-bg@2x.png") top right no-repeat;
+  background-size: 320px 90px;
+  height: 77px;
+}
+/* line 333, style.scss */
+#main .ui-content .ui-body-d li.ui-btn .ui-btn-inner a.list-item-link {
+  padding: .7em 20px .7em 20px;
+}
+/* line 346, style.scss */
+#main .ui-content .ui-body-d li.ui-btn .ui-li-heading {
+  font-size: 18px;
+  color: #83ba3b;
+  font-weight: normal;
+  margin: 0 0 9px 0;
+}
+/* line 352, style.scss */
+#main .ui-content .ui-body-d li.ui-btn .phone {
+  font-size: 16px;
+  color: #a29d9d;
+}
+/* line 356, style.scss */
+#main .ui-content .ui-body-d li.ui-btn .term {
+  font-size: 14px;
+  color: #a29d9d;
+  font-style: italic;
+}
 
+/* line 363, style.scss */
 .ui-panel-content-wrap {
-  height: 100%; }
+  height: 100%;
+}
 
+/* line 366, style.scss */
 #map .ui-content {
   padding: 0;
-  height: 90%; }
+  height: 90%;
+}
 
+/* line 370, style.scss */
 #map, #map_canvas {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 377, style.scss */
 #details #map-canvas {
-  height: 300px; }
+  height: 300px;
+}
+/* line 383, style.scss */
 #details #content {
-  padding: 0; }
+  padding: 0;
+}
+/* line 386, style.scss */
 #details .innertext {
   padding: 5px 15px;
-  background: #edeaea; }
+  background: #edeaea;
+}
+/* line 390, style.scss */
 #details h2 {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
@@ -297,51 +459,75 @@
   padding-bottom: 10px;
   padding-right: 80px;
   font-size: 30px;
-  margin-bottom: 10px; }
-  #details h2.Events {
-    background: url("../images/icon-inset-special@2x.png") right no-repeat;
-    background-size: 40px; }
-  #details h2.Eat {
-    background: url("../images/menu-plate-icon@2x.png") right no-repeat;
-    background-size: 40px; }
-  #details h2.Health {
-    background: url("../images/menu-heart-icon@2x.png") right no-repeat;
-    background-size: 40px; }
-  #details h2.Explore {
-    background: url("../images/menu-sign-icon@2x.png") right no-repeat;
-    background-size: 40px; }
-  #details h2.Services {
-    background: url("../images/menu-suitcase-icon@2x.png") right no-repeat;
-    background-size: 40px; }
+  margin-bottom: 10px;
+}
+/* line 401, style.scss */
+#details h2.Events {
+  background: url("../images/icon-inset-special@2x.png") right no-repeat;
+  background-size: 40px;
+}
+/* line 406, style.scss */
+#details h2.Eat {
+  background: url("../images/menu-plate-icon@2x.png") right no-repeat;
+  background-size: 40px;
+}
+/* line 411, style.scss */
+#details h2.Health {
+  background: url("../images/menu-heart-icon@2x.png") right no-repeat;
+  background-size: 40px;
+}
+/* line 415, style.scss */
+#details h2.Explore {
+  background: url("../images/menu-sign-icon@2x.png") right no-repeat;
+  background-size: 40px;
+}
+/* line 419, style.scss */
+#details h2.Services {
+  background: url("../images/menu-suitcase-icon@2x.png") right no-repeat;
+  background-size: 40px;
+}
+/* line 424, style.scss */
 #details h3 {
   border-top: 1px solid #83ba3b;
   padding-top: 10px;
   color: #83ba3b;
   font-weight: normal;
   font-style: italic;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
+/* line 432, style.scss */
 #details .ui-btn-left {
   margin: 0;
   padding: 0;
   top: 0;
   width: auto;
-  height: auto; }
+  height: auto;
+}
+/* line 439, style.scss */
 #details .ui-btn-left .ui-btn-inner {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+/* line 443, style.scss */
 #details p {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
   font-stretch: normal;
   color: #8a7979;
   font-size: 20px;
-  margin: 5px 0; }
-  #details p.address {
-    background: url("../images/detail-icon-address@2x.png") left no-repeat;
-    background-size: 20px;
-    padding-left: 24px; }
-  #details p.description {
-    font-size: 18px; }
+  margin: 5px 0;
+}
+/* line 448, style.scss */
+#details p.address {
+  background: url("../images/detail-icon-address@2x.png") left no-repeat;
+  background-size: 20px;
+  padding-left: 24px;
+}
+/* line 453, style.scss */
+#details p.description {
+  font-size: 18px;
+}
+/* line 458, style.scss */
 #details phone {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
@@ -350,28 +536,42 @@
   font-size: 20px;
   background: url("../images/detail-icon-phone@2x.png") left no-repeat;
   background-size: 20px;
-  padding-left: 24px; }
-  #details phone a, #details phone a:link {
-    color: #8a7979;
-    text-decoration: none; }
+  padding-left: 24px;
+}
+/* line 465, style.scss */
+#details phone a, #details phone a:link {
+  color: #8a7979;
+  text-decoration: none;
+}
+/* line 470, style.scss */
 #details .detail_image {
   width: 100%;
-  max-height: 250px; }
+  max-height: 250px;
+}
+/* line 474, style.scss */
 #details .view_on_map {
   display: block;
   height: 75px;
-  margin: 5px auto; }
+  margin: 5px auto;
+}
 
 /** NEW info box styles for leafjs **/
+/* line 482, style.scss */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background: #555454; }
+  background: #555454;
+}
 
+/* line 485, style.scss */
 .leaflet-popup-content {
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 489, style.scss */
 .infobox-wrapper {
-  display: none; }
+  display: none;
+}
 
+/* line 492, style.scss */
 #infobox {
   border: 0px solid black;
   background: url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
@@ -385,80 +585,118 @@
   border-radius: 20px;
   text-shadow: 0 -1px #000000;
   /*-webkit-box-shadow: 0 0  8px #000;
-  box-shadow: 0 0 8px #000;*/ }
-  #infobox a, #infobox a:link {
-    color: #FFF;
-    text-decoration: underline; }
-  #infobox a.whole {
-    text-decoration: none; }
-  #infobox.Explore {
-    background: url("../images/menu-sign-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox.Eat {
-    background: url("../images/menu-plate-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox.Events {
-    background: url("../images/icon-inset-special@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox.Health {
-    background: url("../images/menu-heart-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox.Services {
-    background: url("../images/menu-suitcase-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
-    background-size: 50px; }
-  #infobox h4 {
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 400;
-    font-stretch: normal;
-    color: #9dde47;
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    height: 95px;
-    overflow: hidden; }
-  #infobox phone {
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 400;
-    font-stretch: normal;
-    font-size: 20px;
-    margin: 10px 0; }
-  #infobox .category {
-    margin: 0;
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: italic;
-    font-size: 16px; }
-  #infobox .path {
-    display: none; }
+  box-shadow: 0 0 8px #000;*/
+}
+/* line 500, style.scss */
+#infobox a, #infobox a:link {
+  color: #FFF;
+  text-decoration: underline;
+}
+/* line 504, style.scss */
+#infobox a.whole {
+  text-decoration: none;
+}
+/* line 516, style.scss */
+#infobox.Explore {
+  background: url("../images/menu-sign-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  background-size: 50px;
+}
+/* line 520, style.scss */
+#infobox.Eat {
+  background: url("../images/menu-plate-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  background-size: 50px;
+}
+/* line 524, style.scss */
+#infobox.Events {
+  background: url("../images/icon-inset-special@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  background-size: 50px;
+}
+/* line 528, style.scss */
+#infobox.Health {
+  background: url("../images/menu-heart-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  background-size: 50px;
+}
+/* line 532, style.scss */
+#infobox.Services {
+  background: url("../images/menu-suitcase-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
+  background-size: 50px;
+}
+/* line 536, style.scss */
+#infobox h4 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  color: #9dde47;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  height: 95px;
+  overflow: hidden;
+}
+/* line 544, style.scss */
+#infobox phone {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 20px;
+  margin: 10px 0;
+}
+/* line 549, style.scss */
+#infobox .category {
+  margin: 0;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  font-size: 16px;
+}
+/* line 555, style.scss */
+#infobox .path {
+  display: none;
+}
 
+/* line 559, style.scss */
 .infoBox {
   background: url("../images/map-detail-bg@2x.png") -21px -8px no-repeat;
-  background-size: 345px; }
+  background-size: 345px;
+}
 
+/* line 569, style.scss */
 #main .ui-content .ui-listview {
-  padding-left: 15px; }
+  padding-left: 15px;
+}
+/* line 573, style.scss */
 #main .ui-content .sub-collapsible .header-link {
-  margin: -4px -15px 0px -15px; }
+  margin: -4px -15px 0px -15px;
+}
+/* line 576, style.scss */
 #main .ui-content .sub-collapsible a.ui-btn .ui-icon {
-  display: none; }
+  display: none;
+}
+/* line 579, style.scss */
 #main .ui-content .sub-collapsible .ui-collapsible-heading a.ui-btn {
   background: url("../images/bg-sub-collapsible.png") repeat-x 0 0;
   height: 35px;
   width: 100%;
-  margin-left: 0px; }
+  margin-left: 0px;
+}
+/* line 585, style.scss */
 #main .ui-content .sub-collapsible .ui-btn-icon-left .ui-btn-inner {
   padding-left: 15px;
   font-size: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 35px; }
+  line-height: 35px;
+}
+/* line 592, style.scss */
 #main .ui-content .sub-collapsible span.ui-btn-text {
   font-size: 18px;
   color: #FFF;
   text-shadow: none;
   line-height: 1;
   margin-top: 0;
-  font-weight: normal; }
+  font-weight: normal;
+}
+/* line 600, style.scss */
 #main .ui-content .sub-collapsible .ui-body-d li {
   background: url("../images/search-result-bg@2x.png") top left no-repeat;
   background-size: 100% 90px;
@@ -468,25 +706,32 @@
   font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300;
   font-stretch: normal;
-  margin-left: -15px; }
-  #main .ui-content .sub-collapsible .ui-body-d li a {
-    text-decoration: none;
-    font-weight: normal;
-    display: block;
-    padding: 13px 20px 12px 20px; }
+  margin-left: -15px;
+}
+/* line 610, style.scss */
+#main .ui-content .sub-collapsible .ui-body-d li a {
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+  padding: 13px 20px 12px 20px;
+}
+/* line 617, style.scss */
 #main .ui-content .sub-collapsible .ui-li-heading {
   font-size: 18px;
   color: #83ba3b;
   font-weight: normal;
-  margin: 0 0 0px 0; }
+  margin: 0 0 0px 0;
+}
+/* line 623, style.scss */
 #main .ui-content .sub-collapsible .phone {
   font-size: 16px;
   color: #a29d9d;
-  margin: 0; }
+  margin: 0;
+}
+/* line 628, style.scss */
 #main .ui-content .sub-collapsible .term {
   font-size: 14px;
   color: #a29d9d;
   font-style: italic;
-  margin: 0; }
-
-/*# sourceMappingURL=style.css.map */
+  margin: 0;
+}

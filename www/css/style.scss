@@ -190,6 +190,31 @@
 #main .ui-content{
   background:transparent;
   color:#8f8888;
+  .event-linkChange {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 600;
+    font-stretch: normal;
+    color: #a29d9d;
+    background: url(../images/category-bg@2x.png) 0 -6px repeat-x;
+    background-size: 320px 77px;
+    padding: 0;
+    text-shadow: 1px 1px 0 #d8d2d2;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    h6 {
+      padding: 18px 0 18px 55px;
+      font-size: 20px;
+      font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+      font-weight: 600;
+      font-stretch: normal;
+      color: #a29d9d;
+      text-shadow: 1px 1px 0 #d8d2d2;
+      margin: 0 0;
+      background: url(../images/menu-balloons-icon@2x.png) 15px no-repeat;
+      background-size: auto 37px;
+    }
+  }
   .ui-collapsible-heading {
       .ui-btn-icon-left .ui-btn-inner {
         padding-left: 55px;
