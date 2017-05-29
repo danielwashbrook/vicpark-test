@@ -312,7 +312,7 @@ vpmobile = {
       $.mobile.loading( 'show' );
 
       $.ajax({
-          url: 'http://vicpark.localhost/listings/export.json?callback=?',
+          url: 'http://dev-vicpark.pantheonsite.io/listings/export-d8.json?callback=?',
           type: 'GET',
           crossDomain: true,
           dataType: 'jsonp',
