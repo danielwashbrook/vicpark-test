@@ -344,7 +344,10 @@ vpmobile = {
     var thedataTemp = thedataBefore.filter(function (el) {
       return el.listing.term !== '';
     });
-    var thedata = thedataTemp.filter(function (el) {
+    var thedataTemp2 = thedataTemp.filter(function (el) {
+      return el.listing.onmobile != '0';
+    });
+    var thedata = thedataTemp2.filter(function (el) {
       return el.listing.longitude != '0';
     });
 
