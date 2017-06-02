@@ -21,10 +21,6 @@
         The 'device' permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
-
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-geolocation" />
-
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -34,8 +30,8 @@
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <!--<preference name="phonegap-version"           value="3.7.0" />    -->      <!-- all: current version of PhoneGap -->
-    <preference name="phonegap-version" value="cli-6.4.0" />
+    <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
+    <!--<preference name="phonegap-version" value="cli-6.4.0" />-->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
