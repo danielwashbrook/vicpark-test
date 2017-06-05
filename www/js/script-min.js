@@ -513,6 +513,7 @@ $( window ).on( "navigate", function( event, data ) {
 // map page
 $('#map').on('pageinit', function() {
 
+    log('#map pageinit 2');
     $('a.whole').on('click', function(e) {
         vpmobile.active_listing = $(this).find('.path').html();
         $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
@@ -556,7 +557,7 @@ $('#search').on('pageinit', function() {
 $(document).on("pageinit", function(){
   log('pageinit');
   $.extend(  $.mobile , {
-    ajaxEnabled: true
+    ajaxEnabled: false
   });
 });
 
