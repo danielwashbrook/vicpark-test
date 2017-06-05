@@ -132,11 +132,13 @@ vpmobile = {
 
   getDetailedListing: function(path) {
 
-    //log(path);
+    
     if (path == 'null') {
-      //log(vpmobile.active_listing);
+      log(vpmobile.active_listing);
       path = vpmobile.active_listing;
     }
+    log(path);
+
     var thedata = vpmobile.nodes.filter(function (el) {
       //log(el);
       return el.listing.path == path;
@@ -321,6 +323,7 @@ vpmobile = {
       });
 
     } else {
+      log('loading cached data!');
       callbackfunction(optional_argument);
     }
   },
@@ -530,6 +533,7 @@ $( document ).delegate("#map", "pageinit", function() {
 });
 
 
+
 $('#map').on('pageshow', function() {
   log('#map pageshow');
 
@@ -558,6 +562,7 @@ $(document).on("pageinit", function(){
 
 
 $('#details').on('pageshow', function() {
+  log('loading pageshow for details');
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
 
@@ -621,6 +626,8 @@ $('.list-item-link').on('click',function(){
     (RegExp(name + '=' + '(.+?)(&|$)').exec($(this).attr('href'))||[,null])[1]
   );
   vpmobile.active_listing = path;
+  log('clicked on a listing link');
+  log(path);
 });
 
 
@@ -634,6 +641,6 @@ $("div.ui-collapsible").on("expand", function(e) {
 document.addEventListener("deviceready", onDeviceReady);
 
 function log(str){
-  //console.log(str);
+  console.log(str);
 }
 
