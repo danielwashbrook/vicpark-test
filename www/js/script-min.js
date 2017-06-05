@@ -182,7 +182,7 @@ vpmobile = {
   },
   updateUserLocation: function(position) {
     //log('updateUserLocation');
-    //log(position);
+    log(position);
     // call itself in 1 second
 
     var usermarkerimage = L.icon({
