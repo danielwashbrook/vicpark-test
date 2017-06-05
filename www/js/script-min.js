@@ -199,7 +199,7 @@ vpmobile = {
       vpmobile.userLocationMarker.clearLayers();
     }
 
-    var userLocationMarkerObj = L.marker([position.coords.lattitude, position.coords.longitude],
+    var userLocationMarkerObj = L.marker([position.coords.latitude, position.coords.longitude],
       {icon: usermarkerimage});
 
     vpmobile.userLocationMarker.addLayer(userLocationMarkerObj);
