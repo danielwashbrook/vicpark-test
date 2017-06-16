@@ -314,7 +314,7 @@ vpmobile = {
       $.mobile.loading( 'show' );
 
       $.ajax({
-          url: 'http://dev-vicpark.pantheonsite.io/listings/export-d8.json?callback=?',
+          url: 'http://www.victoriapark.org/listings/export-d8.json?callback=?',
           type: 'GET',
           crossDomain: true,
           dataType: 'jsonp',
