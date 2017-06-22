@@ -8,7 +8,18 @@ vpmobile = {
 
     // Start by adding the sub-catgories to the parent catgories
     var terms = [];
-    $.each(vpmobile.nodes, function(index, item) {
+    var thedataTemp = vpmobile.nodes.filter(function (el) {
+      return el.listing.term !== '';
+    });
+    var thedataTemp2 = thedataTemp.filter(function (el) {
+      return el.listing.onmobile != '0';
+    });
+    var thedata = thedataTemp2.filter(function (el) {
+      return el.listing.longitude != '0';
+    });
+
+
+    $.each(thedata, function(index, item) {
       if (item.listing.childName) {
         var childTerm = item.listing.childName;
         var childTermID = childTerm.replace(/[\$\s\&\/]/g, '-');
@@ -38,7 +49,7 @@ vpmobile = {
     });
 
     // Add Locations to the proper Child Category
-    $.each( vpmobile.nodes, function(i, marker) {
+    $.each( thedata, function(i, marker) {
       if (marker.listing.childName) {
         var childTermID = marker.listing.childName.replace(/[\$\s\&\/]/g, '-').replace('&', '');
         listing_html = '<li data-icon="false"><a href="detail.html?path=' + marker.listing.path + '" class="list-item-link"><h2 class="ui-li-heading">' + marker.listing.title + '</h2><p class="phone">' + marker.listing.phone + '</p><p class="term">' + marker.listing.childName + '</p></a></li>';
@@ -438,10 +449,11 @@ vpmobile = {
             '<phone>'+marker.listing.phone+'</phone>'+
             '<p class="category">'+marker.listing.childName+'</p>'+
             '<p class="path">'+marker.listing.path+'</p>'+
-        '</a></div>');
+        '</a></div>').openPopup();
       //log(markerimage[i]);
+log(markerPosition, 'test');
 
-
+      if(!markerPosition) {log('here'); markerPosition = ["51.0424835", "-114.0708057"];}
       vpmobile.bounds.extend(markerPosition);
 
 
