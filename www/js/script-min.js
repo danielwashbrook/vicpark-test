@@ -145,16 +145,16 @@ vpmobile = {
 
     
     if (path == 'null') {
-      log(vpmobile.active_listing);
+      // log(vpmobile.active_listing);
       path = vpmobile.active_listing;
     }
-    log(path);
+    // log(path);
 
     var thedata = vpmobile.nodes.filter(function (el) {
-      //log(el);
+      // //log(el);
       return el.listing.path == path;
     });
-    //log(vpmobile.nodes);
+    // //log(vpmobile.nodes);
     thedata = thedata[0].listing;
     $('.innertext h2').html(thedata.title);
     $('.innertext h2').attr('class', thedata.term);
@@ -176,24 +176,24 @@ vpmobile = {
     vpmobile.currentListing = thedata;
 
     vpmobile.initializeMap(vpmobile.currentListing.lattitude, vpmobile.currentListing.longitude, vpmobile.currentListing.term);
-    log(thedata);
+    // log(thedata);
 
   },
 
   errorLocation: function(error) {
-    log('failed getUserLocation');
-    log(error);
+    // log('failed getUserLocation');
+    // log(error);
   },
   getUserLocation: function() {
-    //log('getUserLocation');
+    // //log('getUserLocation');
     // get the user's GPS location from an HTML5 browser
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(vpmobile.updateUserLocation, vpmobile.errorLocation);
     }
   },
   updateUserLocation: function(position) {
-    //log('updateUserLocation');
-    log(position);
+    // //log('updateUserLocation');
+    // log(position);
     // call itself in 1 second
 
     var usermarkerimage = L.icon({
@@ -294,8 +294,8 @@ vpmobile = {
   searchListings: function(){
     var thedata = vpmobile.nodes;
     $.each( thedata, function(i, node) {
-      //log(i);
-      //log(node.listing);
+      // //log(i);
+      // //log(node.listing);
       listing_html = '<li data-icon="false" class="'+ node.listing.term +'"><a href="detail.html?path='+ node.listing.path +'" class="list-item-link"><h2>'+ node.listing.title +'</h2><p class="phone">'+ node.listing.phone +'</p><p class="category">'+ node.listing.childName +'</p></a>';
       listing_html += '<span style="display:none;">'+node.listing.body + '</span></li>';
 
@@ -304,7 +304,7 @@ vpmobile = {
     });
 
     var searchq = getURLParameter('q');
-    log('searchq: ' + searchq);
+    // log('searchq: ' + searchq);
     if (searchq !== "null") {
       //$('#search-input-page').val( decodeURIComponent(searchq).replace(/\+/g, ' '));
       $('.ui-input-search input').val(decodeURIComponent(getURLParameter('q')).replace(/\+/g, ' '));
@@ -321,7 +321,7 @@ vpmobile = {
   loadNodes: function(callbackfunction, optional_argument) {
 
     if (vpmobile.nodes === undefined || vpmobile.nodes.length < 1){
-      log('getting fresh data!');
+      // log('getting fresh data!');
       $.mobile.loading( 'show' );
 
       $.ajax({
@@ -334,13 +334,13 @@ vpmobile = {
       });
 
     } else {
-      log('loading cached data!');
+      // log('loading cached data!');
       callbackfunction(optional_argument);
     }
   },
 
   loadMarkers: function() {
-    log('loading markers');
+    // log('loading markers');
     var markerimage = new Array();
     if (getURLParameter('childName') != 'null') {
       var thedataBefore = vpmobile.nodes.filter(function (el) {
@@ -375,10 +375,10 @@ vpmobile = {
 
     vpmobile.markers = [];
 
-    //log(thedata);
+    // //log(thedata);
     $.each( thedata, function(i, marker) {
 
-      //log(marker.listing);
+      // //log(marker.listing);
 
       // Marker image from category
 
@@ -450,10 +450,10 @@ vpmobile = {
             '<p class="category">'+marker.listing.childName+'</p>'+
             '<p class="path">'+marker.listing.path+'</p>'+
         '</a></div>').openPopup();
-      //log(markerimage[i]);
-log(markerPosition, 'test');
+//       //log(markerimage[i]);
+// log(markerPosition, 'test');
 
-      if(!markerPosition) {log('here'); markerPosition = ["51.0424835", "-114.0708057"];}
+      // if(!markerPosition) {log('here'); markerPosition = ["51.0424835", "-114.0708057"];}
       vpmobile.bounds.extend(markerPosition);
 
 
@@ -511,9 +511,9 @@ function smart_scroll(el, offset)
 
 
 function onDeviceReady() {
-  log('onDeviceReady');
+  // log('onDeviceReady');
   $(document).ready(function() {
-    log('document ready');
+    // log('document ready');
     vpmobile.getUserLocation();
   });
 }
@@ -525,7 +525,7 @@ $( window ).on( "navigate", function( event, data ) {
 // map page
 $('#map').on('pageinit', function() {
 
-    log('#map pageinit 2');
+    // log('#map pageinit 2');
     $('a.whole').on('click', function(e) {
         vpmobile.active_listing = $(this).find('.path').html();
         $.mobile.changePage("detail.html?path="+$(this).find('.path').html(), {'transition': 'slide'});
@@ -535,7 +535,7 @@ $('#map').on('pageinit', function() {
 });
 
 $( document ).delegate("#map", "pageinit", function() {
-  log('#map pageinit');
+  // log('#map pageinit');
 
   //vpmobile.bounds = new google.maps.LatLngBounds();
   //
@@ -548,7 +548,7 @@ $( document ).delegate("#map", "pageinit", function() {
 
 
 $('#map').on('pageshow', function() {
-  log('#map pageshow');
+  // log('#map pageshow');
 
   vpmobile.initialize();
 
@@ -558,7 +558,7 @@ $('#map').on('pageshow', function() {
 
 // search page functionality
 $('#search').on('pageinit', function() {
-  log('#search pageinit');
+  // log('#search pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: false
   });
@@ -567,7 +567,7 @@ $('#search').on('pageinit', function() {
 
 // pageinit of every page
 $(document).on("pageinit", function(){
-  log('pageinit');
+  // log('pageinit');
   $.extend(  $.mobile , {
     ajaxEnabled: false
   });
@@ -575,7 +575,7 @@ $(document).on("pageinit", function(){
 
 
 $('#details').on('pageshow', function() {
-  log('loading pageshow for details');
+  // log('loading pageshow for details');
   vpmobile.loadNodes(vpmobile.getDetailedListing, getURLParameter('path'));
   $('.view_on_map').click(function(){
 
@@ -588,14 +588,14 @@ $('#details').on('pageshow', function() {
 
 
 $('#main').on('pageshow', function() {
-  log('#main pageshow');
+  // log('#main pageshow');
   //$('#map_canvas').gmap('refresh');
 });
 
 
 // explore page, load the listings into the lists
 $('#main').on('pageinit', function() {
-  log('#main pageinit');
+  // log('#main pageinit');
 
   vpmobile.loadNodes(vpmobile.loadListings);
 
@@ -639,8 +639,8 @@ $('.list-item-link').on('click',function(){
     (RegExp(name + '=' + '(.+?)(&|$)').exec($(this).attr('href'))||[,null])[1]
   );
   vpmobile.active_listing = path;
-  log('clicked on a listing link');
-  log(path);
+  // log('clicked on a listing link');
+  // log(path);
 });
 
 
@@ -654,6 +654,6 @@ $("div.ui-collapsible").on("expand", function(e) {
 document.addEventListener("deviceready", onDeviceReady);
 
 function log(str){
-  console.log(str);
+//   console.log(str);
 }
 
