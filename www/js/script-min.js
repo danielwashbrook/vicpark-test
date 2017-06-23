@@ -651,7 +651,7 @@ $("div.ui-collapsible").on("expand", function(e) {
 
 /* Phone gap bootstrap */
 
-document.addEventListener("deviceready", onDeviceReady);
+document.addEventListener("deviceready", onDeviceReady, {passive: true});
 
 function log(str){
 //   console.log(str);
