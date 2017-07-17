@@ -151,7 +151,7 @@ vpmobile = {
       $('.innertext .description').hide();
     }
 
-    $('.detail_image').attr('src', thedata.thumbnail);
+    $('.detail_image').attr('src', thedata.listingImage);
 
 
 

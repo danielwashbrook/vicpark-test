@@ -545,8 +545,7 @@
 }
 /* line 470, style.scss */
 #details .detail_image {
-  width: 100%;
-  max-height: 250px;
+  max-width: 300px;
 }
 /* line 474, style.scss */
 #details .view_on_map {
@@ -554,24 +553,28 @@
   height: 75px;
   margin: 5px auto;
 }
+/* line 479, style.scss */
+#details .detail_image_wrapper {
+  text-align: center;
+}
 
 /** NEW info box styles for leafjs **/
-/* line 482, style.scss */
+/* line 485, style.scss */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background: #555454;
 }
 
-/* line 485, style.scss */
+/* line 488, style.scss */
 .leaflet-popup-content {
   margin: 0;
 }
 
-/* line 489, style.scss */
+/* line 492, style.scss */
 .infobox-wrapper {
   display: none;
 }
 
-/* line 492, style.scss */
+/* line 495, style.scss */
 #infobox {
   border: 0px solid black;
   background: url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
@@ -587,41 +590,41 @@
   /*-webkit-box-shadow: 0 0  8px #000;
   box-shadow: 0 0 8px #000;*/
 }
-/* line 500, style.scss */
+/* line 503, style.scss */
 #infobox a, #infobox a:link {
   color: #FFF;
   text-decoration: underline;
 }
-/* line 504, style.scss */
+/* line 507, style.scss */
 #infobox a.whole {
   text-decoration: none;
 }
-/* line 516, style.scss */
+/* line 519, style.scss */
 #infobox.Explore {
   background: url("../images/menu-sign-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
   background-size: 50px;
 }
-/* line 520, style.scss */
+/* line 523, style.scss */
 #infobox.Eat {
   background: url("../images/menu-plate-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
   background-size: 50px;
 }
-/* line 524, style.scss */
+/* line 527, style.scss */
 #infobox.Events {
   background: url("../images/icon-inset-special@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
   background-size: 50px;
 }
-/* line 528, style.scss */
+/* line 531, style.scss */
 #infobox.Health {
   background: url("../images/menu-heart-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
   background-size: 50px;
 }
-/* line 532, style.scss */
+/* line 535, style.scss */
 #infobox.Services {
   background: url("../images/menu-suitcase-icon@2x.png") 10px 18px no-repeat, url("../images/icon-flat-info@2x.png") 95% 85% no-repeat;
   background-size: 50px;
 }
-/* line 536, style.scss */
+/* line 539, style.scss */
 #infobox h4 {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
@@ -632,7 +635,7 @@
   height: 95px;
   overflow: hidden;
 }
-/* line 544, style.scss */
+/* line 547, style.scss */
 #infobox phone {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
@@ -640,7 +643,7 @@
   font-size: 20px;
   margin: 10px 0;
 }
-/* line 549, style.scss */
+/* line 552, style.scss */
 #infobox .category {
   margin: 0;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -649,37 +652,37 @@
   font-style: italic;
   font-size: 16px;
 }
-/* line 555, style.scss */
+/* line 558, style.scss */
 #infobox .path {
   display: none;
 }
 
-/* line 559, style.scss */
+/* line 562, style.scss */
 .infoBox {
   background: url("../images/map-detail-bg@2x.png") -21px -8px no-repeat;
   background-size: 345px;
 }
 
-/* line 569, style.scss */
+/* line 572, style.scss */
 #main .ui-content .ui-listview {
   padding-left: 15px;
 }
-/* line 573, style.scss */
+/* line 576, style.scss */
 #main .ui-content .sub-collapsible .header-link {
   margin: -4px -15px 0px -15px;
 }
-/* line 576, style.scss */
+/* line 579, style.scss */
 #main .ui-content .sub-collapsible a.ui-btn .ui-icon {
   display: none;
 }
-/* line 579, style.scss */
+/* line 582, style.scss */
 #main .ui-content .sub-collapsible .ui-collapsible-heading a.ui-btn {
   background: url("../images/bg-sub-collapsible.png") repeat-x 0 0;
   height: 35px;
   width: 100%;
   margin-left: 0px;
 }
-/* line 585, style.scss */
+/* line 588, style.scss */
 #main .ui-content .sub-collapsible .ui-btn-icon-left .ui-btn-inner {
   padding-left: 15px;
   font-size: 20px;
@@ -687,7 +690,7 @@
   padding-bottom: 0;
   line-height: 35px;
 }
-/* line 592, style.scss */
+/* line 595, style.scss */
 #main .ui-content .sub-collapsible span.ui-btn-text {
   font-size: 18px;
   color: #FFF;
@@ -696,7 +699,7 @@
   margin-top: 0;
   font-weight: normal;
 }
-/* line 600, style.scss */
+/* line 603, style.scss */
 #main .ui-content .sub-collapsible .ui-body-d li {
   background: url("../images/search-result-bg@2x.png") top left no-repeat;
   background-size: 100% 90px;
@@ -708,27 +711,27 @@
   font-stretch: normal;
   margin-left: -15px;
 }
-/* line 610, style.scss */
+/* line 613, style.scss */
 #main .ui-content .sub-collapsible .ui-body-d li a {
   text-decoration: none;
   font-weight: normal;
   display: block;
   padding: 13px 20px 12px 20px;
 }
-/* line 617, style.scss */
+/* line 620, style.scss */
 #main .ui-content .sub-collapsible .ui-li-heading {
   font-size: 18px;
   color: #83ba3b;
   font-weight: normal;
   margin: 0 0 0px 0;
 }
-/* line 623, style.scss */
+/* line 626, style.scss */
 #main .ui-content .sub-collapsible .phone {
   font-size: 16px;
   color: #a29d9d;
   margin: 0;
 }
-/* line 628, style.scss */
+/* line 631, style.scss */
 #main .ui-content .sub-collapsible .term {
   font-size: 14px;
   color: #a29d9d;

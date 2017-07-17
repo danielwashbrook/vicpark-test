@@ -468,13 +468,16 @@
     }
   }
   .detail_image {
-    width:100%;
-    max-height: 250px;
+    //width:100%;
+    max-width: 300px;
   }
   .view_on_map {
     display: block;
     height: 75px;
     margin: 5px auto;
+  }
+  .detail_image_wrapper {
+    text-align: center;
   }
 }
 
